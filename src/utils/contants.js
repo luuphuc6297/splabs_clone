@@ -1,0 +1,5 @@
+export const ACCESS_TOKEN_KEY = '';
+
+export const SETTING_STORE_CONTANTS = {
+  CHANGE_LANGUAGE: 'CHANGE_LANGUAGE',
+};
