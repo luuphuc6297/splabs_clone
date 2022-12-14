@@ -5,7 +5,7 @@ import { SPLabsLogo } from 'assets';
 import React from 'react';
 import { NavigateBar } from './NavigateBar';
 
-const SPLabsIcon = styled('img')(({ theme }) => ({
+export const SPLabsIcon = styled('img')(({ theme }) => ({
   width: 148,
   height: 32,
 }));

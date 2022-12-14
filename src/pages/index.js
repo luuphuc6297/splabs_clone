@@ -1,4 +1,6 @@
 import { Header, TopHeader } from 'components';
+import { AreaExplore } from 'components/base/AreaExplore';
+import { Footer } from 'components/base/Footer';
 import AboutUs from './AboutUs';
 import { EnforceProject } from './Enforce';
 import HomePage from './Home';
@@ -8,13 +10,15 @@ import { TheTeam } from './Team';
 const LandingPage = () => {
   return (
     <>
-      <TopHeader />
+      {/* <TopHeader />
       <Header />
       <HomePage />
       <AboutUs />
       <EnforceProject />
-      <MakeDifferent />
+      <MakeDifferent /> */}
       <TheTeam />
+      {/* <AreaExplore />
+      <Footer /> */}
     </>
   );
 };
