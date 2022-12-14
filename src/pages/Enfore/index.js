@@ -22,7 +22,7 @@ export const EnforeProject = () => {
   }, []);
 
   return (
-    <SectionWrapper>
+    <SectionWrapper sx={{ marginBottom: 21 }}>
       <SectionTitle sx={{ textAlign: 'center' }}>Enfore Project</SectionTitle>
       <SectionCaption
         sx={{
