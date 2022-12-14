@@ -3,6 +3,7 @@
  **/
 export * from './base/AppButton';
 export * from './base/Header';
+export * from './base/PresentationCard';
 export * from './base/TopHeader';
 export * from './base/WhiteButton';
 /**

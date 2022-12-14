@@ -27,8 +27,6 @@ const NavLink = styled(Link)(({ theme }) => ({
 }));
 
 export const NavigateBar = React.memo(() => {
-  // const { library } = useAppSelector(selectLibrary);
-
   const renderNavigateItems = React.useCallback(() => {
     return navigateItems.map((item) => (
       <NavLink
