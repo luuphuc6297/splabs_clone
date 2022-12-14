@@ -11,13 +11,13 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <I18nextProvider i18n={i18n}> */}
+    <I18nextProvider i18n={i18n}>
       <Provider store={store}>
         <BrowserRouter>
           <App />
         </BrowserRouter>
       </Provider>
-    {/* </I18nextProvider> */}
+    </I18nextProvider>
   </React.StrictMode>
 );
 

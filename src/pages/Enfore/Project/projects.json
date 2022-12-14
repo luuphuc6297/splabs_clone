@@ -1,0 +1,40 @@
+{
+  "payload": [
+    {
+      "id": "evalution",
+      "step": "01",
+      "title": "PROJECT EVALUATION",
+      "caption": "Startups of all levels of maturity will be vetted and vetted by visionary experts and real-life partners to build blockchain technologies."
+    },
+    {
+      "id": "consultation",
+      "step": "02",
+      "title": "CONSULTATION",
+      "caption": "Understand the main points of the project, consult the concept and the appropriate technology platform and marketing strategy."
+    },
+    {
+      "id": "strategic",
+      "step": "03",
+      "title": "STRATEGIC & TARGET",
+      "caption": "Experienced executives, venture capitalists and global active angels accompany and advise each appropriate phase of the project to help you achieve Web3's goals."
+    },
+    {
+      "id": "build",
+      "step": "04",
+      "title": "BUILD PROJECT",
+      "caption": "Dev team with more than 30 developers and marketers from 3 countries Korea, Japan and Vietnam builds a blockchain technology application platform towards the vast Web3 future."
+    },
+    {
+      "id": "community",
+      "step": "05",
+      "title": "BUILD BRAND & COMMUNITY",
+      "caption": "Dev team with more than 30 developers and marketers from 3 countries Korea, Japan and Vietnam builds a blockchain technology application platform towards the vast Web3 future."
+    },
+    {
+      "id": "review",
+      "step": "06",
+      "title": "REVIEW",
+      "caption": "We listen, recognize and try to adjust to the market situation, improve weaknesses to lead to the effectiveness of the project."
+    }
+  ]
+}

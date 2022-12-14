@@ -5,7 +5,9 @@ import { Description } from './Description';
 import { Presentation } from './Presentation';
 const AboutUs = () => {
   return (
-    <SectionWrapper sx={{ display: 'flex', flexDirection: 'column' }}>
+    <SectionWrapper
+      sx={{ display: 'flex', flexDirection: 'column', marginBottom: 21 }}
+    >
       <Box
         sx={{
           display: 'flex',

@@ -3,6 +3,7 @@ import { styled } from '@mui/system';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { scrollSection } from 'utils';
+import { useTranslation } from 'react-i18next';
 
 const navigateItems = [
   { id: 'home', label: 'home', link: '/' },
@@ -27,6 +28,8 @@ const NavLink = styled(Link)(({ theme }) => ({
 }));
 
 export const NavigateBar = React.memo(() => {
+  const { t } = useTranslation('translation');
+
   const renderNavigateItems = React.useCallback(() => {
     return navigateItems.map((item) => (
       <NavLink
@@ -35,7 +38,7 @@ export const NavigateBar = React.memo(() => {
         to={item.link}
         onClick={() => scrollSection(item.id)}
       >
-        {item.label}
+        {t(item.label)}
       </NavLink>
     ));
   }, []);
