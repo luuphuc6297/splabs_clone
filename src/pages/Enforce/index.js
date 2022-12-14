@@ -6,9 +6,9 @@ import {
   SectionWrapper,
 } from 'components';
 import React from 'react';
-import projects from './Project/projects.json';
+import projects from './projects.json';
 
-export const EnforeProject = () => {
+export const EnforceProject = () => {
   const renderProjects = React.useCallback(() => {
     return projects.payload.map((project) => (
       <ProjectCard

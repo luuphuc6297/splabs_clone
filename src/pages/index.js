@@ -1,8 +1,9 @@
 import { Header, TopHeader } from 'components';
 import AboutUs from './AboutUs';
-import { EnforeProject } from './Enfore';
+import { EnforceProject } from './Enforce';
 import HomePage from './Home';
 import { MakeDifferent } from './MakeDif';
+import { TheTeam } from './Team';
 
 const LandingPage = () => {
   return (
@@ -11,8 +12,9 @@ const LandingPage = () => {
       <Header />
       <HomePage />
       <AboutUs />
-      <EnforeProject />
+      <EnforceProject />
       <MakeDifferent />
+      <TheTeam />
     </>
   );
 };

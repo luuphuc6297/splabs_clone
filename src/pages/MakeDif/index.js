@@ -16,7 +16,13 @@ export const MakeDifferent = () => {
   }, []);
 
   return (
-    <SectionWrapper sx={{ display: 'flex', jusitfyConent: 'space-bewteen' }}>
+    <SectionWrapper
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        marginBottom: 21,
+      }}
+    >
       <Box
         sx={{
           display: 'flex',
@@ -34,7 +40,8 @@ export const MakeDifferent = () => {
         sx={{
           display: 'flex',
           flexWrap: 'wrap',
-          justifyContent: 'center',
+          alignContent: 'center',
+          justifyContent: 'end',
           gridGap: 4,
           gap: 4,
         }}
