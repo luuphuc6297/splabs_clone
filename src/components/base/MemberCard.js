@@ -12,7 +12,7 @@ const Position = styled(Typography)(({ theme }) => ({}));
 
 export const MemberCard = React.memo(({ avatar, name, position }) => {
     return (
-        <Box sx={{ width: 168, border: '1px solid' }}>
+        <Box sx={{ border: '1px solid' }}>
             <AvatarWrapper>
                 <Avatar src={Avt3} loading="lazy" />
             </AvatarWrapper>

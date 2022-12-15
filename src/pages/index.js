@@ -5,6 +5,7 @@ import { Explore } from './Explore';
 import HomePage from './Home';
 import { MakeDifferent } from './MakeDif';
 import { Partners } from './Partners';
+import { Project } from './Project';
 import { StartGrowing } from './StartGrowing';
 import { TheTeam } from './Team';
 
@@ -40,6 +41,7 @@ const LandingPage = () => {
                 <StartGrowing />
             </SectionWrapperFullWidth>
 
+            <Project />
             <Explore />
             <Footer />
         </>
