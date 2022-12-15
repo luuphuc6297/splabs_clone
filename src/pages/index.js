@@ -1,4 +1,4 @@
-import { Footer, Header, TopHeader } from 'components';
+import { Footer, Header, SectionWrapperFullWidth, TopHeader } from 'components';
 import AboutUs from './AboutUs';
 import { EnforceProject } from './Enforce';
 import { Explore } from './Explore';
@@ -11,12 +11,29 @@ import { TheTeam } from './Team';
 const LandingPage = () => {
     return (
         <>
-            <TopHeader />
-            <Header />
-            <HomePage />
-            <AboutUs />
-            <EnforceProject />
-            <MakeDifferent />
+            <SectionWrapperFullWidth
+                sx={{
+                    backgroundImage: `url('/images/background/landing_background.png')`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    objectFit: 'cover',
+                    height: '100vh',
+                }}
+            >
+                <TopHeader />
+                <Header />
+                <HomePage />
+            </SectionWrapperFullWidth>
+            <SectionWrapperFullWidth
+                sx={{
+                    background: 'black',
+                }}
+            >
+                <AboutUs />
+                <EnforceProject />
+                <MakeDifferent />
+            </SectionWrapperFullWidth>
             <TheTeam />
             <Partners />
             <StartGrowing />

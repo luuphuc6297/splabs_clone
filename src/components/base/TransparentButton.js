@@ -1,6 +1,6 @@
 import { Button } from '@mui/material';
+import { grey } from '@mui/material/colors';
 import { styled } from '@mui/system';
-
 const StyledTransparentBtn = styled(Button)(({ theme }) => ({
     textTransform: 'capitalize',
     border: '1px solid rgb(152, 202, 254)',
@@ -8,6 +8,7 @@ const StyledTransparentBtn = styled(Button)(({ theme }) => ({
     width: 96,
     borderRadius: 16,
     fontWeight: 'bold',
+    color: grey[50],
     '&:hover': {
         background:
             'linear-gradient(336.08deg, rgb(159, 140, 204) 10.7%, rgb(45, 145, 200) 97.43%)',
