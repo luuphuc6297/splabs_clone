@@ -28,12 +28,7 @@ const Caption = styled(Typography)(({ theme }) => ({}));
 
 export const ProjectCard = React.memo(({ step, title, caption }) => {
     return (
-        <Box
-            sx={{
-                width: 328,
-                marginBottom: 4,
-            }}
-        >
+        <Box>
             <StepBox>
                 <Step>{step}</Step>
             </StepBox>

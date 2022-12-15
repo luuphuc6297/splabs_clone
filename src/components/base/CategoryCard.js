@@ -18,8 +18,7 @@ export const CategoryCard = React.memo(({ title, lists, logo }) => {
     return (
         <Box
             sx={{
-                width: 296,
-                height: 368,
+                height: 355,
                 borderRadius: 4,
                 display: 'flex',
                 flexDirection: 'column',
@@ -29,6 +28,7 @@ export const CategoryCard = React.memo(({ title, lists, logo }) => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
+                cursor: 'pointer',
                 padding: 2,
                 background: 'rgba(46, 48, 83, 0.4)',
                 boxShadow: 'rgb(0 0 0 / 34%) 0px 1px 9px',

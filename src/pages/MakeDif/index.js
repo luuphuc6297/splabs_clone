@@ -1,53 +1,49 @@
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import {
-  CategoryCard,
-  SectionCaption,
-  SectionTitle,
-  SectionWrapper,
+    CategoryCard,
+    SectionCaption,
+    SectionTitle,
+    SectionWrapper,
 } from 'components';
 import React from 'react';
 import categories from './categories.json';
 
 export const MakeDifferent = () => {
-  const renderCategory = React.useCallback(() => {
-    return categories.payload.map(({ id, title, lists, logo }) => (
-      <CategoryCard key={id} title={title} lists={lists} logo={logo} />
-    ));
-  }, []);
-
-  return (
-    <SectionWrapper
-      sx={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        marginBottom: 21,
-      }}
-    >
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <SectionTitle>WHAT MAKES US DIFFERENT</SectionTitle>
-        <SectionCaption>
-          Exciting results demonstrate some of what our team can do for you!
-        </SectionCaption>
-      </Box>
-      <Box
-        sx={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          alignContent: 'center',
-          justifyContent: 'end',
-          gridGap: 4,
-          gap: 4,
-        }}
-      >
-        {renderCategory()}
-      </Box>
-    </SectionWrapper>
-  );
+    return (
+        <SectionWrapper
+            sx={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                paddingBottom: 20,
+            }}
+        >
+            <Box sx={{ width: '100%' }}>
+                <SectionTitle>WHAT MAKES</SectionTitle>
+                <SectionTitle>US DIFFERENT</SectionTitle>
+                <SectionCaption
+                    sx={{
+                        marginTop: 2,
+                        maxWidth: 300,
+                    }}
+                >
+                    Exciting results demonstrate some of what our team can do
+                    for you!
+                </SectionCaption>
+            </Box>
+            <Box>
+                <Grid container columnSpacing={5} rowSpacing={5}>
+                    {categories.payload.map(({ id, title, lists, logo }) => (
+                        <Grid item xs={12} md={6} key={id}>
+                            <CategoryCard
+                                title={title}
+                                lists={lists}
+                                logo={logo}
+                            />
+                        </Grid>
+                    ))}
+                </Grid>
+            </Box>
+        </SectionWrapper>
+    );
 };
