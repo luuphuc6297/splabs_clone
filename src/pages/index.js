@@ -34,9 +34,12 @@ const LandingPage = () => {
                 <EnforceProject />
                 <MakeDifferent />
             </SectionWrapperFullWidth>
-            <TheTeam />
-            <Partners />
-            <StartGrowing />
+            <SectionWrapperFullWidth sx={{ background: 'black' }}>
+                <TheTeam />
+                <Partners />
+                <StartGrowing />
+            </SectionWrapperFullWidth>
+
             <Explore />
             <Footer />
         </>
