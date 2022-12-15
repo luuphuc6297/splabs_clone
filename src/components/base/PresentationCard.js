@@ -1,6 +1,6 @@
-import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
+import React from 'react';
 
 const Step = styled(Typography)(({ theme }) => ({
     marginBottom: 16,
@@ -23,7 +23,6 @@ export const PresentationCard = React.memo(
                     display: 'flex',
                     flexDirection: 'column',
                     padding: '32px 64px 32px 32px',
-                    // border: '1px solid',
                     borderRadius: 4,
                     textAlign: 'left',
                     backgroundImage: `url('/images/background/presentation_background.png')`,

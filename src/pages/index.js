@@ -6,6 +6,7 @@ import HomePage from './Home';
 import { MakeDifferent } from './MakeDif';
 import { Partners } from './Partners';
 import { TheTeam } from './Team';
+import { StartGrowing } from './StartGrowing';
 
 const LandingPage = () => {
     return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
             <MakeDifferent />
             <TheTeam />
             <Partners />
+            <StartGrowing />
             <Explore />
             <Footer />
         </>
