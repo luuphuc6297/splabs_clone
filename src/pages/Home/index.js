@@ -7,7 +7,7 @@ const HomePage = () => {
         <SectionWrapper
             sx={{
                 textAlign: 'center',
-                height: '65%',
+                height: '70%',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'end',

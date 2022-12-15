@@ -1,5 +1,5 @@
-import { createTheme } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
+import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         primary: {
@@ -17,11 +17,11 @@ const theme = createTheme({
             'sans-serif',
         ].join(','),
         h1: {
-            fontSize: '2rem',
+            fontSize: '2.75rem',
             fontWeight: 'bold',
         },
         h2: {
-            fontSize: '1.75rem',
+            fontSize: '2rem',
             fontWeight: 'bold',
         },
         h3: {

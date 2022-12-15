@@ -21,6 +21,7 @@ export * from './base/WhiteButton';
 /**
  * Section
  **/
+export * from './sections/HomeTitle';
 export * from './sections/SectionCaption';
 export * from './sections/SectionTitle';
 export * from './sections/SectionWrapper';
