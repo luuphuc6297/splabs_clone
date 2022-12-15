@@ -7,19 +7,21 @@ import { useController } from 'react-hook-form';
 const CustomInput = styled(TextField)(({ theme }) => ({
     marginTop: 0,
     borderRadius: 16,
+    backgroundColor: 'white',
+    border: 'none',
     '& .MuiOutlinedInput-root:hover': {
         '& > fieldset': {
-            borderColor: `${theme.palette.primary}`,
+            // borderColor: `${theme.palette.primary}`,
         },
     },
     '& .MuiOutlinedInput-root.Mui-focused': {
         '& > fieldset': {
-            borderColor: `${theme.palette.primary}`,
+            // borderColor: `${theme.palette.primary}`,
         },
     },
     '& .MuiOutlinedInput-root': {
         borderRadius: 24,
-        borderColor: `${theme.palette.primary}`,
+        // borderColor: `${theme.palette.primary}`,
     },
 }));
 
