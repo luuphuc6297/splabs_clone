@@ -33,7 +33,7 @@ export const Footer = () => {
             </Box>
             <Box sx={{ marginBottom: 2.25, marginTop: 3.25 }}>
               {' '}
-              <Typography color="#ffffff" variant="subtitle2" gutterBottom>
+              <Typography color="white" variant="subtitle2" gutterBottom>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standa.
               </Typography>
@@ -44,9 +44,9 @@ export const Footer = () => {
                 gap: 1.25,
               }}
             >
-              <FacebookIcon htmlColor="#ffffff" />
-              <FacebookIcon htmlColor="#ffffff" />
-              <FacebookIcon htmlColor="#ffffff" />
+              <FacebookIcon htmlColor="white" />
+              <FacebookIcon htmlColor="white" />
+              <FacebookIcon htmlColor="white" />
             </Box>
           </Box>
 
@@ -57,7 +57,7 @@ export const Footer = () => {
                 sx={{
                   fontWeight: 600,
                 }}
-                color="#ffffff"
+                color="white"
                 variant="subtitle1"
                 gutterBottom
               >
@@ -75,7 +75,7 @@ export const Footer = () => {
                     sx={{
                       margin: 0,
                     }}
-                    color="#ffffff"
+                    color="white"
                     variant="subtitle2"
                     gutterBottom
                   >
@@ -87,7 +87,7 @@ export const Footer = () => {
                     sx={{
                       margin: 0,
                     }}
-                    color="#ffffff"
+                    color="white"
                     variant="subtitle2"
                     gutterBottom
                   >
@@ -99,7 +99,7 @@ export const Footer = () => {
                     sx={{
                       margin: 0,
                     }}
-                    color="#ffffff"
+                    color="white"
                     variant="subtitle2"
                     gutterBottom
                   >
@@ -118,7 +118,7 @@ export const Footer = () => {
                 sx={{
                   fontWeight: 600,
                 }}
-                color="#ffffff"
+                color="white"
                 variant="subtitle1"
                 gutterBottom
               >
@@ -136,7 +136,7 @@ export const Footer = () => {
                     sx={{
                       margin: 0,
                     }}
-                    color="#ffffff"
+                    color="white"
                     variant="subtitle2"
                     gutterBottom
                   >
@@ -148,7 +148,7 @@ export const Footer = () => {
                     sx={{
                       margin: 0,
                     }}
-                    color="#ffffff"
+                    color="white"
                     variant="subtitle2"
                     gutterBottom
                   >
@@ -160,7 +160,7 @@ export const Footer = () => {
                     sx={{
                       margin: 0,
                     }}
-                    color="#ffffff"
+                    color="white"
                     variant="subtitle2"
                     gutterBottom
                   >

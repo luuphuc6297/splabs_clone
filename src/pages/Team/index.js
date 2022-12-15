@@ -9,12 +9,11 @@ import { SwiperSlide } from 'swiper/react';
 import members from './members.json';
 
 export const TheTeam = () => {
-  return (
-    <SectionWrapper sx={{ margin: 'auto' }}>
-      <SectionTitle sx={{ textAlign: 'center' }}>THE TEAM</SectionTitle>
+  const renderMemberCards = React.useCallback(() => {
+    return (
       <CustomSwiper>
-        {members.payload.map(({ id, name, position, avatar }, index) => (
-          <SwiperSlide key={index}>
+        {members.payload.map(({ id, name, position, avatar }) => (
+          <SwiperSlide>
             <MemberCard
               id={id}
               name={name}
@@ -24,6 +23,13 @@ export const TheTeam = () => {
           </SwiperSlide>
         ))}
       </CustomSwiper>
+    );
+  }, []);
+
+  return (
+    <SectionWrapper sx={{ margin: 'auto', marginBottom: 21 }}>
+      <SectionTitle sx={{ textAlign: 'center' }}>THE TEAM</SectionTitle>
+      {renderMemberCards()}
     </SectionWrapper>
   );
 };

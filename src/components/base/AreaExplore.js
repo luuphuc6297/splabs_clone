@@ -1,8 +1,6 @@
 import { Box, CardActionArea, CardContent, CardMedia } from '@mui/material';
-import React from 'react';
 import Typography from '@mui/material/Typography';
-import { SectionWrapper } from 'components';
-import { SectionWrapperFullWidth } from 'components/sections/SectionWrapperFullWidth';
+import { SectionWrapper, SectionWrapperFullWidth } from 'components';
 
 export const AreaExplore = () => {
   return (
@@ -31,7 +29,7 @@ export const AreaExplore = () => {
               />
               <CardContent sx={{ padding: '0px 4px', marginTop: 1.25 }}>
                 <Typography
-                  color="#ffffff"
+                  color="white"
                   gutterBottom
                   variant="subtitle1"
                   component="span"
