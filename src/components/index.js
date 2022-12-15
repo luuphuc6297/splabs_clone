@@ -13,6 +13,7 @@ export * from './base/PresentationCard';
 export * from './base/ProjectCard';
 export * from './base/SPLabsLogo';
 export * from './base/TopHeader';
+export * from './base/TransparentButton';
 export * from './base/WhiteButton';
 /**
  * Section
@@ -21,5 +22,4 @@ export * from './sections/SectionCaption';
 export * from './sections/SectionTitle';
 export * from './sections/SectionWrapper';
 export * from './sections/SectionWrapperFullWidth';
-
 
