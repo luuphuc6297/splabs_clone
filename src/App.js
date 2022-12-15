@@ -6,25 +6,25 @@ import { ToastContainer } from 'react-toastify';
 import Router from './routes';
 
 function App() {
-  return (
-    <React.Fragment>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Router />
-      </ThemeProvider>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
-    </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <Router />
+            </ThemeProvider>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
+        </React.Fragment>
+    );
 }
 
 export default App;

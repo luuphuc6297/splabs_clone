@@ -5,8 +5,8 @@ import { Explore } from './Explore';
 import HomePage from './Home';
 import { MakeDifferent } from './MakeDif';
 import { Partners } from './Partners';
-import { TheTeam } from './Team';
 import { StartGrowing } from './StartGrowing';
+import { TheTeam } from './Team';
 
 const LandingPage = () => {
     return (

@@ -3,7 +3,7 @@ import {
     AddressCard,
     SectionTitle,
     SectionWrapper,
-    SectionWrapperFullWidth,
+    SectionWrapperFullWidth
 } from 'components';
 import React from 'react';
 import address from './address.json';
