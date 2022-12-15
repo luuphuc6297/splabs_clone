@@ -4,6 +4,7 @@ import { InputField, SubmitButton } from 'components';
 import { useForm } from 'react-hook-form';
 import { ContactSchema } from './validate';
 import { styled } from '@mui/system';
+import Timer from 'components/base/CountDownTimmer';
 const StyledForm = styled('form')(({ theme }) => ({
     display: 'flex',
     width: '100%',
@@ -15,17 +16,24 @@ export const StartGrowingForm = () => {
     const {
         control,
         handleSubmit,
-        formState: { isSubmitting, isValid },
+        formState: { isSubmitting, isValid, isSubmitSuccessful },
+        reset,
     } = useForm({
         mode: 'onChange',
         defaultValues: initialValues,
         resolver: yupResolver(ContactSchema),
     });
 
-    const handleFormSubmit = async (formValues) => {
-        console.log(formValues);
+    const handleFormSubmit = (formValues) => {
+        reset((formValues) => {
+            const emptyForm = { ...formValues };
+            Object.keys(emptyForm).map((item) => (emptyForm[item] = ''));
+            return emptyForm;
+        });
     };
-
+    const timeUpCallBack = () => {
+        reset();
+    };
     return (
         <StyledForm onSubmit={handleSubmit(handleFormSubmit)}>
             <Box sx={{ width: '100%' }}>
@@ -49,12 +57,16 @@ export const StartGrowingForm = () => {
                     control={control}
                     label="Company Name"
                 />
-                <SubmitButton
-                    disabled={!isValid || isSubmitting}
-                    loading={isSubmitting}
-                >
-                    &nbsp;SUBMIT
-                </SubmitButton>
+                {isSubmitSuccessful ? (
+                    <Timer duration={1} callback={timeUpCallBack} />
+                ) : (
+                    <SubmitButton
+                        disabled={!isValid || isSubmitting}
+                        loading={isSubmitting}
+                    >
+                        &nbsp;SUBMIT
+                    </SubmitButton>
+                )}
             </Box>
         </StyledForm>
     );
