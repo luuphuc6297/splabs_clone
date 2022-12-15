@@ -9,7 +9,6 @@ const StyledForm = styled('form')(({ theme }) => ({
     width: '100%',
     gap: 16,
     justifyContent: 'center',
-    
 }));
 export const StartGrowingForm = () => {
     const initialValues = {};
@@ -23,7 +22,7 @@ export const StartGrowingForm = () => {
         resolver: yupResolver(ContactSchema),
     });
 
-    const handleFormSubmit = (formValues) => {
+    const handleFormSubmit = async (formValues) => {
         console.log(formValues);
     };
 

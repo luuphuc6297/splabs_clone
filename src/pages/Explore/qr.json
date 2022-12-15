@@ -3,12 +3,12 @@
         {
             "id": "email",
             "title": "Email Address",
-            "qr": ""
+            "qr": "/images/email_qr.png"
         },
         {
             "id": "email",
             "title": "Website",
-            "qr": ""
+            "qr": "/images/website_qr.png"
         }
     ]
 }

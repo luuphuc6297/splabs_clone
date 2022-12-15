@@ -3,13 +3,20 @@ import {
     AddressCard,
     SectionTitle,
     SectionWrapper,
-    SectionWrapperFullWidth
+    SectionWrapperFullWidth,
+    QRCard,
 } from 'components';
 import React from 'react';
 import address from './address.json';
+import qrs from './qr.json';
 
 export const Explore = () => {
-    const renderQRCard = React.useCallback(() => {}, []);
+    const renderQRCard = React.useCallback(() => {
+        return qrs.payload.map(({ id, title, qr }) => (
+            <QRCard id={id} title={title} qr={qr} />
+        ));
+    }, []);
+
     const renderAddressCards = React.useCallback(() => {
         return address.payload.map(({ id, office, address }) => (
             <AddressCard id={id} office={office} address={address} />
@@ -30,7 +37,7 @@ export const Explore = () => {
                         textAlign: 'center',
                         color: 'white',
                         fontWeight: 'bold',
-                        marginBottom: 4,
+                        marginBottom: 6,
                     }}
                     variant="h4"
                 >
@@ -40,7 +47,7 @@ export const Explore = () => {
                     sx={{
                         display: 'flex',
                         justifyContent: 'center',
-                        gap: 6,
+                        gap: 21,
                     }}
                 >
                     {renderQRCard()}
