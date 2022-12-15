@@ -47,6 +47,7 @@ export function InputField({
     return (
         <>
             <CustomInput
+                hiddenLabel
                 fullWidth
                 size="small"
                 margin="normal"

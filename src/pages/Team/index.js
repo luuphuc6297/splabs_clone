@@ -5,63 +5,71 @@ import {
     SectionTitle,
     SectionWrapper,
 } from 'components';
+import { IconChevronLeftSvg } from 'components/Svgs/IconChevronLeftSvg';
+import { IconChevronRightSvg } from 'components/Svgs/IconChevronRightSvg';
 import React, { useRef } from 'react';
-import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
 import members from './members.json';
 
 export const TheTeam = () => {
     const swiperRef = useRef(null);
 
-    const renderMemberCards = React.useCallback(() => {
-        return (
-            <CustomSwiper
-                style={{ textAlign: 'center' }}
-                loop={true}
-                spaceBetween={50}
-                slidesPerView={3}
-                slidesPerGroup={3}
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
-                onSwiper={(swiper) => {
-                    swiperRef.current = swiper;
-                }}
-            >
-                {members.payload.map(({ id, name, position, avatar }) => (
-                    <SwiperSlide>
-                        <MemberCard
-                            id={id}
-                            name={name}
-                            position={position}
-                            avatar={avatar}
-                        />
-                    </SwiperSlide>
-                ))}
-            </CustomSwiper>
-        );
-    }, []);
-
     return (
-        <SectionWrapper
-            sx={{ margin: 'auto', marginBottom: 21, position: 'relative' }}
-        >
-            <SectionTitle sx={{ textAlign: 'center' }}>THE TEAM</SectionTitle>
-            {renderMemberCards()}
-            <Box
-                sx={{
-                    position: 'absolute',
-                    width: '104%',
-                    top: '50%',
-                    left: '-2%',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                }}
-            >
-                <button onClick={() => swiperRef.current.slideNext()}>
-                    pre
-                </button>
-                <button onClick={() => swiperRef.current.slideNext()}>
-                    next
-                </button>
+        <SectionWrapper sx={{ marginBottom: 20, position: 'relative' }}>
+            <Box>
+                <SectionTitle sx={{ textAlign: 'center', marginBottom: 5 }}>
+                    THE TEAM
+                </SectionTitle>
+                <CustomSwiper
+                    loop={true}
+                    spaceBetween={60}
+                    slidesPerView={3}
+                    slidesPerGroup={3}
+                    onSwiper={(swiper) => {
+                        swiperRef.current = swiper;
+                    }}
+                >
+                    {members.payload.map(({ id, name, position, avatar }) => (
+                        <SwiperSlide>
+                            <MemberCard
+                                id={id}
+                                name={name}
+                                position={position}
+                                avatar={avatar}
+                            />
+                        </SwiperSlide>
+                    ))}
+                </CustomSwiper>
+            </Box>
+            <Box slot="container-start">
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        top: 0,
+                        bottom: 0,
+                        left: '-50px',
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}
+                >
+                    <IconChevronLeftSvg
+                        onClick={() => swiperRef.current.slideNext()}
+                    />
+                </Box>
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        top: 0,
+                        bottom: 0,
+                        right: '-50px',
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}
+                >
+                    <IconChevronRightSvg
+                        onClick={() => swiperRef.current.slideNext()}
+                    />
+                </Box>
             </Box>
         </SectionWrapper>
     );
