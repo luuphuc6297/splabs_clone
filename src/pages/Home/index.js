@@ -1,13 +1,18 @@
 import { Box } from '@mui/material';
-import {
-  AppButton,
-  SectionWrapper, WhiteButton
-} from 'components';
+import { AppButton, SectionWrapper, WhiteButton } from 'components';
 import { MainTitle } from './MainTitle';
 
 const HomePage = () => {
     return (
-        <SectionWrapper sx={{ margin: '168px auto', textAlign: 'center' }}>
+        <SectionWrapper
+            sx={{
+                textAlign: 'center',
+                height: '65%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'end',
+            }}
+        >
             <MainTitle />
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                 <AppButton>Apply now</AppButton>
