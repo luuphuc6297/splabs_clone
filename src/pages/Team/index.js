@@ -27,7 +27,7 @@ export const TheTeam = () => {
   }, []);
 
   return (
-    <SectionWrapper sx={{ margin: 'auto' }}>
+    <SectionWrapper sx={{ margin: 'auto', marginBottom: 21 }}>
       <SectionTitle sx={{ textAlign: 'center' }}>THE TEAM</SectionTitle>
       {renderMemberCards()}
     </SectionWrapper>
