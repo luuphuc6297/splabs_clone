@@ -1,10 +1,8 @@
 import { Box } from '@mui/material';
 import {
-    AddressCard,
-    SectionTitle,
+    AddressCard, QRCard, SectionTitle,
     SectionWrapper,
-    SectionWrapperFullWidth,
-    QRCard,
+    SectionWrapperFullWidth
 } from 'components';
 import React from 'react';
 import address from './address.json';
