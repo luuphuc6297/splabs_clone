@@ -6,6 +6,7 @@ import { MainTitle } from './MainTitle';
 const PhoneIcon = styled(AiFillPhone)(({ theme }) => ({
     width: 16,
     height: 16,
+    
 }));
 
 const HomePage = () => {
