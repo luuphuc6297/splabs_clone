@@ -1,0 +1,14 @@
+{
+    "payload": [
+        {
+            "id": "email",
+            "title": "Email Address",
+            "qr": ""
+        },
+        {
+            "id": "email",
+            "title": "Website",
+            "qr": ""
+        }
+    ]
+}

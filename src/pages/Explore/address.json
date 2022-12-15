@@ -1,0 +1,19 @@
+{
+    "payload": [
+        {
+            "id": "vietnam",
+            "office": "VietNam office",
+            "address": "109 Nguyen Co Thach, An Loi Dong Ward, District 2, HCMC, Viet Nam"
+        },
+        {
+            "id": "head",
+            "office": "Headquaters Address",
+            "address": "109 Nguyen Co Thach, An Loi Dong Ward, District 2, HCMC, Viet Nam"
+        },
+        {
+            "id": "korea",
+            "office": "Korea Office",
+            "address": "109 Nguyen Co Thach, An Loi Dong Ward, District 2, HCMC, Viet Nam"
+        }
+    ]
+}

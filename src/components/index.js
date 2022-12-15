@@ -1,7 +1,9 @@
 /**
  * Base
  **/
+export * from './base/AddressCard';
 export * from './base/AppButton';
+export * from './base/AreaExplore';
 export * from './base/CategoryCard';
 export * from './base/CustomSwiper';
 export * from './base/Footer';
