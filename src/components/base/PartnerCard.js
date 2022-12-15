@@ -3,8 +3,9 @@ import { styled } from '@mui/system';
 import React from 'react';
 
 const Logo = styled('img')(({ theme }) => ({
-    width: 64,
+    width: 108,
     height: 64,
+    objectFit: 'contain',
 }));
 
 export const PartnerCard = React.memo(({ partnerLogo }) => {
