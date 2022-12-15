@@ -1,10 +1,10 @@
 import { Box } from '@mui/material';
 import { styled } from '@mui/system';
+import { TransparentButton } from 'components';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { scrollSection } from 'utils';
-import { useTranslation } from 'react-i18next';
-import { TransparentButton } from 'components';
 const navigateItems = [
     { id: 'home', label: 'home', link: '/' },
     { id: 'about_us', label: 'about_us', link: '/#about-us' },
@@ -19,12 +19,18 @@ const Navbar = styled(Box)(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     gridGap: 8,
-    gap: 8,
+    gap: 24,
+    fontWeight: 'bold',
 }));
 
 const NavLink = styled(Link)(({ theme }) => ({
     color: theme.palette.text['primary'],
     textDecoration: 'none',
+    transition: 'all 0.5s ease 0s',
+    '&:hover': {
+        color: 'rgb(159, 140, 204)',
+        transform: 'scale(1.025)',
+    },
 }));
 
 export const NavigateBar = React.memo(() => {

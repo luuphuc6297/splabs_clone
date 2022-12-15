@@ -8,6 +8,7 @@ const SubmitBtn = styled(LoadingButton)({
     height: 44,
     marginBottom: 24,
     borderRadius: 24,
+    backgroundColor: '#fff',
 });
 
 export const SubmitButton = ({ children, loading, ...props }) => {
@@ -16,8 +17,8 @@ export const SubmitButton = ({ children, loading, ...props }) => {
             type="submit"
             variant="contained"
             fullWidth
-            {...props}
             loading={loading}
+            {...props}
         >
             {children}
         </SubmitBtn>

@@ -1,10 +1,10 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Box } from '@mui/material';
+import { styled } from '@mui/system';
 import { InputField, SubmitButton } from 'components';
+import Timer from 'components/base/CountDownTimmer';
 import { useForm } from 'react-hook-form';
 import { ContactSchema } from './validate';
-import { styled } from '@mui/system';
-import Timer from 'components/base/CountDownTimmer';
 const StyledForm = styled('form')(({ theme }) => ({
     display: 'flex',
     width: '100%',

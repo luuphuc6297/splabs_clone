@@ -1,6 +1,12 @@
-import { Box } from '@mui/material';
+import { Box, styled } from '@mui/material';
 import { AppButton, SectionWrapper, WhiteButton } from 'components';
+import { AiFillPhone } from 'react-icons/ai';
 import { MainTitle } from './MainTitle';
+
+const PhoneIcon = styled(AiFillPhone)(({ theme }) => ({
+    width: 16,
+    height: 16,
+}));
 
 const HomePage = () => {
     return (
@@ -16,7 +22,7 @@ const HomePage = () => {
             <MainTitle />
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                 <AppButton>Apply now</AppButton>
-                <WhiteButton>Contact us</WhiteButton>
+                <WhiteButton endIcon={<PhoneIcon />}>Contact us</WhiteButton>
             </Box>
         </SectionWrapper>
     );
