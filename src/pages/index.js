@@ -10,15 +10,15 @@ import { TheTeam } from './Team';
 const LandingPage = () => {
   return (
     <>
-      {/* <TopHeader />
+      <TopHeader />
       <Header />
       <HomePage />
       <AboutUs />
       <EnforceProject />
-      <MakeDifferent /> */}
+      <MakeDifferent />
       <TheTeam />
-      {/* <AreaExplore />
-      <Footer /> */}
+      <AreaExplore />
+      <Footer />
     </>
   );
 };
