@@ -6,7 +6,7 @@ import HomePage from './Home';
 import { MakeDifferent } from './MakeDif';
 import { Partners } from './Partners';
 import { TheTeam } from './Team';
-import { AreaExplore } from 'components';
+
 const LandingPage = () => {
     return (
         <>
@@ -19,7 +19,6 @@ const LandingPage = () => {
             <TheTeam />
             <Partners />
             <Explore />
-            {/* <AreaExplore /> */}
             <Footer />
         </>
     );

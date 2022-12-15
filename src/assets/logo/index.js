@@ -1,1 +1,1 @@
-export const SPLabsLogo = '/images/logo-SPLabs.png';
+export const SPLabsLogoImg = '/images/logo-SPLabs.png';

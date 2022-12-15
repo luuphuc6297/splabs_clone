@@ -19,7 +19,7 @@ export const QRCard = React.memo(({ qr, title }) => {
                 image="https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg"
                 alt="green iguana"
             />
-            <CardContent sx={{ padding: '0px 4px', marginTop: 1.25 }}>
+            <CardContent sx={{ padding: '0px 4px', marginTop: 1 }}>
                 <Title gutterBottom variant="subtitle1" component="p">
                     {title}
                 </Title>
