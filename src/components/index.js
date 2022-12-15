@@ -12,6 +12,7 @@ export * from './base/MemberCard';
 export * from './base/PartnerCard';
 export * from './base/PresentationCard';
 export * from './base/ProjectCard';
+export * from './base/QRCard';
 export * from './base/SPLabsLogo';
 export * from './base/SubmitButton';
 export * from './base/TopHeader';
@@ -28,5 +29,4 @@ export * from './sections/SectionWrapperFullWidth';
  * Typography
  **/
 export * from './typography/Error';
-
 

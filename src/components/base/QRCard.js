@@ -10,17 +10,31 @@ import React from 'react';
 const Title = styled(Typography)(({ theme }) => ({
     color: 'white',
 }));
-export const QRCard = React.memo(({ qr, title }) => {
+export const QRCard = React.memo(({ id, qr, title }) => {
     return (
-        <CardActionArea component="div" disableRipple disableTouchRipple>
+        <CardActionArea
+            component="div"
+            disableRipple
+            disableTouchRipple
+            sx={{ width: 'unset', marginBottom: 4 }}
+        >
             <CardMedia
                 component="img"
-                height="110"
-                image="https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg"
-                alt="green iguana"
+                image={qr}
+                alt={id}
+                sx={{ width: 168, height: 168 }}
             />
             <CardContent sx={{ padding: '0px 4px', marginTop: 1 }}>
-                <Title gutterBottom variant="subtitle1" component="p">
+                <Title
+                    gutterBottom
+                    variant="subtitle1"
+                    component="p"
+                    sx={{
+                        textAlign: 'center',
+                        fontWeight: 'bold',
+                        fontSize: 18,
+                    }}
+                >
                     {title}
                 </Title>
             </CardContent>

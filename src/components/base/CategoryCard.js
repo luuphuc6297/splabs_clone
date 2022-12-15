@@ -7,30 +7,40 @@ const Title = styled(Typography)(({ theme }) => ({
 }));
 
 const Logo = styled('img')(({ theme }) => ({
-    color: 'black',
+    objectFit: 'contain',
 }));
 const Lists = styled('ul')(({ theme }) => ({}));
-const ListItem = styled('li')(({ theme }) => ({}));
+const ListItem = styled('li')(({ theme }) => ({
+    fontSize: 14,
+}));
 
 export const CategoryCard = React.memo(({ title, lists, logo }) => {
     return (
         <Box
             sx={{
-                width: 348,
-                height: 348,
-                borderRadius: 2,
+                width: 296,
+                height: 368,
+                borderRadius: 4,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                background: `url('/images/border/make_different_card.png')`,
+                border: '1px solid rgb(152, 202, 254)',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 padding: 2,
+                background: 'rgba(46, 48, 83, 0.4)',
+                boxShadow: 'rgb(0 0 0 / 34%) 0px 1px 9px',
+                '&:hover': {
+                    background:
+                        'linear-gradient(336.08deg, rgb(159, 140, 204) 10.7%, rgb(45, 145, 200) 97.43%)',
+                    transition: 'all 0.5s ease 0s',
+                    transform: 'translateY(-10px) scale(1.05)',
+                },
             }}
         >
-            <Logo src={logo} />
+            <Logo src={logo} loading="lazy" />
             <Title variant="h6">{title}</Title>
             <Lists>
                 {lists.map((list, index) => (
