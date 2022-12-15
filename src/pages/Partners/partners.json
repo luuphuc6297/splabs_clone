@@ -1,100 +1,106 @@
 {
-  "payload": [
-    {
-      "id": "polygon_studio",
-      "partnerLogo": "/images/partners/polygon_studio.png"
-    },
-    {
-      "id": "polygon_second",
-      "partnerLogo": "/images/partners/polygon.png"
-    },
-    {
-      "id": "bit_keep",
-      "partnerLogo": "/images/partners/bit_keep.png"
-    },
-    {
-      "id": "block_wiz",
-      "partnerLogo": "/images/partners/block_wiz.png"
-    },
-    {
-      "id": "dwf",
-      "partnerLogo": "/images/partners/dwf.png"
-    },
-    {
-      "id": "nftb",
-      "partnerLogo": "/images/partners/nftb.png"
-    },
-    {
-      "id": "chainlink",
-      "partnerLogo": "/images/partners/chainlink.png"
-    },
-    {
-      "id": "chain_dustry",
-      "partnerLogo": "/images/partners/chain_dustry.png"
-    },
-    {
-      "id": "cls",
-      "partnerLogo": "/images/partners/cls.png"
-    },
-    {
-      "id": "nsststudio",
-      "partnerLogo": "/images/partners/nsstudio.png"
-    },
-    {
-      "id": "klaytn",
-      "partnerLogo": "/images/partners/klaytn.png"
-    },
-    {
-      "id": "kaikas",
-      "partnerLogo": "/images/partners/kaikas.png"
-    },
-    {
-      "id": "soken",
-      "partnerLogo": "/images/partners/soken.png"
-    },
-    {
-      "id": "houbi_nft",
-      "partnerLogo": "/images/partners/houbi_nft.png"
-    },
-    {
-      "id": "toz",
-      "partnerLogo": "/images/partners/toz.png"
-    },
-    {
-      "id": "signvm",
-      "partnerLogo": "/images/partners/signvm.png"
-    },
-    {
-      "id": "mk",
-      "partnerLogo": "/images/partners/mk.png"
-    },
-    {
-      "id": "moon_knight",
-      "partnerLogo": "/images/partners/moon_knight.png"
-    },
-    {
-      "id": "game_tree",
-      "partnerLogo": "/images/partners/game_tree.png"
-    },
-    {
-      "id": "gateio",
-      "partnerLogo": "/images/partners/gateio.png"
-    },
-    {
-      "id": "gateio_lab",
-      "partnerLogo": "/images/partners/gateio_lab.png"
-    },
-    {
-      "id": "kucoin",
-      "partnerLogo": "/images/partners/kucoin.png"
-    },
-    {
-      "id": "mexc",
-      "partnerLogo": "/images/partners/mexc.png"
-    },
-    {
-      "id": "phemex",
-      "partnerLogo": "/images/partners/phemex.png"
-    }
-  ]
+    "payload": [
+        {
+            "id": "polygon_studio",
+            "partnerLogo": "/images/partners/polygon_studio.png",
+            "hrefPartner": "https://polygonstudios.com/"
+        },
+        {
+            "id": "polygon_second",
+            "partnerLogo": "/images/partners/polygon.png",
+            "hrefPartner": "https://polygon.technology/"
+        },
+        {
+            "id": "bit_keep",
+            "partnerLogo": "/images/partners/bit_keep.png",
+            "hrefPartner": ""
+        },
+        {
+            "id": "block_wiz",
+            "partnerLogo": "/images/partners/block_wiz.png",
+            "hrefPartner": ""
+        },
+        {
+            "id": "dwf",
+            "partnerLogo": "/images/partners/dwf.png",
+            "hrefPartner": ""
+        },
+        {
+            "id": "nftb",
+            "partnerLogo": "/images/partners/nftb.png",
+            "hrefPartner": ""
+        },
+        {
+            "id": "chainlink",
+            "partnerLogo": "/images/partners/chainlink.png"
+        },
+        {
+            "id": "chain_dustry",
+            "partnerLogo": "/images/partners/chain_dustry.png"
+        },
+        {
+            "id": "cls",
+            "partnerLogo": "/images/partners/cls.png"
+        },
+        {
+            "id": "nsststudio",
+            "partnerLogo": "/images/partners/nsstudio.png"
+        },
+        {
+            "id": "klaytn",
+            "partnerLogo": "/images/partners/klaytn.png"
+        },
+        {
+            "id": "kaikas",
+            "partnerLogo": "/images/partners/kaikas.png"
+        },
+        {
+            "id": "soken",
+            "partnerLogo": "/images/partners/soken.png"
+        },
+        {
+            "id": "houbi_nft",
+            "partnerLogo": "/images/partners/houbi_nft.png"
+        },
+        {
+            "id": "toz",
+            "partnerLogo": "/images/partners/toz.png"
+        },
+        {
+            "id": "signvm",
+            "partnerLogo": "/images/partners/signvm.png"
+        },
+        {
+            "id": "mk",
+            "partnerLogo": "/images/partners/mk.png"
+        },
+        {
+            "id": "moon_knight",
+            "partnerLogo": "/images/partners/moon_knight.png"
+        },
+        {
+            "id": "game_tree",
+            "partnerLogo": "/images/partners/game_tree.png"
+        },
+        {
+            "id": "gateio",
+            "partnerLogo": "/images/partners/gateio.png"
+        },
+        {
+            "id": "gateio_lab",
+            "partnerLogo": "/images/partners/gateio_lab.png"
+        },
+        {
+            "id": "kucoin",
+            "partnerLogo": "/images/partners/kucoin.png"
+        },
+        {
+            "id": "mexc",
+            "partnerLogo": "/images/partners/mexc.png"
+        },
+        {
+            "id": "phemex",
+            "partnerLogo": "/images/partners/phemex.png"
+        }
+    ]
 }

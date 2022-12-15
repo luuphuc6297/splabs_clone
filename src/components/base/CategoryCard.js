@@ -7,10 +7,12 @@ const Title = styled(Typography)(({ theme }) => ({
 }));
 
 const Logo = styled('img')(({ theme }) => ({
-    color: 'black',
+    objectFit: 'contain',
 }));
 const Lists = styled('ul')(({ theme }) => ({}));
-const ListItem = styled('li')(({ theme }) => ({}));
+const ListItem = styled('li')(({ theme }) => ({
+    fontSize: 14,
+}));
 
 export const CategoryCard = React.memo(({ title, lists, logo }) => {
     return (
@@ -38,13 +40,11 @@ export const CategoryCard = React.memo(({ title, lists, logo }) => {
                 },
             }}
         >
-            <Logo src={logo} />
+            <Logo src={logo} loading="lazy" />
             <Title variant="h6">{title}</Title>
             <Lists>
                 {lists.map((list, index) => (
-                    <ListItem key={index} sx={{ fontSize: 14 }}>
-                        {list.caption}
-                    </ListItem>
+                    <ListItem key={index}>{list.caption}</ListItem>
                 ))}
             </Lists>
         </Box>
