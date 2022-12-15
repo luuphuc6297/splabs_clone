@@ -27,6 +27,7 @@ export const CustomSwiper = ({ children, ...props }) => {
       </Swiper>
 
       <button onClick={() => swiperRef.current.slideNext()}>pre</button>
+      <button onClick={() => swiperRef.current.slideNext()}>next</button>
     </>
   );
 };

@@ -8,6 +8,7 @@ import React from 'react';
 import { SwiperSlide } from 'swiper/react';
 import members from './members.json';
 
+
 export const TheTeam = () => {
   const renderMemberCards = React.useCallback(() => {
     return (
