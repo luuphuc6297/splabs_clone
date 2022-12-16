@@ -1,73 +1,68 @@
 import { yupResolver } from '@hookform/resolvers/yup';
-import { Box } from '@mui/material';
-import { styled } from '@mui/system';
-import { InputField, SubmitButton } from 'components';
+import { Grid } from '@mui/material';
+import { SubmitButton } from 'components';
 import Timer from 'components/base/CountDownTimmer';
+import { InputFieldV2 } from 'components/base/InputFieldV2';
 import { useForm } from 'react-hook-form';
 import { ContactSchema } from './validate';
-const StyledForm = styled('form')(({ theme }) => ({
-    display: 'flex',
-    width: '100%',
-    gap: 16,
-    justifyContent: 'center',
-}));
+
 export const StartGrowingForm = () => {
-    const initialValues = {};
     const {
-        control,
-        handleSubmit,
-        formState: { isSubmitting, isValid, isSubmitSuccessful },
+        formState: { isValid, isSubmitting, isSubmitSuccessful, errors },
         reset,
+        register,
+        handleSubmit,
     } = useForm({
         mode: 'onChange',
-        defaultValues: initialValues,
+        defaultValues: {},
         resolver: yupResolver(ContactSchema),
     });
 
-    const handleFormSubmit = (formValues) => {
-        reset((formValues) => {
-            const emptyForm = { ...formValues };
-            Object.keys(emptyForm).map((item) => (emptyForm[item] = ''));
-            return emptyForm;
-        });
+    const handleFormSubmit = (values) => {
+        console.log('values---', values);
     };
+
     const timeUpCallBack = () => {
         reset();
     };
+
     return (
-        <StyledForm onSubmit={handleSubmit(handleFormSubmit)}>
-            <Box sx={{ width: '100%' }}>
-                <InputField
-                    id="email-address"
-                    name="email"
-                    control={control}
-                    label="Email address"
-                />
-                <InputField
-                    id="description_project"
-                    name="description_project"
-                    control={control}
-                    label="Description Project"
-                />
-            </Box>
-            <Box sx={{ width: '100%' }}>
-                <InputField
-                    id="company_name"
-                    name="company_name"
-                    control={control}
-                    label="Company Name"
-                />
-                {isSubmitSuccessful ? (
-                    <Timer duration={1} callback={timeUpCallBack} />
-                ) : (
+        <form onSubmit={handleSubmit(handleFormSubmit)}>
+            <Grid container columnSpacing={6} rowSpacing={4}>
+                <Grid item xs={12} sm={6}>
+                    <InputFieldV2
+                        error={errors.email}
+                        placeholder="Email Address"
+                        {...register('email')}
+                    />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <InputFieldV2
+                        error={errors.description_project}
+                        placeholder="Description Project"
+                        {...register('description_project')}
+                    />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <InputFieldV2
+                        error={errors.company_name}
+                        placeholder="Company Name"
+                        {...register('company_name')}
+                    />
+                </Grid>
+                <Grid item xs={12} sm={6}>
                     <SubmitButton
-                        disabled={!isValid || isSubmitting}
                         loading={isSubmitting}
+                        disabled={!isValid || isSubmitting}
                     >
-                        &nbsp;SUBMIT
+                        {isSubmitSuccessful ? (
+                            <Timer duration={1} callback={timeUpCallBack} />
+                        ) : (
+                            'SUBMIT'
+                        )}
                     </SubmitButton>
-                )}
-            </Box>
-        </StyledForm>
+                </Grid>
+            </Grid>
+        </form>
     );
 };

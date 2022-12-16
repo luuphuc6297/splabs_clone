@@ -11,13 +11,13 @@ import qrs from './qr.json';
 export const Explore = () => {
     const renderQRCard = React.useCallback(() => {
         return qrs.payload.map(({ id, title, qr }) => (
-            <QRCard id={id} title={title} qr={qr} />
+            <QRCard key={id} id={id} title={title} qr={qr} />
         ));
     }, []);
 
     const renderAddressCards = React.useCallback(() => {
         return address.payload.map(({ id, office, address }) => (
-            <AddressCard id={id} office={office} address={address} />
+            <AddressCard key={id} id={id} office={office} address={address} />
         ));
     }, []);
 

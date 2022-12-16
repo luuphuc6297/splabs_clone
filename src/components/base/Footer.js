@@ -5,13 +5,13 @@ import {
     SectionTitle,
     SectionWrapper,
     SectionWrapperFullWidth,
-    SPLabsLogo,
+    SPLabsLogo
 } from 'components';
 import { useMobile } from 'hooks/useMobile';
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram,
+    AiOutlineInstagram
 } from 'react-icons/ai';
 
 const FaceBookIcon = styled(AiOutlineFacebook)(({ theme }) => ({
@@ -55,6 +55,11 @@ const Email = styled('a')(({ theme }) => ({
     },
 }));
 
+const SocialLink = styled('a')(({ theme }) => ({
+    color: theme.palette.text.primary,
+    textDecoration: 'none',
+    cursor: 'pointer',
+}));
 export const Footer = () => {
     const isMobile = useMobile();
 
@@ -91,15 +96,32 @@ export const Footer = () => {
                                 gap: 1,
                             }}
                         >
-                            <FaceBookIcon />
-                            <InstagramIcon />
-                            <TwitterIcon />
+                            <SocialLink
+                                href="https://www.facebook.com/SPLabs.info"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FaceBookIcon />
+                            </SocialLink>
+                            <SocialLink
+                                href="https://t.me/SPLabs_channel"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <InstagramIcon />
+                            </SocialLink>
+                            <SocialLink
+                                href="https://twitter.com/SPLabs_info"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <TwitterIcon />
+                            </SocialLink>
                         </Box>
                     </Box>
 
                     <Box sx={{ flexBasis: isMobile ? '1' : '0', flexGrow: 1 }}>
                         <Box>
-                            {' '}
                             <SectionTitle
                                 sx={{
                                     fontWeight: 600,
