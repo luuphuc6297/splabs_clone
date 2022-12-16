@@ -6,6 +6,7 @@ import {
     SectionWrapperFullWidth,
     SPLabsLogo,
 } from 'components';
+import { useMobile } from 'hooks/useMobile';
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
@@ -31,6 +32,8 @@ const TwitterIcon = styled(AiFillTwitterSquare)(({ theme }) => ({
 }));
 
 export const Footer = () => {
+    const isMobile = useMobile();
+
     return (
         <SectionWrapperFullWidth sx={{ background: '#262626' }}>
             <SectionWrapper sx={{ background: '#262626', display: 'flex' }}>
@@ -39,11 +42,12 @@ export const Footer = () => {
                         display: 'flex',
                         gap: 5,
                         width: '100%',
-                        paddingTop: 6,
+                        paddingTop: isMobile ? 3 : 6,
                         paddingBottom: 6,
+                        flexWrap: 'wrap',
                     }}
                 >
-                    <Box sx={{ flex: '1' }}>
+                    <Box sx={{ flexBasis: isMobile ? '1' : '0', flexGrow: 1 }}>
                         <SPLabsLogo />
 
                         <Box sx={{ marginBottom: 2, marginTop: 3 }}>
@@ -69,7 +73,7 @@ export const Footer = () => {
                         </Box>
                     </Box>
 
-                    <Box sx={{ flex: '1' }}>
+                    <Box sx={{ flexBasis: isMobile ? '1' : '0', flexGrow: 1 }}>
                         <Box>
                             {' '}
                             <SectionTitle
@@ -129,7 +133,7 @@ export const Footer = () => {
                         </Box>
                     </Box>
 
-                    <Box sx={{ flex: '1' }}>
+                    <Box sx={{ flexBasis: isMobile ? '1' : '0', flexGrow: 1 }}>
                         <Box>
                             {' '}
                             <SectionTitle

@@ -24,11 +24,18 @@ export const Project = () => {
                 style={{ textAlign: 'center' }}
                 loop={true}
                 spaceBetween={50}
+                speed={1000}
+                autoplay={{ delay: 2000 }}
                 centeredSlides
-                slidesPerView={1.8}
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                slidesPerView={1}
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
+                }}
+                breakpoints={{
+                    600: {
+                        slidesPerView: 1.8,
+                        spaceBetween: 5,
+                    },
                 }}
             >
                 {members.payload.map(({ id, name, position, avatar }) => (
