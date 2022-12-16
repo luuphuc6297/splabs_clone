@@ -22,7 +22,14 @@ const Position = styled(Typography)(({ theme }) => ({ textAlign: 'center' }));
 
 export const MemberCard = React.memo(({ avatar, name, position }) => {
     return (
-        <Box>
+        <Box
+            sx={{
+                '&:hover': {
+                    transition: 'all 0.5s ease 0s',
+                    transform: 'scale(1.01) !important',
+                },
+            }}
+        >
             <AvatarWrapper>
                 <Avatar src={avatar} loading="lazy" />
             </AvatarWrapper>

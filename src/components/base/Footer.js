@@ -144,7 +144,7 @@ export const Footer = () => {
                                 variant="subtitle1"
                                 gutterBottom
                             >
-                                Service
+                                Contact
                             </SectionTitle>
                             <List
                                 sx={{

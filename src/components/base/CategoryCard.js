@@ -39,7 +39,7 @@ export const CategoryCard = React.memo(({ title, lists, logo }) => {
                     background:
                         'linear-gradient(336.08deg, rgb(159, 140, 204) 10.7%, rgb(45, 145, 200) 97.43%)',
                     transition: 'all 0.5s ease 0s',
-                    transform: 'translateY(-10px) scale(1.05)',
+                    transform: 'translateY(-10px) scale(1.05) !important',
                 },
             }}
         >
