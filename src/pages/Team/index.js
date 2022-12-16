@@ -22,11 +22,17 @@ export const TheTeam = () => {
                 </SectionTitle>
                 <CustomSwiper
                     loop={true}
-                    spaceBetween={60}
-                    slidesPerView={3}
+                    spaceBetween={30}
+                    slidesPerView={2}
                     slidesPerGroup={3}
                     onSwiper={(swiper) => {
                         swiperRef.current = swiper;
+                    }}
+                    breakpoints={{
+                        600: {
+                            slidesPerView: 3,
+                            spaceBetween: 60,
+                        },
                     }}
                 >
                     {members.payload.map(({ id, name, position, avatar }) => (
