@@ -8,7 +8,7 @@ import { ContactSchema } from './validate';
 
 export const StartGrowingForm = () => {
     const {
-        formState: { isSubmitting, isSubmitSuccessful, errors },
+        formState: { isValid, isSubmitting, isSubmitSuccessful, errors },
         reset,
         register,
         handleSubmit,
@@ -51,7 +51,10 @@ export const StartGrowingForm = () => {
                     />
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <SubmitButton loading={isSubmitting}>
+                    <SubmitButton
+                        loading={isSubmitting}
+                        disabled={!isValid || isSubmitting}
+                    >
                         {isSubmitSuccessful ? (
                             <Timer duration={1} callback={timeUpCallBack} />
                         ) : (
