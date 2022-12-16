@@ -1,0 +1,28 @@
+{
+    "payload": [
+        {
+            "id": "ceo",
+            "name": "Step watch is a Web3 walking",
+            "title": "Step watch is a Web3 walking fitness",
+            "image": "/images/members/ceo.png"
+        },
+        {
+            "id": "cso",
+            "name": "Step watch is a Web3 walking",
+            "title": "Step watch is a Web3 walking fitness",
+            "image": "/images/members/cso.png"
+        },
+        {
+            "id": "Step watch is a Web3 walking",
+            "name": "Step watch is a Web3 walking",
+            "title": "Step watch is a Web3 walking fitness",
+            "image": "/images/members/coo.png"
+        },
+        {
+            "id": "coo1",
+            "name": "Step watch is a Web3 walking",
+            "title": "Step watch is a Web3 walking fitness",
+            "image": "/images/members/coo.png"
+        }
+    ]
+}

@@ -21,7 +21,6 @@ const PassProjectWrapper = styled(Grid)(({ theme }) => ({
 const LogoWrapper = styled(Box)(({ theme }) => ({
     width: '100%',
     height: '100%',
-    maxWidth: 268,
     borderRadius: 8,
     border: '1px solid #f5f5f5',
 }));
@@ -49,9 +48,9 @@ const Description = styled(Typography)(({ theme }) => ({
 
 const CommunityWrapper = styled(Box)(({ theme }) => ({
     display: 'flex',
-    justifyContent: 'space-between',
     fontSize: 14,
     marginBottom: 24,
+    gap: 30,
 }));
 
 const TelegramIcon = styled(BsTelegram)(({ theme }) => ({

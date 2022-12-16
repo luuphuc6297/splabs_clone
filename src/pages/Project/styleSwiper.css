@@ -1,6 +1,6 @@
 .containerSwiperinitialized .swiper-slide {
     transition: all 200ms linear;
-    transform: scale(0.8);
+    transform: scale(0.9);
     filter: blur(4px);
 }
 .containerSwiperinitialized .slideActiveClass {

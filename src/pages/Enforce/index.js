@@ -3,7 +3,7 @@ import {
     ProjectCard,
     SectionCaption,
     SectionTitle,
-    SectionWrapper
+    SectionWrapper,
 } from 'components';
 import projects from './projects.json';
 
