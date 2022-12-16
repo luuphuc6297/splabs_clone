@@ -4,8 +4,9 @@ import { Box } from '@mui/material';
 import { styled } from '@mui/system';
 import { SectionWrapper } from 'components';
 import {
-  AiFillTwitterSquare, AiOutlineFacebook,
-  AiOutlineInstagram
+    AiFillTwitterSquare,
+    AiOutlineFacebook,
+    AiOutlineInstagram,
 } from 'react-icons/ai';
 
 const StyledTopHeader = styled(Box)(({ theme }) => ({
@@ -35,6 +36,7 @@ const EmailInfo = styled(Box)(({ theme }) => ({
 const Email = styled('a')(({ theme }) => ({
     fontSize: 12,
     marginRight: 8,
+    cursor: 'pointer',
 }));
 
 const EmailIcon = styled(EmailOutlinedIcon)(({ theme }) => ({
@@ -50,6 +52,7 @@ const PhoneInfo = styled(Box)(({ theme }) => ({
 
 const Phone = styled('a')(({ theme }) => ({
     fontSize: 12,
+    cursor: 'pointer',
 }));
 
 const PhoneIcon = styled(PhoneOutlinedIcon)(({ theme }) => ({
@@ -90,12 +93,16 @@ export const TopHeader = () => {
                     {/* Email */}
                     <EmailInfo>
                         <EmailIcon />
-                        <Email>info@webmail.com</Email>
+                        <Email href="mailto:info@splabs.info">
+                            info@splabs.info{' '}
+                        </Email>
                     </EmailInfo>
                     {/* Phone */}
                     <PhoneInfo>
                         <PhoneIcon />
-                        <Phone>+987 8762 866 82</Phone>
+                        <Phone href="tel:+987 8762 866 82">
+                            +987 8762 866 82
+                        </Phone>
                     </PhoneInfo>
                 </ContactInfoArea>
                 <SocialNetworksArea>
