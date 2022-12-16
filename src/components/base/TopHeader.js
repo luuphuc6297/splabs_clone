@@ -6,7 +6,7 @@ import { SectionWrapper } from 'components';
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram,
+    AiOutlineInstagram
 } from 'react-icons/ai';
 
 const StyledTopHeader = styled(Box)(({ theme }) => ({
@@ -83,6 +83,12 @@ const TwitterIcon = styled(AiFillTwitterSquare)(({ theme }) => ({
     marginRight: 32,
 }));
 
+const SocialLink = styled('a')(({ theme }) => ({
+    color: theme.palette.text.primary,
+    textDecoration: 'none',
+    cursor: 'pointer',
+}));
+
 export const TopHeader = () => {
     return (
         <StyledTopHeader>
@@ -110,9 +116,27 @@ export const TopHeader = () => {
                     </PhoneInfo>
                 </ContactInfoArea>
                 <SocialNetworksArea>
-                    <FaceBookIcon />
-                    <InstagramIcon />
-                    <TwitterIcon />
+                    <SocialLink
+                        href="https://www.facebook.com/SPLabs.info"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <FaceBookIcon />
+                    </SocialLink>
+                    <SocialLink
+                        href="https://t.me/SPLabs_channel"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <InstagramIcon />
+                    </SocialLink>
+                    <SocialLink
+                        href="https://twitter.com/SPLabs_info"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <TwitterIcon />
+                    </SocialLink>
                 </SocialNetworksArea>
             </SectionWrapper>
         </StyledTopHeader>
