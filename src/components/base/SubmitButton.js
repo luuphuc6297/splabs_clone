@@ -2,13 +2,15 @@ import { LoadingButton } from '@mui/lab';
 import { styled } from '@mui/system';
 
 const SubmitBtn = styled(LoadingButton)({
-    textTransform: 'none',
-    fontSize: 16,
-    fontWeight: 'bold',
-    height: 44,
-    marginBottom: 24,
-    borderRadius: 24,
-    backgroundColor: '#fff',
+    cursor: 'pointer',
+    '&.MuiButton-root': {
+        fontSize: 20,
+        fontFamily: 'PoppinsBold',
+        height: 60,
+        borderRadius: 30,
+        color: '#ffffff',
+        backgroundColor: '#19c0ff',
+    },
 });
 
 export const SubmitButton = ({ children, loading, ...props }) => {
