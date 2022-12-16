@@ -6,7 +6,16 @@ import { theme } from 'configs';
 import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import Router from './routes';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
+const queryClient = new QueryClient({
+    defaultOptions: {
+        queries: {
+            retry: 0,
+            refetchOnWindowFocus: false,
+        },
+    },
+});
 function App() {
     React.useEffect(() => {
         Aos.init({ once: true });
@@ -14,10 +23,12 @@ function App() {
 
     return (
         <React.Fragment>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
-                <Router />
-            </ThemeProvider>
+            <QueryClientProvider client={queryClient}>
+                <ThemeProvider theme={theme}>
+                    <CssBaseline />
+                    <Router />
+                </ThemeProvider>
+            </QueryClientProvider>
             <ToastContainer
                 position="top-right"
                 autoClose={5000}
