@@ -3,7 +3,7 @@ import {
     CustomSwiper,
     MemberCard,
     SectionTitle,
-    SectionWrapper
+    SectionWrapper,
 } from 'components';
 import { IconChevronLeftSvg } from 'components/Svgs/IconChevronLeftSvg';
 import { IconChevronRightSvg } from 'components/Svgs/IconChevronRightSvg';
@@ -36,7 +36,7 @@ export const TheTeam = () => {
                     }}
                 >
                     {members.payload.map(({ id, name, position, avatar }) => (
-                        <SwiperSlide>
+                        <SwiperSlide key={id}>
                             <MemberCard
                                 id={id}
                                 name={name}

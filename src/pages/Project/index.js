@@ -42,6 +42,7 @@ export const Project = () => {
                     ({ id, logo, name, description, community, qr }) => (
                         <SwiperSlide>
                             <PastProject
+                                key={id}
                                 id={id}
                                 name={name}
                                 description={description}
