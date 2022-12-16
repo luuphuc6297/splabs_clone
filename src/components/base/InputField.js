@@ -29,12 +29,11 @@ const CustomInput = styled(TextField)(({ theme }) => ({
 export function InputField({
     name,
     control,
-    label,
     apiError,
     InputProps,
     passwordCriteria,
     onKeyUp,
-    ...inputProps
+    ...props
 }) {
     const {
         field: { value, onChange, onBlur, ref },
@@ -47,7 +46,6 @@ export function InputField({
     return (
         <>
             <CustomInput
-                hiddenLabel
                 fullWidth
                 size="small"
                 margin="normal"
@@ -58,8 +56,7 @@ export function InputField({
                 variant="outlined"
                 inputRef={ref}
                 error={invalid}
-                label={label}
-                inputProps={inputProps}
+                helperText={false}
                 InputProps={InputProps}
                 sx={{
                     '& .MuiOutlinedInput-root:hover': {
@@ -76,6 +73,7 @@ export function InputField({
                         borderColor: `${theme.palette.primary}`,
                     },
                 }}
+                {...props}
             />
             <Error error={true}>{error?.message}</Error>
         </>
