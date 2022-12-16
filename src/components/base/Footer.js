@@ -1,6 +1,6 @@
 import { Box, List, ListItem, Typography } from '@mui/material';
-import { styled } from '@mui/system';
 import { grey } from '@mui/material/colors';
+import { styled } from '@mui/system';
 import {
     SectionTitle,
     SectionWrapper,
@@ -32,12 +32,27 @@ const TwitterIcon = styled(AiFillTwitterSquare)(({ theme }) => ({
     color: 'white',
 }));
 
+const Services = styled('a')(({ theme }) => ({
+    fontSize: 12,
+    marginRight: 8,
+    cursor: 'pointer',
+    textDecoration: 'none',
+    color: grey[500],
+    '&:hover': {
+        color: grey[400],
+    },
+}));
+
 const Email = styled('a')(({ theme }) => ({
     fontSize: 12,
     marginRight: 8,
     cursor: 'pointer',
     textDecoration: 'none',
     color: grey[500],
+    '&:hover': {
+        textDecoration: 'underline',
+        color: grey[400],
+    },
 }));
 
 export const Footer = () => {
@@ -103,40 +118,15 @@ export const Footer = () => {
                                 }}
                             >
                                 <ListItem disablePadding>
-                                    <Typography
-                                        sx={{
-                                            margin: 0,
-                                        }}
-                                        color="white"
-                                        variant="subtitle2"
-                                        gutterBottom
-                                    >
-                                        Lorem Ipsum
-                                    </Typography>
+                                    <Services target="_blank" rel="noreferrer">
+                                        Cyber Security
+                                    </Services>
                                 </ListItem>
                                 <ListItem disablePadding>
-                                    <Typography
-                                        sx={{
-                                            margin: 0,
-                                        }}
-                                        color="white"
-                                        variant="subtitle2"
-                                        gutterBottom
-                                    >
-                                        Lorem Ipsum
-                                    </Typography>
+                                    <Services>IT Consultant</Services>
                                 </ListItem>
                                 <ListItem disablePadding>
-                                    <Typography
-                                        sx={{
-                                            margin: 0,
-                                        }}
-                                        color="white"
-                                        variant="subtitle2"
-                                        gutterBottom
-                                    >
-                                        Lorem Ipsum
-                                    </Typography>
+                                    <Services>Strategy & Research</Services>
                                 </ListItem>
                             </List>
                         </Box>
@@ -162,23 +152,34 @@ export const Footer = () => {
                                 }}
                             >
                                 <ListItem disablePadding>
-                                    <Email href="mailto:info@splabs.info">
+                                    <Email
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="mailto:info@splabs.info"
+                                    >
                                         info@splabs.info
                                     </Email>
                                 </ListItem>
                                 <ListItem disablePadding>
-                                    <Email href="mailto:contact@splabs.info276">
+                                    <Email
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="mailto:contact@splabs.info276"
+                                    >
                                         contact@splabs.info276
                                     </Email>
                                 </ListItem>
                                 <ListItem disablePadding>
-                                    <Email href="mailto:koreacontact@splabs.info">
+                                    <Email
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="mailto:koreacontact@splabs.info"
+                                    >
                                         koreacontact@splabs.info
                                     </Email>
                                 </ListItem>
                             </List>
                         </Box>
-                        <Box></Box>
                     </Box>
                 </Box>
             </SectionWrapper>
