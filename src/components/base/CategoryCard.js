@@ -17,6 +17,9 @@ const ListItem = styled('li')(({ theme }) => ({
 export const CategoryCard = React.memo(({ title, lists, logo }) => {
     return (
         <Box
+            data-aos="fade-right"
+            data-aos-duration="5000"
+            data-aos-easing="linear"
             sx={{
                 height: 355,
                 borderRadius: 4,

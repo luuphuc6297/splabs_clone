@@ -24,7 +24,7 @@ export const PartnerCard = React.memo(({ partnerLogo, hrefPartner }) => {
                     cursor: 'pointer',
                     transition: 'transform 300ms ease-in-out 0s',
                     '&:hover': {
-                        transform: 'scale(1.05)',
+                        transform: 'scale(1.05) !important',
                     },
                 }}
             >

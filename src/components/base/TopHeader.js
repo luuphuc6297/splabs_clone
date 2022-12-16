@@ -37,6 +37,8 @@ const Email = styled('a')(({ theme }) => ({
     fontSize: 12,
     marginRight: 8,
     cursor: 'pointer',
+    textDecoration: 'none',
+    color: theme.palette.text.primary,
 }));
 
 const EmailIcon = styled(EmailOutlinedIcon)(({ theme }) => ({
@@ -53,6 +55,8 @@ const PhoneInfo = styled(Box)(({ theme }) => ({
 const Phone = styled('a')(({ theme }) => ({
     fontSize: 12,
     cursor: 'pointer',
+    textDecoration: 'none',
+    color: theme.palette.text.primary,
 }));
 
 const PhoneIcon = styled(PhoneOutlinedIcon)(({ theme }) => ({

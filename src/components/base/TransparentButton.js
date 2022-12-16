@@ -14,7 +14,7 @@ const StyledTransparentBtn = styled(Button)(({ theme }) => ({
         background:
             'linear-gradient(336.08deg, rgb(159, 140, 204) 10.7%, rgb(45, 145, 200) 97.43%)',
         transition: 'all 0.5s ease 0s',
-        transform: 'scale(1.025)',
+        transform: 'scale(1.025) !important',
     },
 }));
 

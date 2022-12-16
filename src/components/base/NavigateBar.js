@@ -29,7 +29,7 @@ const NavLink = styled(Link)(({ theme }) => ({
     transition: 'all 0.5s ease 0s',
     '&:hover': {
         color: 'rgb(159, 140, 204)',
-        transform: 'scale(1.025)',
+        transform: 'scale(1.025) !important',
     },
 }));
 

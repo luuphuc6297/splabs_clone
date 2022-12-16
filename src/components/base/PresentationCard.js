@@ -18,6 +18,9 @@ export const PresentationCard = React.memo(
     ({ step, title, top_caption, bot_caption }) => {
         return (
             <Box
+                data-aos="fade-down"
+                data-aos-duration="5000"
+                data-aos-easing="linear"
                 sx={{
                     width: 368,
                     display: 'flex',
@@ -30,6 +33,10 @@ export const PresentationCard = React.memo(
                     backgroundSize: 'cover',
                     objectFit: 'contain',
                     backgroundPosition: 'center',
+                    transition: 'all 0.5s ease 0s',
+                    '&:hover': {
+                        transform: 'scale(1.025) !important',
+                    },
                 }}
             >
                 <Step variant="h3">{step}</Step>
