@@ -1,6 +1,6 @@
 import { CustomSwiper, PastProject } from 'components';
 import React, { useRef } from 'react';
-import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
+import { Autoplay } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
 import pastProjects from './pastProjects.json';
 import './styleSwiper.css';
@@ -23,9 +23,8 @@ export const Project = () => {
                 slidePrevClass={CLASS_PREV}
                 style={{ textAlign: 'center' }}
                 loop={true}
+                modules={[Autoplay]}
                 spaceBetween={50}
-                speed={1000}
-                autoplay={{ delay: 2000 }}
                 centeredSlides
                 slidesPerView={1}
                 onSwiper={(swiper) => {
@@ -34,7 +33,7 @@ export const Project = () => {
                 breakpoints={{
                     600: {
                         slidesPerView: 1.8,
-                        spaceBetween: 5,
+                        spaceBetween: 50,
                     },
                 }}
             >

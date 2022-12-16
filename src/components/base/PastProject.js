@@ -4,7 +4,6 @@ import { styled } from '@mui/system';
 import { BsTelegram } from 'react-icons/bs';
 
 const PassProjectWrapper = styled(Grid)(({ theme }) => ({
-    width: '95%',
     display: 'flex',
     padding: 16,
     border: '1px solid #f5f5f5',
@@ -13,8 +12,10 @@ const PassProjectWrapper = styled(Grid)(({ theme }) => ({
 }));
 
 const LogoWrapper = styled(Box)(({ theme }) => ({
-    width: 268,
-    height: 268,
+    width: '100%',
+    height: '100%',
+    maxWidth: 268,
+    maxHeight: 268,
     borderRadius: 8,
     border: '1px solid #f5f5f5',
 }));
