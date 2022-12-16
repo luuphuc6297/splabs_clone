@@ -9,13 +9,19 @@ const PassProjectWrapper = styled(Grid)(({ theme }) => ({
     border: '1px solid #f5f5f5',
     borderRadius: 16,
     margin: 0,
+    width: '100% !important',
+    '.MuiGrid-root': {
+        padding: 0,
+    },
+    '.info-project': {
+        paddingLeft: 16,
+    },
 }));
 
 const LogoWrapper = styled(Box)(({ theme }) => ({
     width: '100%',
     height: '100%',
     maxWidth: 268,
-    maxHeight: 268,
     borderRadius: 8,
     border: '1px solid #f5f5f5',
 }));
@@ -68,12 +74,19 @@ const QrBox = styled('img')(({ theme }) => ({
 export const PastProject = ({ logo, name, description, community, qr }) => {
     return (
         <PassProjectWrapper container spacing={2}>
-            <Grid item xs={4} sm={5}>
+            <Grid
+                sx={{
+                    padding: 0,
+                }}
+                item
+                xs={5}
+                sm={5}
+            >
                 <LogoWrapper>
                     <Logo src={logo} loading="lazy" />
                 </LogoWrapper>
             </Grid>
-            <Grid item xs={8} sm={6}>
+            <Grid className="info-project" item xs={7} sm={7}>
                 <InfoWrapper>
                     <Typography sx={{ marginBottom: 1, textAlign: 'left' }}>
                         Past Project
