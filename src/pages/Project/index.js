@@ -26,6 +26,7 @@ export const Project = () => {
                 modules={[Autoplay]}
                 spaceBetween={50}
                 centeredSlides
+                autoplay
                 slidesPerView={1}
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
