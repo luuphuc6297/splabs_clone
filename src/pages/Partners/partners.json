@@ -23,7 +23,7 @@
         {
             "id": "dwf",
             "partnerLogo": "/images/partners/dwf.png",
-            "hrefPartner": ""
+            "hrefPartner": "https://www.dwf-labs.com/"
         },
         {
             "id": "nftb",
@@ -101,6 +101,58 @@
         {
             "id": "phemex",
             "partnerLogo": "/images/partners/phemex.png"
+        },
+        {
+            "id": "linx",
+            "partnerLogo": "/images/partners/linx.png"
+        },
+        {
+            "id": "game_con",
+            "partnerLogo": "/images/partners/game_con.png"
+        },
+        {
+            "id": "teddy_bear",
+            "partnerLogo": "/images/partners/teddy_bear.png"
+        },
+        {
+            "id": "gramming",
+            "partnerLogo": "/images/partners/gramming.png"
+        },
+        {
+            "id": "pixel_play",
+            "partnerLogo": "/images/partners/pixel_play.png"
+        },
+        {
+            "id": "sotatek",
+            "partnerLogo": "/images/partners/sotatek.png"
+        },
+        {
+            "id": "parable",
+            "partnerLogo": "/images/partners/parable.png"
+        },
+        {
+            "id": "sun_miya",
+            "partnerLogo": "/images/partners/sun_miya.png"
+        },
+        {
+            "id": "guy",
+            "partnerLogo": "/images/partners/guy.png"
+        },
+        {
+            "id": "aqua_pnix",
+            "partnerLogo": "/images/partners/aqua_pnix.png"
+        },
+        {
+            "id": "earn_box",
+            "partnerLogo": "/images/partners/earn_box.png"
+        },
+        {
+            "id": "travel_track",
+            "partnerLogo": "/images/partners/travel_track.png"
+        },
+        {
+            "id": "finace",
+            "partnerLogo": "/images/partners/finace.png"
         }
     ]
 }

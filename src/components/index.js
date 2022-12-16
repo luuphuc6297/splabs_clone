@@ -18,6 +18,7 @@ export * from './base/SubmitButton';
 export * from './base/TopHeader';
 export * from './base/TransparentButton';
 export * from './base/WhiteButton';
+export * from './base/PastProject';
 /**
  * Section
  **/
@@ -30,4 +31,3 @@ export * from './sections/SectionWrapperFullWidth';
  * Typography
  **/
 export * from './typography/Error';
-

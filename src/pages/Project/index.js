@@ -1,9 +1,8 @@
-import { CustomSwiper, MemberCard, SectionWrapperFullWidth } from 'components';
-import MediaControlCard from 'components/base/Project';
+import { CustomSwiper, PastProject } from 'components';
 import React, { useRef } from 'react';
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
-import members from './members.json';
+import pastProjects from './pastProjects.json';
 import './styleSwiper.css';
 
 const CLASS_CONTAINER = 'containerSwiper';
@@ -13,6 +12,7 @@ const CLASS_PREV = 'slidePrevClass';
 
 export const Project = () => {
     const swiperRef = useRef(null);
+
     const renderMemberCards = React.useCallback(() => {
         return (
             <CustomSwiper
@@ -31,16 +31,22 @@ export const Project = () => {
                     swiperRef.current = swiper;
                 }}
             >
-                {members.payload.map(({ id, name, position, avatar }) => (
-                    <SwiperSlide>
-                        <MediaControlCard />
-                    </SwiperSlide>
-                ))}
+                {pastProjects.payload.map(
+                    ({ id, logo, name, description, community, qr }) => (
+                        <SwiperSlide>
+                            <PastProject
+                                id={id}
+                                name={name}
+                                description={description}
+                                community={community}
+                                qr={qr}
+                            />
+                        </SwiperSlide>
+                    )
+                )}
             </CustomSwiper>
         );
     }, []);
 
-    return (
-        <SectionWrapperFullWidth>{renderMemberCards()}</SectionWrapperFullWidth>
-    );
+    return <>{renderMemberCards()}</>;
 };

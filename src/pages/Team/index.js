@@ -3,11 +3,11 @@ import {
     CustomSwiper,
     MemberCard,
     SectionTitle,
-    SectionWrapper,
+    SectionWrapper
 } from 'components';
 import { IconChevronLeftSvg } from 'components/Svgs/IconChevronLeftSvg';
 import { IconChevronRightSvg } from 'components/Svgs/IconChevronRightSvg';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { SwiperSlide } from 'swiper/react';
 import members from './members.json';
 

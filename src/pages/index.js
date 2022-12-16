@@ -39,9 +39,9 @@ const LandingPage = () => {
                 <TheTeam />
                 <Partners />
                 <StartGrowing />
+                <Project />
             </SectionWrapperFullWidth>
 
-            <Project />
             <Explore />
             <Footer />
         </>
