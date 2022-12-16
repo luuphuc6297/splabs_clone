@@ -1,28 +1,28 @@
 {
-  "payload": [
-    {
-      "id": "ceo",
-      "name": "Kyle Kim",
-      "position": "CEO",
-      "avatar": ""
-    },
-    {
-      "id": "cso",
-      "name": "David Lee",
-      "position": "CSO",
-      "avatar": ""
-    },
-    {
-      "id": "coo",
-      "name": "Tracy Nguyen",
-      "position": "COO",
-      "avatar": ""
-    },
-    {
-      "id": "coo",
-      "name": "Tracy Nguyen",
-      "position": "COO",
-      "avatar": ""
-    }
-  ]
+    "payload": [
+        {
+            "id": "ceo",
+            "name": "Kyle Kim",
+            "position": "CEO",
+            "avatar": "/images/members/ceo.png"
+        },
+        {
+            "id": "cso",
+            "name": "David Lee",
+            "position": "CSO",
+            "avatar": "/images/members/cso.png"
+        },
+        {
+            "id": "coo",
+            "name": "Tracy Nguyen",
+            "position": "COO",
+            "avatar": "/images/members/coo.png"
+        },
+        {
+            "id": "coo",
+            "name": "Tracy Nguyen",
+            "position": "COO",
+            "avatar": "/images/members/coo.png"
+        }
+    ]
 }

@@ -1,10 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
-import { Avt3 } from 'assets';
 import React from 'react';
 
 const AvatarWrapper = styled(Box)(({ theme }) => ({
-    border: '1px solid #ffffff',
     borderRadius: '24px',
     display: 'flex',
 }));
@@ -26,7 +24,7 @@ export const MemberCard = React.memo(({ avatar, name, position }) => {
     return (
         <Box>
             <AvatarWrapper>
-                <Avatar src={Avt3} loading="lazy" />
+                <Avatar src={avatar} loading="lazy" />
             </AvatarWrapper>
             <Name>{name}</Name>
             <Position>{position}</Position>
