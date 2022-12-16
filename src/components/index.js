@@ -10,6 +10,7 @@ export * from './base/Header';
 export * from './base/InputField';
 export * from './base/MemberCard';
 export * from './base/PartnerCard';
+export * from './base/PastProject';
 export * from './base/PresentationCard';
 export * from './base/ProjectCard';
 export * from './base/QRCard';
@@ -18,7 +19,6 @@ export * from './base/SubmitButton';
 export * from './base/TopHeader';
 export * from './base/TransparentButton';
 export * from './base/WhiteButton';
-export * from './base/PastProject';
 /**
  * Section
  **/
@@ -31,3 +31,4 @@ export * from './sections/SectionWrapperFullWidth';
  * Typography
  **/
 export * from './typography/Error';
+

@@ -3,9 +3,8 @@ import {
     ProjectCard,
     SectionCaption,
     SectionTitle,
-    SectionWrapper,
+    SectionWrapper
 } from 'components';
-import React from 'react';
 import projects from './projects.json';
 
 export const EnforceProject = () => {
@@ -18,7 +17,7 @@ export const EnforceProject = () => {
             <SectionCaption
                 sx={{
                     textAlign: 'center',
-                    margin: '30px auto',
+                    margin: '32px auto',
                     maxWidth: 500,
                 }}
             >
@@ -30,8 +29,7 @@ export const EnforceProject = () => {
                 sx={{
                     border: '2px solid #19c0ff',
                     borderRadius: 8,
-                    boxShadow: '0px 0px 18px 0px rgba(0,0,0,0.75)',
-                    padding: '40px 50px',
+                    padding: '40px 56px',
                 }}
             >
                 <Grid container columnSpacing={6} rowSpacing={4}>

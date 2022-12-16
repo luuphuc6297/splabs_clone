@@ -5,6 +5,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { scrollSection } from 'utils';
+
 const navigateItems = [
     { id: 'home', label: 'home', link: '/' },
     { id: 'about_us', label: 'about_us', link: '/#about-us' },
@@ -48,6 +49,7 @@ export const NavigateBar = React.memo(() => {
             </NavLink>
         ));
     }, []);
+
     return (
         <Navbar
             sx={{

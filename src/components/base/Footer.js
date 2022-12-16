@@ -1,5 +1,6 @@
 import { Box, List, ListItem, Typography } from '@mui/material';
 import { styled } from '@mui/system';
+import { grey } from '@mui/material/colors';
 import {
     SectionTitle,
     SectionWrapper,
@@ -29,6 +30,14 @@ const TwitterIcon = styled(AiFillTwitterSquare)(({ theme }) => ({
     width: 24,
     height: 24,
     color: 'white',
+}));
+
+const Email = styled('a')(({ theme }) => ({
+    fontSize: 12,
+    marginRight: 8,
+    cursor: 'pointer',
+    textDecoration: 'none',
+    color: grey[500],
 }));
 
 export const Footer = () => {
@@ -135,7 +144,6 @@ export const Footer = () => {
 
                     <Box sx={{ flexBasis: isMobile ? '1' : '0', flexGrow: 1 }}>
                         <Box>
-                            {' '}
                             <SectionTitle
                                 sx={{
                                     fontWeight: 600,
@@ -154,40 +162,19 @@ export const Footer = () => {
                                 }}
                             >
                                 <ListItem disablePadding>
-                                    <Typography
-                                        sx={{
-                                            margin: 0,
-                                        }}
-                                        color="white"
-                                        variant="subtitle2"
-                                        gutterBottom
-                                    >
-                                        Lorem Ipsum
-                                    </Typography>
+                                    <Email href="mailto:info@splabs.info">
+                                        info@splabs.info
+                                    </Email>
                                 </ListItem>
                                 <ListItem disablePadding>
-                                    <Typography
-                                        sx={{
-                                            margin: 0,
-                                        }}
-                                        color="white"
-                                        variant="subtitle2"
-                                        gutterBottom
-                                    >
-                                        Lorem Ipsum
-                                    </Typography>
+                                    <Email href="mailto:contact@splabs.info276">
+                                        contact@splabs.info276
+                                    </Email>
                                 </ListItem>
                                 <ListItem disablePadding>
-                                    <Typography
-                                        sx={{
-                                            margin: 0,
-                                        }}
-                                        color="white"
-                                        variant="subtitle2"
-                                        gutterBottom
-                                    >
-                                        Lorem Ipsum
-                                    </Typography>
+                                    <Email href="mailto:koreacontact@splabs.info">
+                                        koreacontact@splabs.info
+                                    </Email>
                                 </ListItem>
                             </List>
                         </Box>

@@ -98,7 +98,7 @@ export const TopHeader = () => {
                     <EmailInfo>
                         <EmailIcon />
                         <Email href="mailto:info@splabs.info">
-                            info@splabs.info{' '}
+                            info@splabs.info
                         </Email>
                     </EmailInfo>
                     {/* Phone */}
