@@ -28,14 +28,26 @@ const LandingPage = () => {
             </SectionWrapperFullWidth>
             <SectionWrapperFullWidth
                 sx={{
-                    background: 'black',
+                    backgroundImage: `url('/images/background/second_background-min.png')`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    objectFit: 'cover',
                 }}
             >
                 <AboutUs />
                 <EnforceProject />
                 <MakeDifferent />
             </SectionWrapperFullWidth>
-            <SectionWrapperFullWidth sx={{ background: 'black' }}>
+            <SectionWrapperFullWidth
+                sx={{
+                    backgroundImage: `url('/images/background/second_background-min.png')`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    objectFit: 'cover',
+                }}
+            >
                 <TheTeam />
                 <Partners />
                 <StartGrowing />

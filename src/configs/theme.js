@@ -55,18 +55,22 @@ const theme = createTheme({
         h1: {
             fontSize: '2.75rem',
             fontWeight: 'bold',
+            fontFamily: 'PoppinsBold',
         },
         h2: {
             fontSize: '2rem',
             fontWeight: 'bold',
+            fontFamily: 'PoppinsBold',
         },
         h3: {
             fontSize: '1.25rem',
             fontWeight: 'bold',
+            fontFamily: 'PoppinsMedium',
         },
         h6: {
             fontSize: '1rem',
             fontWeight: 'bold',
+            fontFamily: 'PoppinsMedium',
         },
         caption: {
             fontSize: '1rem',
