@@ -9,9 +9,9 @@ export const Project = () => {
                 Project
             </SectionTitle>
             <NewProject />
-            <SectionWrapperFullWidth>
+            {/* <SectionWrapperFullWidth> */}
                 <ListProject />
-            </SectionWrapperFullWidth>
+            {/* </SectionWrapperFullWidth> */}
         </SectionWrapperFullWidth>
     );
 };

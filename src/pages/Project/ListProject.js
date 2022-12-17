@@ -12,34 +12,33 @@ export const ListProject = () => {
 
     return (
         <SectionWrapper sx={{ marginTop: 5, position: 'relative' }}>
-            <Box>
-                <CustomSwiper
-                    loop={true}
-                    spaceBetween={30}
-                    slidesPerView={2}
-                    slidesPerGroup={4}
-                    onSwiper={(swiper) => {
-                        swiperRef.current = swiper;
-                    }}
-                    breakpoints={{
-                        600: {
-                            slidesPerView: 4,
-                            spaceBetween: 30,
-                        },
-                    }}
-                >
-                    {members.payload.map(({ id, name, title, image }) => (
-                        <SwiperSlide key={id}>
-                            <ProjectItemCard
-                                id={id}
-                                name={name}
-                                title={title}
-                                image={image}
-                            />
-                        </SwiperSlide>
-                    ))}
-                </CustomSwiper>
-            </Box>
+            <CustomSwiper
+                loop={true}
+                spaceBetween={30}
+                slidesPerView={2}
+                slidesPerGroup={4}
+                onSwiper={(swiper) => {
+                    swiperRef.current = swiper;
+                }}
+                breakpoints={{
+                    600: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
+                }}
+            >
+                {members.payload.map(({ id, name, title, image }) => (
+                    <SwiperSlide key={id}>
+                        <ProjectItemCard
+                            id={id}
+                            name={name}
+                            title={title}
+                            image={image}
+                        />
+                    </SwiperSlide>
+                ))}
+            </CustomSwiper>
+
             <Box>
                 <Box
                     sx={{

@@ -3,26 +3,31 @@ import { styled } from '@mui/system';
 import React from 'react';
 
 const ImageWrapper = styled(Box)(() => ({
+    width: 160,
+    height: 160,
     borderRadius: '16px',
     display: 'flex',
     margin: '0 auto',
     overflow: 'hidden',
     border: '1px solid #ffffff',
 }));
+
 const Avatar = styled('img')(() => ({
     objectFit: 'cover',
     width: '100%',
     height: '100%',
-    maxHeight: 220,
 }));
 
 const Name = styled(Typography)(() => ({
-    marginTop: '16px',
-    marginBottom: '8px',
-    fontFamily: 'PoppinsSemiBold',
+    marginTop: 8,
+    marginBottom: 8,
+    fontSize: 14,
+    fontWeight: 'bold',
 }));
 
-const Position = styled(Typography)(() => ({}));
+const Caption = styled(Typography)(() => ({
+    fontSize: 12,
+}));
 
 export const ProjectItemCard = React.memo(({ image, name, title }) => {
     return (
@@ -39,12 +44,10 @@ export const ProjectItemCard = React.memo(({ image, name, title }) => {
             </ImageWrapper>
 
             <Box>
-                <Name align="center" variant="h6">
-                    {name}
-                </Name>
-                <Position align="center" color="#8B8B8B" variant="subtitle2">
+                <Name align="center">{name}</Name>
+                <Caption align="center" color="#8B8B8B" variant="subtitle2">
                     {title}
-                </Position>
+                </Caption>
             </Box>
         </Box>
     );
