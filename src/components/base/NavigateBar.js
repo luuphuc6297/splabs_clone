@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom';
 import { scrollSection } from 'utils';
 import { Link as LinkReactScroll } from 'react-scroll';
 
+export const ABOUT_US_UID = 'about_us';
+export const PARTNERS_UID = 'partners';
+
 const navigateItems = [
     { id: 'home', label: 'home', link: '/' },
     { id: 'about_us', label: 'about_us', link: '/#about-us', internal: true },
@@ -26,12 +29,12 @@ const Navbar = styled(Box)(() => ({
 }));
 
 const NavItem = styled(Box)(() => ({
-    color: 'grey[50]',
+    color: '#ffffff',
     textDecoration: 'none',
-    transition: 'all 0.5s ease 0s',
+    transition: 'all 0.5s',
     '&:hover': {
         color: 'rgb(159, 140, 204)',
-        transform: 'scale(1.025) !important',
+        transform: 'scale(1.05) !important',
     },
     cursor: 'pointer',
 }));
@@ -40,11 +43,7 @@ export const NavigateBar = React.memo(() => {
     const { t } = useTranslation('translation');
 
     return (
-        <Navbar
-            sx={{
-                justifyContent: 'end',
-            }}
-        >
+        <Navbar sx={{ justifyContent: 'end' }}>
             {navigateItems.map((item) => (
                 <NavItem key={item.id}>
                     {item.internal ? (
@@ -62,12 +61,12 @@ export const NavigateBar = React.memo(() => {
                             to={item.link}
                             onClick={() => scrollSection(item.id)}
                             style={{
-                                color: 'grey[50]',
+                                color: '#ffffff',
                                 textDecoration: 'none',
-                                transition: 'all 0.5s ease 0s',
+                                transition: 'all 0.5s',
                                 '&:hover': {
                                     color: 'rgb(159, 140, 204)',
-                                    transform: 'scale(1.025) !important',
+                                    transform: 'scale(1.05) !important',
                                 },
                                 cursor: 'pointer',
                             }}

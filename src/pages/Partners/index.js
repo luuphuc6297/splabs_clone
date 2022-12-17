@@ -1,11 +1,12 @@
 import { Box, Grid } from '@mui/material';
 import { PartnerCard, SectionTitle, SectionWrapper } from 'components';
+import { PARTNERS_UID } from 'components/base/NavigateBar';
 import React from 'react';
 import partners from './partners.json';
 
 export const Partners = () => {
     return (
-        <SectionWrapper sx={{ paddingBottom: 20 }}>
+        <SectionWrapper id={PARTNERS_UID} sx={{ paddingBottom: 20 }}>
             <SectionTitle sx={{ textAlign: 'center', marginBottom: 8 }}>
                 PARTNERS
             </SectionTitle>
