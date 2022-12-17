@@ -7,18 +7,6 @@ import { Link } from 'react-router-dom';
 import { scrollSection } from 'utils';
 import { Link as LinkReactScroll } from 'react-scroll';
 
-export const ABOUT_US_UID = 'about_us';
-export const PARTNERS_UID = 'partners';
-
-const navigateItems = [
-    { id: 'home', label: 'home', link: '/' },
-    { id: 'about_us', label: 'about_us', link: '/#about-us', internal: true },
-    { id: 'the_studio', label: 'the_studio', link: '/#the-studio' },
-    { id: 'influencer', label: 'influencer', link: '/#influencer' },
-    { id: 'marketing', label: 'marketing', link: '/#marketing' },
-    { id: 'partners', label: 'partners', link: '/#partners', internal: true },
-];
-
 const Navbar = styled(Box)(() => ({
     width: '100%',
     display: 'flex',
@@ -39,7 +27,7 @@ const NavItem = styled(Box)(() => ({
     cursor: 'pointer',
 }));
 
-export const NavigateBar = React.memo(() => {
+export const NavigateBar = ({ navigateItems }) => {
     const { t } = useTranslation('translation');
 
     return (
@@ -79,4 +67,4 @@ export const NavigateBar = React.memo(() => {
             <TransparentButton>Apply</TransparentButton>
         </Navbar>
     );
-});
+};

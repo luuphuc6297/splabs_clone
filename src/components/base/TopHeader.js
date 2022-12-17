@@ -6,7 +6,7 @@ import { SectionWrapper } from 'components';
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram
+    AiOutlineInstagram,
 } from 'react-icons/ai';
 
 const StyledTopHeader = styled(Box)(({ theme }) => ({
@@ -23,14 +23,22 @@ const StyledTopHeader = styled(Box)(({ theme }) => ({
 const ContactInfoArea = styled(Box)(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
-    padding: '12px 0',
+    flexWrap: 'wrap',
 }));
 
-const SocialNetworksArea = styled(Box)(({ theme }) => ({}));
+const SocialNetworksArea = styled(Box)(({ theme }) => ({
+    display: 'flex',
+    alignItems: 'center',
+    flexWrap: 'nowrap',
+    '& > *': {
+        marginLeft: 16,
+    },
+}));
 
 const EmailInfo = styled(Box)(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
+    margin: '8px 0',
 }));
 
 const Email = styled('a')(({ theme }) => ({
@@ -50,6 +58,7 @@ const EmailIcon = styled(EmailOutlinedIcon)(({ theme }) => ({
 const PhoneInfo = styled(Box)(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
+    margin: '8px 0',
 }));
 
 const Phone = styled('a')(({ theme }) => ({
@@ -63,24 +72,6 @@ const PhoneIcon = styled(PhoneOutlinedIcon)(({ theme }) => ({
     width: 24,
     height: 24,
     marginRight: 4,
-}));
-
-const FaceBookIcon = styled(AiOutlineFacebook)(({ theme }) => ({
-    width: 24,
-    height: 24,
-    marginRight: 16,
-}));
-
-const InstagramIcon = styled(AiOutlineInstagram)(({ theme }) => ({
-    width: 24,
-    height: 24,
-    marginRight: 16,
-}));
-
-const TwitterIcon = styled(AiFillTwitterSquare)(({ theme }) => ({
-    width: 24,
-    height: 24,
-    marginRight: 32,
 }));
 
 const SocialLink = styled('a')(({ theme }) => ({
@@ -116,27 +107,33 @@ export const TopHeader = () => {
                     </PhoneInfo>
                 </ContactInfoArea>
                 <SocialNetworksArea>
-                    <SocialLink
-                        href="https://www.facebook.com/SPLabs.info"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <FaceBookIcon />
-                    </SocialLink>
-                    <SocialLink
-                        href="https://t.me/SPLabs_channel"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <InstagramIcon />
-                    </SocialLink>
-                    <SocialLink
-                        href="https://twitter.com/SPLabs_info"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <TwitterIcon />
-                    </SocialLink>
+                    <Box>
+                        <SocialLink
+                            href="https://www.facebook.com/SPLabs.info"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <AiOutlineFacebook size={24} />
+                        </SocialLink>
+                    </Box>
+                    <Box>
+                        <SocialLink
+                            href="https://t.me/SPLabs_channel"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <AiOutlineInstagram size={24} />
+                        </SocialLink>
+                    </Box>
+                    <Box>
+                        <SocialLink
+                            href="https://twitter.com/SPLabs_info"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <AiFillTwitterSquare size={24} />
+                        </SocialLink>
+                    </Box>
                 </SocialNetworksArea>
             </SectionWrapper>
         </StyledTopHeader>

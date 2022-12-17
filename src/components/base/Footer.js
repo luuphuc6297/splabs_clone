@@ -13,7 +13,8 @@ import {
     AiOutlineFacebook,
     AiOutlineInstagram,
 } from 'react-icons/ai';
-import { ABOUT_US_UID } from './NavigateBar';
+
+import { ABOUT_US_UID } from './Header';
 
 const FaceBookIcon = styled(AiOutlineFacebook)(({ theme }) => ({
     width: 24,

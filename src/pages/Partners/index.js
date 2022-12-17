@@ -1,6 +1,6 @@
 import { Box, Grid } from '@mui/material';
 import { PartnerCard, SectionTitle, SectionWrapper } from 'components';
-import { PARTNERS_UID } from 'components/base/NavigateBar';
+import { PARTNERS_UID } from 'components/base/Header';
 import React from 'react';
 import partners from './partners.json';
 
