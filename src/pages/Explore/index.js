@@ -1,26 +1,16 @@
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import {
-    AddressCard, QRCard, SectionTitle,
+    AddressCard,
+    QRCard,
+    SectionTitle,
     SectionWrapper,
-    SectionWrapperFullWidth
+    SectionWrapperFullWidth,
 } from 'components';
 import React from 'react';
 import address from './address.json';
 import qrs from './qr.json';
 
 export const Explore = () => {
-    const renderQRCard = React.useCallback(() => {
-        return qrs.payload.map(({ id, title, qr }) => (
-            <QRCard key={id} id={id} title={title} qr={qr} />
-        ));
-    }, []);
-
-    const renderAddressCards = React.useCallback(() => {
-        return address.payload.map(({ id, office, address }) => (
-            <AddressCard key={id} id={id} office={office} address={address} />
-        ));
-    }, []);
-
     return (
         <SectionWrapperFullWidth
             sx={{
@@ -45,20 +35,20 @@ export const Explore = () => {
                     sx={{
                         display: 'flex',
                         justifyContent: 'center',
-                        gap: 21,
+                        flexWrap: 'wrap',
                     }}
                 >
-                    {renderQRCard()}
+                    {qrs.payload.map(({ id, title, qr }) => (
+                        <QRCard key={id} id={id} title={title} qr={qr} />
+                    ))}
                 </Box>
-                <Box
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        gap: 8,
-                    }}
-                >
-                    {renderAddressCards()}
-                </Box>
+                <Grid container spacing={4}>
+                    {address.payload.map((add) => (
+                        <Grid item xs={12} md={4} key={add.id}>
+                            <AddressCard {...add} />
+                        </Grid>
+                    ))}
+                </Grid>
             </SectionWrapper>
         </SectionWrapperFullWidth>
     );

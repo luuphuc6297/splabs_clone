@@ -16,7 +16,7 @@ export const QRCard = React.memo(({ id, qr, title }) => {
             component="div"
             disableRipple
             disableTouchRipple
-            sx={{ width: 'unset', marginBottom: 4 }}
+            sx={{ width: 'unset', margin: 4 }}
         >
             <CardMedia
                 component="img"

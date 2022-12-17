@@ -1,27 +1,18 @@
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import { PresentationCard } from 'components';
 import React from 'react';
 import presentation from './presentation.json';
 
 export const Presentation = () => {
-    const renderPresentation = React.useCallback(() => {
-        return presentation.payload.map(
-            ({ id, step, title, top_caption, bot_caption }) => (
-                <PresentationCard
-                    key={id}
-                    id={id}
-                    title={title}
-                    step={step}
-                    top_caption={top_caption}
-                    bot_caption={bot_caption}
-                />
-            )
-        );
-    }, []);
-
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-            {renderPresentation()}
+        <Box sx={{ marginTop: 5 }}>
+            <Grid container columnSpacing={3} rowSpacing={3}>
+                {presentation.payload.map((pres) => (
+                    <Grid item xs={12} md={4} key={pres.id}>
+                        <PresentationCard {...pres} />
+                    </Grid>
+                ))}
+            </Grid>
         </Box>
     );
 };

@@ -4,15 +4,15 @@ import React from 'react';
 
 const Step = styled(Typography)(({ theme }) => ({
     marginBottom: 16,
+    fontFamily: 'PoppinsBold',
 }));
 
 const Title = styled(Typography)(({ theme }) => ({
     marginBottom: 16,
+    fontFamily: 'PoppinsBold',
 }));
 
-const TopCaption = styled(Typography)(({ theme }) => ({
-    marginBottom: 24,
-}));
+const TopCaption = styled(Typography)(({ theme }) => ({}));
 
 export const PresentationCard = React.memo(
     ({ step, title, top_caption, bot_caption }) => {
@@ -22,12 +22,9 @@ export const PresentationCard = React.memo(
                 data-aos-duration="5000"
                 data-aos-easing="linear"
                 sx={{
-                    width: 368,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    padding: '32px 64px 32px 32px',
+                    height: '100%',
+                    padding: '40px',
                     borderRadius: 4,
-                    textAlign: 'left',
                     backgroundImage: `url('/images/background/presentation_background.png')`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
@@ -41,7 +38,9 @@ export const PresentationCard = React.memo(
             >
                 <Step variant="h3">{step}</Step>
                 <Title variant="h3">{title}</Title>
-                <TopCaption variant="caption">{top_caption}</TopCaption>
+                <div style={{ marginBottom: 16 }}>
+                    <TopCaption variant="caption">{top_caption}</TopCaption>
+                </div>
                 <Typography variant="caption">{bot_caption}</Typography>
             </Box>
         );

@@ -1,25 +1,26 @@
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import { SectionWrapper } from 'components';
 import { Banner } from './Banner';
 import { Description } from './Description';
 import { Presentation } from './Presentation';
+
 const AboutUs = () => {
     return (
         <SectionWrapper
             id=""
-            sx={{ display: 'flex', flexDirection: 'column', marginBottom: 21 }}
+            sx={{
+                marginBottom: 20,
+                paddingTop: 20,
+            }}
         >
-            <Box
-                sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    marginBottom: 8,
-                }}
-            >
-                <Banner />
-                <Description />
-            </Box>
+            <Grid container columnSpacing={3} rowSpacing={3}>
+                <Grid item xs={12} md={6}>
+                    <Banner />
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Description />
+                </Grid>
+            </Grid>
 
             <Presentation />
         </SectionWrapper>
