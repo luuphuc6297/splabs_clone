@@ -1,11 +1,9 @@
-import { Box } from '@mui/system';
 import { CustomSwiper, SectionWrapper } from 'components';
 import { ProjectItemCard } from 'components/base/ProjectItemCard';
-import { IconChevronLeftSvg } from 'components/Svgs/IconChevronLeftSvg';
-import { IconChevronRightSvg } from 'components/Svgs/IconChevronRightSvg';
 import { useRef } from 'react';
 import { SwiperSlide } from 'swiper/react';
 import members from './ListProject.json';
+import { CustomNavigationSwiper } from 'components/base/CustomNavigationSwiper';
 
 export const ListProject = () => {
     const swiperRef = useRef(null);
@@ -39,36 +37,7 @@ export const ListProject = () => {
                 ))}
             </CustomSwiper>
 
-            <Box>
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        top: 0,
-                        bottom: 0,
-                        left: '-50px',
-                        display: 'flex',
-                        alignItems: 'center',
-                    }}
-                >
-                    <IconChevronLeftSvg
-                        onClick={() => swiperRef.current.slideNext()}
-                    />
-                </Box>
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        top: 0,
-                        bottom: 0,
-                        right: '-50px',
-                        display: 'flex',
-                        alignItems: 'center',
-                    }}
-                >
-                    <IconChevronRightSvg
-                        onClick={() => swiperRef.current.slideNext()}
-                    />
-                </Box>
-            </Box>
+            <CustomNavigationSwiper swiperRef={swiperRef} />
         </SectionWrapper>
     );
 };

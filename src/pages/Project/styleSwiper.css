@@ -1,9 +1,10 @@
-.containerSwiperinitialized .swiper-slide {
-    transition: all 200ms linear;
+.containerSwiperinitialized .swiper-slide .wrapperPastProject {
     transform: scale(0.9);
+    transition: all 200ms linear;
     filter: blur(4px);
 }
-.containerSwiperinitialized .slideActiveClass {
+
+.containerSwiperinitialized .swiper-slide-active .wrapperPastProject {
     transform: scale(1);
     filter: blur(0);
 }

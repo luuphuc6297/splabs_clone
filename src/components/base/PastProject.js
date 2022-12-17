@@ -62,7 +62,6 @@ export const PastProject = ({ logo, name, description, community, qr }) => {
                 padding: 3,
                 border: '1px solid #f5f5f5',
                 borderRadius: '16px',
-                width: 840,
                 height: 360,
                 display: 'flex',
                 alignItems: 'center',

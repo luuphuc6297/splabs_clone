@@ -1,3 +1,4 @@
+import { Box } from '@mui/system';
 import { CustomSwiper, PastProject } from 'components';
 import React, { useRef } from 'react';
 import { Autoplay } from 'swiper';
@@ -6,9 +7,7 @@ import pastProjects from './pastProjects.json';
 import './styleSwiper.css';
 
 const CLASS_CONTAINER = 'containerSwiper';
-const CLASS_ACTIVE = 'slideActiveClass';
-const CLASS_NEXT = 'slideNextClass';
-const CLASS_PREV = 'slidePrevClass';
+const CLASS_WRAPPER_PASS_PROJECT = 'wrapperPastProject';
 
 export const NewProject = () => {
     const swiperRef = useRef(null);
@@ -16,9 +15,6 @@ export const NewProject = () => {
     return (
         <CustomSwiper
             containerModifierClass={CLASS_CONTAINER}
-            slideActiveClass={CLASS_ACTIVE}
-            slideNextClass={CLASS_NEXT}
-            slidePrevClass={CLASS_PREV}
             style={{ textAlign: 'center' }}
             loop={true}
             modules={[Autoplay]}
@@ -32,7 +28,9 @@ export const NewProject = () => {
         >
             {pastProjects.payload.map((pr) => (
                 <SwiperSlide>
-                    <PastProject key={pr.id} {...pr} />
+                    <Box className={CLASS_WRAPPER_PASS_PROJECT}>
+                        <PastProject key={pr.id} {...pr} />
+                    </Box>
                 </SwiperSlide>
             ))}
         </CustomSwiper>

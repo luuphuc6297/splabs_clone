@@ -3,7 +3,7 @@ import { styled } from '@mui/system';
 import React from 'react';
 
 const ImageWrapper = styled(Box)(() => ({
-    width: 160,
+    // width: 160, // why u fixed width in here? if fixed wide, i think have a lot issue when responsive.
     height: 160,
     borderRadius: '16px',
     display: 'flex',
