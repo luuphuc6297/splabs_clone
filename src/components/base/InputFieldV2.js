@@ -1,13 +1,14 @@
 import { Box, TextField, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import React from 'react';
 
 const CustomInput = styled(TextField)(({ theme }) => ({
     '.MuiOutlinedInput-root': {},
     '.MuiOutlinedInput-input': {
         background: '#ffffff',
         textAlign: 'center',
-        borderRadius: '30px',
-        color: '#65686f',
+        borderRadius: '30px !important',
+        color: '#65686f !important',
         padding: '0 24px',
         height: '60px',
     },
@@ -17,13 +18,14 @@ const CustomInput = styled(TextField)(({ theme }) => ({
     },
 }));
 
-export function InputFieldV2({ error, ...props }) {
+export const InputFieldV2 = React.forwardRef(({ error, ...props }, ref) => {
     return (
         <Box sx={{ position: 'relative' }}>
             <CustomInput
                 variant="outlined"
                 InputLabelProps={{ shrink: false }}
                 fullWidth
+                ref={ref}
                 {...props}
             />
             {error?.message && (
@@ -42,4 +44,4 @@ export function InputFieldV2({ error, ...props }) {
             )}
         </Box>
     );
-}
+});

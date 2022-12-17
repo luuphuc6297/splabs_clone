@@ -1,31 +1,22 @@
 import { Box, Divider, Grid, Typography } from '@mui/material';
-import { grey } from '@mui/material/colors';
 import { styled } from '@mui/system';
 import { BsTelegram } from 'react-icons/bs';
-
-const PassProjectWrapper = styled(Grid)(({ theme }) => ({
-    display: 'flex',
-    padding: 16,
-    border: '1px solid #f5f5f5',
-    borderRadius: 16,
-    margin: 0,
-    width: '100% !important',
-    '.MuiGrid-root': {
-        padding: 0,
-    },
-    '.info-project': {
-        paddingLeft: 16,
-    },
-}));
 
 const LogoWrapper = styled(Box)(({ theme }) => ({
     width: '100%',
     height: '100%',
-    borderRadius: 8,
+    borderRadius: 24,
     border: '1px solid #f5f5f5',
+    overflow: 'hidden',
+    boxSizing: 'border-box',
+    display: 'flex',
 }));
 
-const Logo = styled('img')(({ theme }) => ({}));
+const Logo = styled('img')(({ theme }) => ({
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+}));
 
 const InfoWrapper = styled(Box)(({ theme }) => ({
     display: 'flex',
@@ -34,23 +25,16 @@ const InfoWrapper = styled(Box)(({ theme }) => ({
 
 const Name = styled(Typography)(({ theme }) => ({
     textAlign: 'left',
-    fontWeight: 'bold',
-    fontSize: 18,
-    marginBottom: 8,
+    fontFamily: 'PoppinsBold',
+    fontSize: 24,
+    marginTop: 8,
 }));
 
 const Description = styled(Typography)(({ theme }) => ({
-    fontWeight: 'normal',
     fontSize: 14,
     textAlign: 'left',
+    marginTop: 12,
     marginBottom: 24,
-}));
-
-const CommunityWrapper = styled(Box)(({ theme }) => ({
-    display: 'flex',
-    fontSize: 14,
-    marginBottom: 24,
-    gap: 30,
 }));
 
 const TelegramIcon = styled(BsTelegram)(({ theme }) => ({
@@ -66,88 +50,119 @@ const CommunityInfo = styled(Typography)(({ theme }) => ({
 }));
 
 const QrBox = styled('img')(({ theme }) => ({
-    width: 56,
-    height: 56,
+    width: 100,
+    height: 100,
 }));
 
 export const PastProject = ({ logo, name, description, community, qr }) => {
     return (
-        <PassProjectWrapper container spacing={2}>
-            <Grid
-                sx={{
-                    padding: 0,
-                }}
-                item
-                xs={5}
-                sm={5}
-            >
-                <LogoWrapper>
-                    <Logo src={logo} loading="lazy" />
-                </LogoWrapper>
-            </Grid>
-            <Grid className="info-project" item xs={7} sm={7}>
-                <InfoWrapper>
-                    <Typography sx={{ marginBottom: 1, textAlign: 'left' }}>
-                        Past Project
-                    </Typography>
-                    <Divider
-                        sx={{
-                            width: '12%',
-                            marginBottom: 1,
-                            color: grey[50],
-                        }}
-                    />
-                    <Name>{name}</Name>
-                    <Description>{description}</Description>
-                    <CommunityWrapper>
-                        <Box
+        <Box
+            sx={{
+                padding: '40px',
+                border: '1px solid #f5f5f5',
+                borderRadius: '24px',
+            }}
+        >
+            <Grid container spacing={4}>
+                <Grid item xs={5} sm={5}>
+                    <LogoWrapper>
+                        <Logo src={logo} loading="lazy" />
+                    </LogoWrapper>
+                </Grid>
+                <Grid item xs={7} sm={7}>
+                    <InfoWrapper>
+                        <Typography
                             sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'start',
-                                flexDirection: 'column',
+                                marginBottom: 1,
+                                textAlign: 'left',
+                                fontSize: 18,
                             }}
                         >
-                            <Box sx={{ display: 'flex', marginBottom: 1 }}>
-                                <TelegramIcon />
-                                <CommunityInfo>
-                                    Group/ 12.5 members
-                                </CommunityInfo>
-                            </Box>
-                            <Box sx={{ display: 'flex' }}>
-                                <TelegramIcon />
-                                <CommunityInfo>
-                                    Group/ 12.5 members
-                                </CommunityInfo>
-                            </Box>
+                            Past Project
+                        </Typography>
+                        <Divider
+                            sx={{
+                                width: '12%',
+                                padding: '1px',
+                                borderColor: '#ffffff',
+                                background: '#ffffff',
+                                borderRadius: '4px',
+                            }}
+                        />
+                        <Name>{name}</Name>
+                        <Description>{description}</Description>
+                        <Box>
+                            <Grid
+                                container
+                                rowSpacing={{ xs: 2 }}
+                                columnSpacing={{ xs: 2 }}
+                            >
+                                <Grid
+                                    item
+                                    xs={6}
+                                    sx={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                    }}
+                                >
+                                    <TelegramIcon />
+                                    <CommunityInfo>
+                                        Group/ 12.5 members
+                                    </CommunityInfo>
+                                </Grid>
+                                <Grid
+                                    item
+                                    xs={6}
+                                    sx={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                    }}
+                                >
+                                    <TelegramIcon />
+                                    <CommunityInfo>
+                                        Group/ 12.5 members
+                                    </CommunityInfo>
+                                </Grid>
+                                <Grid
+                                    item
+                                    xs={6}
+                                    sx={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                    }}
+                                >
+                                    <TelegramIcon />
+                                    <CommunityInfo>
+                                        Group/ 12.5 members
+                                    </CommunityInfo>
+                                </Grid>
+                                <Grid
+                                    item
+                                    xs={6}
+                                    sx={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                    }}
+                                >
+                                    <TelegramIcon />
+                                    <CommunityInfo>
+                                        Group/ 12.5 members
+                                    </CommunityInfo>
+                                </Grid>
+                            </Grid>
                         </Box>
                         <Box
                             sx={{
                                 display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'start',
-                                flexDirection: 'column',
+                                justifyContent: 'end',
+                                marginTop: 3,
                             }}
                         >
-                            <Box sx={{ display: 'flex', marginBottom: 1 }}>
-                                <TelegramIcon />
-                                <CommunityInfo>
-                                    Group/ 12.5 members
-                                </CommunityInfo>
-                            </Box>
-                            <Box sx={{ display: 'flex' }}>
-                                <TelegramIcon />
-                                <CommunityInfo>
-                                    Group/ 12.5 members
-                                </CommunityInfo>
-                            </Box>
+                            <QrBox src={qr} />
                         </Box>
-                    </CommunityWrapper>
-                    <Box sx={{ display: 'flex', justifyContent: 'end' }}>
-                        <QrBox src={qr} />
-                    </Box>
-                </InfoWrapper>
+                    </InfoWrapper>
+                </Grid>
             </Grid>
-        </PassProjectWrapper>
+        </Box>
     );
 };

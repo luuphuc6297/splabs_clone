@@ -1,5 +1,5 @@
 import { Box } from '@mui/system';
-import { CustomSwiper, MemberCard, SectionWrapper } from 'components';
+import { CustomSwiper, SectionWrapper } from 'components';
 import { ProjectItemCard } from 'components/base/ProjectItemCard';
 import { IconChevronLeftSvg } from 'components/Svgs/IconChevronLeftSvg';
 import { IconChevronRightSvg } from 'components/Svgs/IconChevronRightSvg';
@@ -11,7 +11,7 @@ export const ListProject = () => {
     const swiperRef = useRef(null);
 
     return (
-        <SectionWrapper sx={{ marginTop: 4, position: 'relative' }}>
+        <SectionWrapper sx={{ marginTop: 5, position: 'relative' }}>
             <Box>
                 <CustomSwiper
                     loop={true}
@@ -40,7 +40,7 @@ export const ListProject = () => {
                     ))}
                 </CustomSwiper>
             </Box>
-            <Box slot="container-start">
+            <Box>
                 <Box
                     sx={{
                         position: 'absolute',

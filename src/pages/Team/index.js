@@ -47,7 +47,7 @@ export const TheTeam = () => {
                     ))}
                 </CustomSwiper>
             </Box>
-            <Box slot="container-start">
+            <Box>
                 <Box
                     sx={{
                         position: 'absolute',

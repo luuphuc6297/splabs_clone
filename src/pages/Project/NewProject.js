@@ -13,48 +13,28 @@ const CLASS_PREV = 'slidePrevClass';
 export const NewProject = () => {
     const swiperRef = useRef(null);
 
-    const renderMemberCards = React.useCallback(() => {
-        return (
-            <CustomSwiper
-                slideToClickedSlide
-                containerModifierClass={CLASS_CONTAINER}
-                slideActiveClass={CLASS_ACTIVE}
-                slideNextClass={CLASS_NEXT}
-                slidePrevClass={CLASS_PREV}
-                style={{ textAlign: 'center' }}
-                loop={true}
-                modules={[Autoplay]}
-                spaceBetween={1}
-                centeredSlides
-                slidesPerView={1}
-                onSwiper={(swiper) => {
-                    swiperRef.current = swiper;
-                }}
-                autoPlay
-                breakpoints={{
-                    600: {
-                        slidesPerView: 1.25,
-                        spaceBetween: 1,
-                    },
-                }}
-            >
-                {pastProjects.payload.map(
-                    ({ id, logo, name, description, community, qr }) => (
-                        <SwiperSlide>
-                            <PastProject
-                                key={id}
-                                id={id}
-                                name={name}
-                                description={description}
-                                community={community}
-                                qr={qr}
-                            />
-                        </SwiperSlide>
-                    )
-                )}
-            </CustomSwiper>
-        );
-    }, []);
-
-    return <>{renderMemberCards()}</>;
+    return (
+        <CustomSwiper
+            containerModifierClass={CLASS_CONTAINER}
+            slideActiveClass={CLASS_ACTIVE}
+            slideNextClass={CLASS_NEXT}
+            slidePrevClass={CLASS_PREV}
+            style={{ textAlign: 'center' }}
+            loop={true}
+            modules={[Autoplay]}
+            spaceBetween={1}
+            centeredSlides
+            slidesPerView={1.25}
+            onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+            }}
+            autoPlay
+        >
+            {pastProjects.payload.map((pr) => (
+                <SwiperSlide>
+                    <PastProject key={pr.id} {...pr} />
+                </SwiperSlide>
+            ))}
+        </CustomSwiper>
+    );
 };

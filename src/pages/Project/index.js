@@ -9,7 +9,7 @@ export const Project = () => {
                 Project
             </SectionTitle>
             <NewProject />
-            <SectionWrapperFullWidth slot="container-start">
+            <SectionWrapperFullWidth>
                 <ListProject />
             </SectionWrapperFullWidth>
         </SectionWrapperFullWidth>

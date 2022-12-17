@@ -2,26 +2,27 @@ import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import React from 'react';
 
-const ImageWrapper = styled(Box)(({ theme }) => ({
-    borderRadius: '8px',
+const ImageWrapper = styled(Box)(() => ({
+    borderRadius: '16px',
     display: 'flex',
     margin: '0 auto',
     overflow: 'hidden',
+    border: '1px solid #ffffff',
 }));
-const Avatar = styled('img')(({ theme }) => ({
+const Avatar = styled('img')(() => ({
     objectFit: 'cover',
     width: '100%',
     height: '100%',
-    maxHeight: 120,
+    maxHeight: 220,
 }));
 
-const Name = styled(Typography)(({ theme }) => ({
-    marginTop: '10px',
-    marginBottom: '4px',
-    fontWeight: 600,
+const Name = styled(Typography)(() => ({
+    marginTop: '16px',
+    marginBottom: '8px',
+    fontFamily: 'PoppinsSemiBold',
 }));
 
-const Position = styled(Typography)(({ theme }) => ({}));
+const Position = styled(Typography)(() => ({}));
 
 export const ProjectItemCard = React.memo(({ image, name, title }) => {
     return (
@@ -37,15 +38,11 @@ export const ProjectItemCard = React.memo(({ image, name, title }) => {
                 <Avatar src={image} loading="lazy" />
             </ImageWrapper>
 
-            <Box
-                sx={{
-                    padding: '0 10px',
-                }}
-            >
-                <Name align="left" variant="h6">
+            <Box>
+                <Name align="center" variant="h6">
                     {name}
                 </Name>
-                <Position align="left" color="#8B8B8B" variant="subtitle2">
+                <Position align="center" color="#8B8B8B" variant="subtitle2">
                     {title}
                 </Position>
             </Box>
