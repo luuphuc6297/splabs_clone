@@ -50,9 +50,9 @@ const LandingPage = () => {
                 }}
             >
                 <TheTeam />
+                <Project />
                 <Partners />
                 <StartGrowing />
-                <Project />
             </SectionWrapperFullWidth>
 
             <Explore />

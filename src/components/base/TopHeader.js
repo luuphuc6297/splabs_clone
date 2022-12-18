@@ -8,7 +8,7 @@ import {
     AiOutlineFacebook,
     AiOutlineInstagram,
 } from 'react-icons/ai';
-import { useTranslation } from 'react-i18next';
+import ButtonChangeLanguage from './ButtonChangeLanguage';
 
 const StyledTopHeader = styled(Box)(({ theme }) => ({
     width: '100vw',
@@ -79,13 +79,10 @@ const SocialLink = styled('a')(({ theme }) => ({
     color: theme.palette.text.primary,
     textDecoration: 'none',
     cursor: 'pointer',
+    display: 'flex',
 }));
 
 export const TopHeader = () => {
-    const { i18n } = useTranslation();
-
-    const changeLanguageHandler = (lang) => i18n.changeLanguage(lang);
-
     return (
         <StyledTopHeader>
             <SectionWrapper
@@ -130,6 +127,7 @@ export const TopHeader = () => {
                             <AiOutlineInstagram size={24} />
                         </SocialLink>
                     </Box>
+
                     <Box>
                         <SocialLink
                             href="https://twitter.com/SPLabs_info"
@@ -138,6 +136,10 @@ export const TopHeader = () => {
                         >
                             <AiFillTwitterSquare size={24} />
                         </SocialLink>
+                    </Box>
+
+                    <Box>
+                        <ButtonChangeLanguage />
                     </Box>
                 </SocialNetworksArea>
             </SectionWrapper>
