@@ -1,11 +1,11 @@
 import { Box, Divider, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import { BsTelegram } from 'react-icons/bs';
+import { useMobile } from 'hooks/useMobile';
 
 const LogoWrapper = styled(Box)(({ theme }) => ({
     width: 480,
     height: 344,
-    marginRight: 24,
     borderRadius: 8,
     border: '1px solid #f5f5f5',
     overflow: 'hidden',
@@ -56,22 +56,29 @@ const QrBox = styled('img')(({ theme }) => ({
 }));
 
 export const PastProject = ({ logo, name, description, community, qr }) => {
+    const isMobile = useMobile();
+
     return (
         <Box
             sx={{
                 padding: 3,
                 border: '1px solid #f5f5f5',
                 borderRadius: '16px',
-                height: 360,
+                height: isMobile ? 460 : 360,
                 display: 'flex',
                 alignItems: 'center',
+                flexDirection: isMobile ? 'column' : 'initial',
+                gap: 2,
             }}
         >
-            <LogoWrapper>
+            <LogoWrapper
+                sx={{ width: isMobile ? '100%' : 480 }}
+                className="ádasdasdasdasd"
+            >
                 <Logo src={logo} loading="lazy" />
             </LogoWrapper>
 
-            <InfoWrapper>
+            <InfoWrapper className="dasdasdasdasd">
                 <Typography
                     sx={{
                         marginBottom: 1,
@@ -148,10 +155,15 @@ export const PastProject = ({ logo, name, description, community, qr }) => {
                     sx={{
                         display: 'flex',
                         justifyContent: 'end',
-                        marginTop: 3,
                     }}
                 >
-                    <QrBox src={qr} />
+                    <QrBox
+                        sx={{
+                            width: isMobile ? 50 : 80,
+                            height: isMobile ? 50 : 80,
+                        }}
+                        src={qr}
+                    />
                 </Box>
             </InfoWrapper>
         </Box>

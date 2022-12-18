@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import { styled } from '@mui/system';
-import './style.scss';
+// import './style.scss';
 
 const options = {
     shouldForwardProp: (prop) => prop !== 'gradientColors',

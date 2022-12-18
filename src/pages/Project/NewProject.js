@@ -20,11 +20,17 @@ export const NewProject = () => {
             modules={[Autoplay]}
             spaceBetween={1}
             centeredSlides
-            slidesPerView={1.25}
+            slidesPerView={1}
             onSwiper={(swiper) => {
                 swiperRef.current = swiper;
             }}
             autoPlay
+            breakpoints={{
+                600: {
+                    slidesPerView: 1.25,
+                    spaceBetween: 30,
+                },
+            }}
         >
             {pastProjects.payload.map((pr) => (
                 <SwiperSlide>
