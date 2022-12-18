@@ -3,16 +3,17 @@ import {
     CategoryCard,
     SectionCaption,
     SectionTitle,
-    SectionWrapper
+    SectionWrapper,
 } from 'components';
 import { useTablet } from 'hooks/useTablet';
 import categories from './categories.json';
 
 export const MakeDifferent = () => {
     const { isTablet } = useTablet();
-    console.log('isTablet', isTablet);
+
     return (
         <SectionWrapper
+            id="influencer"
             sx={{
                 display: 'flex',
                 justifyContent: 'space-between',
@@ -22,7 +23,9 @@ export const MakeDifferent = () => {
                 gap: isTablet ? '32px' : '0',
             }}
         >
-            <Box sx={{ width: '100%' }}>
+            <Box
+                sx={{ width: '100%', textAlign: isTablet ? 'center' : 'left' }}
+            >
                 <SectionTitle>WHAT MAKES</SectionTitle>
                 <SectionTitle>US DIFFERENT</SectionTitle>
                 <SectionCaption

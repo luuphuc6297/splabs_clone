@@ -1,12 +1,13 @@
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import { SectionWrapper } from 'components';
+
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram,
+    AiOutlineInstagram
 } from 'react-icons/ai';
 import ButtonChangeLanguage from './ButtonChangeLanguage';
 
@@ -36,37 +37,50 @@ const SocialNetworksArea = styled(Box)(({ theme }) => ({
     },
 }));
 
-const EmailInfo = styled(Box)(({ theme }) => ({
+const EmailInfo = styled('a')(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     margin: '8px 0',
+    textDecoration: 'none',
+    color: theme.palette.text.primary,
 }));
 
-const Email = styled('a')(({ theme }) => ({
+const Email = styled(Typography)(({ theme }) => ({
     fontSize: 12,
     marginRight: 8,
     cursor: 'pointer',
     textDecoration: 'none',
     color: theme.palette.text.primary,
+    [theme.breakpoints.down('sm')]: {
+        display: 'none',
+    },
 }));
 
 const EmailIcon = styled(EmailOutlinedIcon)(({ theme }) => ({
     width: 24,
     height: 24,
     marginRight: 4,
+    [theme.breakpoints.down('sm')]: {
+        marginRight: 16,
+    },
 }));
 
-const PhoneInfo = styled(Box)(({ theme }) => ({
+const PhoneInfo = styled('a')(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     margin: '8px 0',
+    textDecoration: 'none',
+    color: theme.palette.text.primary,
 }));
 
-const Phone = styled('a')(({ theme }) => ({
+const Phone = styled(Typography)(({ theme }) => ({
     fontSize: 12,
     cursor: 'pointer',
     textDecoration: 'none',
     color: theme.palette.text.primary,
+    [theme.breakpoints.down('sm')]: {
+        display: 'none',
+    },
 }));
 
 const PhoneIcon = styled(PhoneOutlinedIcon)(({ theme }) => ({
@@ -94,18 +108,14 @@ export const TopHeader = () => {
             >
                 <ContactInfoArea>
                     {/* Email */}
-                    <EmailInfo>
+                    <EmailInfo href="mailto:info@splabs.info">
                         <EmailIcon />
-                        <Email href="mailto:info@splabs.info">
-                            info@splabs.info
-                        </Email>
+                        <Email>info@splabs.info</Email>
                     </EmailInfo>
                     {/* Phone */}
-                    <PhoneInfo>
+                    <PhoneInfo href="tel:+987 8762 866 82">
                         <PhoneIcon />
-                        <Phone href="tel:+987 8762 866 82">
-                            +987 8762 866 82
-                        </Phone>
+                        <Phone>+987 8762 866 82</Phone>
                     </PhoneInfo>
                 </ContactInfoArea>
                 <SocialNetworksArea>

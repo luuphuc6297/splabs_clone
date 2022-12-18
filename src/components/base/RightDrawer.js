@@ -13,7 +13,7 @@ export const RightDrawer = ({ isTablet, showSidebar, handleClose }) => {
         <Drawer open={showSidebar} anchor="right" onClose={handleClose}>
             <DrawerBox
                 sx={{
-                    width: isTablet ? 300 : 300,
+                    width: isTablet ? 320 : 320,
                 }}
             >
                 <Box

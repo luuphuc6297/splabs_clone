@@ -3,22 +3,22 @@ import {
     ProjectCard,
     SectionCaption,
     SectionTitle,
-    SectionWrapper
+    SectionWrapper,
 } from 'components';
 import projects from './projects.json';
 
 export const EnforceProject = () => {
     return (
-        <SectionWrapper sx={{ marginBottom: 21 }}>
-            <SectionTitle sx={{ textAlign: 'center' }}>Enforce</SectionTitle>
+        <SectionWrapper id="the_studio" sx={{ marginBottom: 21 }}>
+            <SectionTitle sx={{ textAlign: 'center' }}>ENFORCE</SectionTitle>
             <SectionTitle sx={{ textAlign: 'center' }}>
-                Your Project
+                YOUR PROJECT
             </SectionTitle>
             <SectionCaption
                 sx={{
                     textAlign: 'center',
                     margin: '32px auto',
-                    maxWidth: 500,
+                    maxWidth: 560,
                 }}
             >
                 We aim to become the most trustworthy community, breaking

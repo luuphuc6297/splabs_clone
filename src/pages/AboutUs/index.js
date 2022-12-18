@@ -1,4 +1,4 @@
-import { Box, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import { SectionWrapper } from 'components';
 import { Banner } from './Banner';
 import { Description } from './Description';
@@ -7,10 +7,10 @@ import { Presentation } from './Presentation';
 const AboutUs = () => {
     return (
         <SectionWrapper
-            id=""
+            id="about_us"
             sx={{
-                marginBottom: 20,
-                paddingTop: 20,
+                marginBottom: 24,
+                paddingTop: 24,
             }}
         >
             <Grid container columnSpacing={3} rowSpacing={3}>
