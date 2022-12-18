@@ -1,28 +1,32 @@
 {
     "payload": [
         {
-            "id": "ceo",
-            "name": "Step watch is a Web3 walking",
-            "title": "Step watch is a Web3 walking fitness",
-            "image": "/images/members/ceo.png"
+            "id": "immortal_war",
+            "logo": "/images/past_projects/immortal_war.png",
+            "title": "Market Roadmap",
+            "description": "Brand Positioning & Messaging",
+            "link": "https://stepwatch.feliciastation.com/"
         },
         {
-            "id": "cso",
-            "name": "Step watch is a Web3 walking",
-            "title": "Step watch is a Web3 walking fitness",
-            "image": "/images/members/cso.png"
+            "id": "infinity_angel",
+            "logo": "/images/past_projects/infinity.png",
+            "title": "Market Roadmap",
+            "description": "Brand Positioning & Messaging",
+            "link": "https://infinityangel.io/"
         },
         {
-            "id": "Step watch is a Web3 walking",
-            "name": "Step watch is a Web3 walking",
-            "title": "Step watch is a Web3 walking fitness",
-            "image": "/images/members/coo.png"
+            "id": "aqua_pnix",
+            "logo": "/images/past_projects/aqua_pnix.png",
+            "title": "Market Roadmap",
+            "description": "Brand Positioning & Messaging",
+            "link": "https://aquapnix.com/"
         },
         {
-            "id": "coo1",
-            "name": "Step watch is a Web3 walking",
-            "title": "Step watch is a Web3 walking fitness",
-            "image": "/images/members/coo.png"
+            "id": "gunz",
+            "logo": "/images/past_projects/gunz.png",
+            "title": "Market Roadmap",
+            "description": "Brand Positioning & Messaging",
+            "link": "https://gunzduels.com/"
         }
     ]
 }

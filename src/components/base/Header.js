@@ -1,25 +1,37 @@
 import { Box, Drawer } from '@mui/material';
-import { SectionWrapper, SPLabsLogo } from 'components';
-import React, { useState, useEffect } from 'react';
-import { NavigateBar } from './NavigateBar';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { IconGridSvg } from 'components/Svgs/IconGridSvg';
-import { IconArrowLeftSvg } from 'components/Svgs/IconArrowLeftSvg';
-import { Link as LinkReactScroll } from 'react-scroll';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import { styled } from '@mui/system';
-
-export const ABOUT_US_UID = 'about_us';
-export const PARTNERS_UID = 'partners';
+import { SectionWrapper, SPLabsLogo } from 'components';
+import { IconArrowLeftSvg } from 'components/Svgs/IconArrowLeftSvg';
+import { IconGridSvg } from 'components/Svgs/IconGridSvg';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { Link as LinkReactScroll } from 'react-scroll';
+import { NavigateBar } from './NavigateBar';
 
 const navigateItems = [
     { id: 'home', label: 'home', link: '/' },
     { id: 'about_us', label: 'about_us', link: '/#about-us', internal: true },
-    { id: 'the_studio', label: 'the_studio', link: '/#the-studio' },
-    { id: 'influencer', label: 'influencer', link: '/#influencer' },
-    { id: 'marketing', label: 'marketing', link: '/#marketing' },
+    {
+        id: 'the_studio',
+        label: 'the_studio',
+        link: '/#the-studio',
+        internal: true,
+    },
+    {
+        id: 'influencer',
+        label: 'influencer',
+        link: '/#influencer',
+        internal: true,
+    },
+    {
+        id: 'marketing',
+        label: 'marketing',
+        link: '/#marketing',
+        internal: true,
+    },
     { id: 'partners', label: 'partners', link: '/#partners', internal: true },
 ];
 
@@ -45,8 +57,9 @@ export const Header = () => {
 
     const { t } = useTranslation('translation');
 
-    const [scrollPositionToggle, setScrollPositionToggle] = useState(false);
-    const [openDrawerMenu, setOpenDrawerMenu] = useState(false);
+    const [scrollPositionToggle, setScrollPositionToggle] =
+        React.useState(false);
+    const [openDrawerMenu, setOpenDrawerMenu] = React.useState(false);
 
     const handleScroll = () => {
         const position = window.pageYOffset;
@@ -57,7 +70,7 @@ export const Header = () => {
         }
     };
 
-    useEffect(() => {
+    React.useEffect(() => {
         window.addEventListener('scrollSection', handleScroll, {
             passive: true,
         });
@@ -88,7 +101,7 @@ export const Header = () => {
                     open={openDrawerMenu}
                     variant="temporary"
                     onClose={() => setOpenDrawerMenu(false)}
-                    PaperProps={{ sx: { width: matchesXS ? '100%' : 300 } }}
+                    PaperProps={{ sx: { width: matchesXS ? '100%' : 320 } }}
                 >
                     <Box>
                         <Box

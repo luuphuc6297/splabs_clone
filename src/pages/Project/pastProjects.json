@@ -2,19 +2,21 @@
     "payload": [
         {
             "id": "step_watch",
-            "logo": "/images/past_projects/291.png",
+            "logo": "/images/past_projects/step_watch.png",
             "name": "Step Watch",
             "description": "Step watch is a Web3 walking fitness reward application that allows user to exercise with their NFT and earn money",
             "community": "",
-            "qr": "/images/email_qr.png"
+            "qr": "/images/email_qr.png",
+            "link": "https://stepwatch.feliciastation.com/"
         },
         {
             "id": "infinity_angel",
-            "logo": "",
+            "logo": "/images/past_projects/infinity.png",
             "name": "Infinity Angel",
             "description": "Step watch is a Web3 walking fitness reward application that allows user to exercise with their NFT and earn money",
             "community": "",
-            "qr": "/images/email_qr.png"
+            "qr": "/images/email_qr.png",
+            "link": "https://infinityangel.io/"
         },
         {
             "id": "infinity_angel_1",

@@ -5,16 +5,15 @@ import {
     SectionTitle,
     SectionWrapper,
     SectionWrapperFullWidth,
-    SPLabsLogo,
+    SPLabsLogo
 } from 'components';
 import { useMobile } from 'hooks/useMobile';
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram,
+    AiOutlineInstagram
 } from 'react-icons/ai';
 
-import { ABOUT_US_UID } from './Header';
 
 const FaceBookIcon = styled(AiOutlineFacebook)(({ theme }) => ({
     width: 24,
@@ -66,10 +65,7 @@ export const Footer = () => {
     const isMobile = useMobile();
 
     return (
-        <SectionWrapperFullWidth
-            id={ABOUT_US_UID}
-            sx={{ background: '#262626' }}
-        >
+        <SectionWrapperFullWidth id="contact_us" sx={{ background: '#262626' }}>
             <SectionWrapper sx={{ background: '#262626', display: 'flex' }}>
                 <Box
                     sx={{

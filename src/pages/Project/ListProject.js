@@ -2,7 +2,7 @@ import { CustomSwiper, SectionWrapper } from 'components';
 import { ProjectItemCard } from 'components/base/ProjectItemCard';
 import { useRef } from 'react';
 import { SwiperSlide } from 'swiper/react';
-import members from './ListProject.json';
+import projects from './ListProject.json';
 import { CustomNavigationSwiper } from 'components/base/CustomNavigationSwiper';
 
 export const ListProject = () => {
@@ -25,16 +25,19 @@ export const ListProject = () => {
                     },
                 }}
             >
-                {members.payload.map(({ id, name, title, image }) => (
-                    <SwiperSlide key={id}>
-                        <ProjectItemCard
-                            id={id}
-                            name={name}
-                            title={title}
-                            image={image}
-                        />
-                    </SwiperSlide>
-                ))}
+                {projects.payload.map(
+                    ({ id, logo, title, description, link }) => (
+                        <SwiperSlide key={id}>
+                            <ProjectItemCard
+                                id={id}
+                                logo={logo}
+                                title={title}
+                                description={description}
+                                link={link}
+                            />
+                        </SwiperSlide>
+                    )
+                )}
             </CustomSwiper>
 
             <CustomNavigationSwiper swiperRef={swiperRef} />

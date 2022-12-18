@@ -5,7 +5,6 @@ import React from 'react';
 const StepBox = styled(Box)(({ theme }) => ({
     width: 32,
     height: 32,
-    border: '0.5px solid',
     borderRadius: 8,
     marginBottom: 16,
     display: 'flex',
@@ -29,7 +28,14 @@ const Caption = styled(Typography)(({ theme }) => ({}));
 export const ProjectCard = React.memo(({ step, title, caption }) => {
     return (
         <Box>
-            <StepBox>
+            <StepBox
+                sx={{
+                    background: `url('/images/border/border_step_number.png')`,
+                    backgroundPosition: 'center',
+                    backgroundSize: '150% 150%',
+                    objectFit: 'center',
+                }}
+            >
                 <Step>{step}</Step>
             </StepBox>
             <TitleBox>

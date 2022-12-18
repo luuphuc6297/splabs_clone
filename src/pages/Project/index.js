@@ -6,12 +6,10 @@ export const Project = () => {
     return (
         <SectionWrapperFullWidth sx={{ paddingBottom: 20 }}>
             <SectionTitle sx={{ textAlign: 'center', marginBottom: 5 }}>
-                Project
+                PROJECTS
             </SectionTitle>
             <NewProject />
-            {/* <SectionWrapperFullWidth> */}
-                <ListProject />
-            {/* </SectionWrapperFullWidth> */}
+            <ListProject />
         </SectionWrapperFullWidth>
     );
 };
