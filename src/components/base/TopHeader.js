@@ -8,6 +8,7 @@ import {
     AiOutlineFacebook,
     AiOutlineInstagram,
 } from 'react-icons/ai';
+import { useTranslation } from 'react-i18next';
 
 const StyledTopHeader = styled(Box)(({ theme }) => ({
     width: '100vw',
@@ -81,6 +82,10 @@ const SocialLink = styled('a')(({ theme }) => ({
 }));
 
 export const TopHeader = () => {
+    const { i18n } = useTranslation();
+
+    const changeLanguageHandler = (lang) => i18n.changeLanguage(lang);
+
     return (
         <StyledTopHeader>
             <SectionWrapper
