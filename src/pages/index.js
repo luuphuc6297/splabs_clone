@@ -1,5 +1,10 @@
 import { homeBackground, secondBackground } from 'assets';
-import { Footer, Header, SectionWrapperFullWidth, TopHeader } from 'components';
+import {
+    Footer,
+    Header,
+    SectionWrapperFullWidth,
+    TopHeader
+} from 'components';
 import AboutUs from './AboutUs';
 import { EnforceProject } from './Enforce';
 import { Explore } from './Explore';
@@ -54,7 +59,6 @@ const LandingPage = () => {
                 <Partners />
                 <StartGrowing />
             </SectionWrapperFullWidth>
-
             <Explore />
             <Footer />
         </>

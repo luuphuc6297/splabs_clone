@@ -1,16 +1,16 @@
-import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import EditIcon from '@mui/icons-material/Edit';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import EditIcon from '@mui/icons-material/Edit';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { alpha, styled } from '@mui/material/styles';
+import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { getLanguage } from 'utils';
 
 const LIST_LANGUAGE_SUPPORT = {
-    VI: { name: 'Viet Nam', code: 'VI', icon: <EditIcon /> },
-    EN: { name: 'English', code: 'EN', icon: <EditIcon /> },
+    vi: { name: 'VietNam', code: 'vi', icon: <EditIcon /> },
+    en: { name: 'English', code: 'en', icon: <EditIcon /> },
 };
 
 const StyledMenu = styled((props) => (
@@ -58,6 +58,7 @@ const StyledMenu = styled((props) => (
 
 const StyleButtonChangeLanguage = styled(Button)(() => ({
     background: 'none',
+    textTransform: 'capitalize',
     '&:hover': {
         background: 'none',
     },
@@ -69,6 +70,7 @@ export default function ButtonChangeLanguage() {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
+
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -76,8 +78,9 @@ export default function ButtonChangeLanguage() {
         setAnchorEl(null);
     };
 
-    const handleClickItem = (codeLanguage) => {
-        i18n.changeLanguage(codeLanguage.toLowerCase());
+    const changeLanguageHandler = (lang) => {
+        console.log('codeLanguage', lang);
+        i18n.changeLanguage(lang);
         setAnchorEl(null);
     };
 
@@ -85,7 +88,7 @@ export default function ButtonChangeLanguage() {
         return;
     }
 
-    const currentLang = currentLanguage.toUpperCase();
+    const currentLang = currentLanguage;
 
     return (
         <div>
@@ -119,11 +122,12 @@ export default function ButtonChangeLanguage() {
                         return (
                             <MenuItem
                                 key={index}
-                                onClick={() => handleClickItem(code)}
+                                vc
+                                onClick={() => changeLanguageHandler(code)}
                                 disableRipple
                             >
-                                {icon}
                                 {name}
+                                {/* {icon} */}
                             </MenuItem>
                         );
                     }

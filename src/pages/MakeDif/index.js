@@ -3,23 +3,23 @@ import {
     CategoryCard,
     SectionCaption,
     SectionTitle,
-    SectionWrapper,
+    SectionWrapper
 } from 'components';
-import React from 'react';
+import { useTablet } from 'hooks/useTablet';
 import categories from './categories.json';
-import { useMobile } from 'hooks/useMobile';
 
 export const MakeDifferent = () => {
-    const isMobile = useMobile();
+    const { isTablet } = useTablet();
+    console.log('isTablet', isTablet);
     return (
         <SectionWrapper
             sx={{
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                paddingBottom: 20,
-                flexDirection: isMobile ? 'column' : 'initial',
-                gap: isMobile ? '30px' : '0',
+                paddingBottom: 24,
+                flexDirection: isTablet ? 'column' : 'initial',
+                gap: isTablet ? '32px' : '0',
             }}
         >
             <Box sx={{ width: '100%' }}>
@@ -28,7 +28,7 @@ export const MakeDifferent = () => {
                 <SectionCaption
                     sx={{
                         marginTop: 2,
-                        maxWidth: isMobile ? '100%' : 300,
+                        maxWidth: isTablet ? '100%' : 320,
                     }}
                 >
                     Exciting results demonstrate some of what our team can do
