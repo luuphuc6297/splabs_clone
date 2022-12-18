@@ -2,20 +2,24 @@ import { Box } from '@mui/material';
 import { SectionTitle, SectionCaption } from 'components';
 
 export const Description = () => {
-  return (
-    <Box sx={{ width: '100%' }}>
-      <SectionTitle sx={{ marginBottom: 2 }}>ABOUT US</SectionTitle>
-      <SectionCaption sx={{ textAlign: 'left' }}>
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English. Many desktop publishing packages and web
-        page editors now use Lorem Ipsum as their default model text, and a
-        search for 'lorem ipsum' will uncover many web sites still in their
-        infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose
-      </SectionCaption>
-    </Box>
-  );
+    return (
+        <Box sx={{ width: '100%' }}>
+            <SectionTitle sx={{ marginBottom: 2 }}>ABOUT US</SectionTitle>
+            <SectionCaption sx={{ textAlign: 'left', marginBottom: 3 }}>
+                SPLabs is a blockchain hub operating in countries across the
+                globe Vietnam, Korea, and Japan, and has created various GameFi
+                metaverse WEB 3.0-based platforms and products. With experience
+                building on BNB, AVAX, ETH, MATIC, and GATE. It is a company
+                that challenges the global Blockchain Industry with over 30+
+                Degens working with us. SPLabs Japan was recently opened due to
+                the rising popularity of blockchain within the country.
+            </SectionCaption>
+            <SectionCaption sx={{ textAlign: 'left' }}>
+                SPLabs has built up various games and applications on WEB3 and
+                is a company that strives to enable various projects around the
+                world to float with blockchain through the experience SPLabs has
+                gathered within the projects they have made.
+            </SectionCaption>
+        </Box>
+    );
 };

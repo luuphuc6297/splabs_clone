@@ -3,7 +3,7 @@ import {
     ProjectCard,
     SectionCaption,
     SectionTitle,
-    SectionWrapper,
+    SectionWrapper
 } from 'components';
 import projects from './projects.json';
 
@@ -27,7 +27,7 @@ export const EnforceProject = () => {
             </SectionCaption>
             <Box
                 sx={{
-                    border: '2px solid #19c0ff',
+                    border: '1px solid #19c0ff',
                     borderRadius: 8,
                     padding: '40px 56px',
                 }}

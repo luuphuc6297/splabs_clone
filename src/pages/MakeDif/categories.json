@@ -1,92 +1,92 @@
 {
-  "payload": [
-    {
-      "id": "marketing_roadmap",
-      "title": "Marketing Roadmap",
-      "lists": [
+    "payload": [
         {
-          "id": "brand",
-          "caption": "Brand Positioning & Messaging"
+            "id": "marketing_roadmap",
+            "title": "Marketing Roadmap",
+            "lists": [
+                {
+                    "id": "brand",
+                    "caption": "Brand Positioning & Messaging"
+                },
+                {
+                    "id": "marketing",
+                    "caption": "Marketing Strategy Development"
+                }
+            ],
+            "logo": "/images/roadmap.png"
         },
         {
-          "id": "marketing",
-          "caption": "Marketing Strategy Development"
+            "id": "design",
+            "title": "Design",
+            "lists": [
+                {
+                    "id": "identity",
+                    "caption": "Branding & Identity"
+                },
+                {
+                    "id": "rebranding",
+                    "caption": "Rebranding"
+                },
+                {
+                    "id": "ux_ui",
+                    "caption": "UX/UI Design & Development"
+                },
+                {
+                    "id": "presentation",
+                    "caption": "Presentation Material Design"
+                },
+                {
+                    "id": "video",
+                    "caption": "Video Production"
+                }
+            ],
+            "logo": "/images/ux_design.png"
+        },
+        {
+            "id": "management",
+            "title": "Management",
+            "lists": [
+                {
+                    "id": "social",
+                    "caption": "Social Media Management"
+                },
+                {
+                    "id": "community",
+                    "caption": "Community Management 24/7"
+                },
+                {
+                    "id": "content",
+                    "caption": "Content Marketing"
+                }
+            ],
+            "logo": "/images/ux_design.png"
+        },
+        {
+            "id": "exchange",
+            "title": "Exchange & Investor Relations",
+            "lists": [
+                {
+                    "id": "creative",
+                    "caption": "Creative NFT, GameFi, and Metaverse connect B2C, C2C, B2B models."
+                },
+                {
+                    "id": "launchpad",
+                    "caption": "Launchpad platform deploy INO, IDO, IGO"
+                },
+                {
+                    "id": "exchange",
+                    "caption": "Exchange Listings DEX/CEX"
+                },
+                {
+                    "id": "market_making",
+                    "caption": "Market Making"
+                },
+                {
+                    "id": "investor",
+                    "caption": "Investor Relations"
+                }
+            ],
+            "logo": "/images/ux_design.png"
         }
-      ],
-      "logo": "/images/roadmap.png"
-    },
-    {
-      "id": "design",
-      "title": "Design",
-      "lists": [
-        {
-          "id": "identity",
-          "caption": "Branding & Identity"
-        },
-        {
-          "id": "rebranding",
-          "caption": "Rebranding"
-        },
-        {
-          "id": "ux_ui",
-          "caption": "UX/UI Design & Development"
-        },
-        {
-          "id": "presentation",
-          "caption": "Presentation Material Design"
-        },
-        {
-          "id": "video",
-          "caption": "Video Production"
-        }
-      ],
-      "logo": "/images/ux_design.png"
-    },
-    {
-      "id": "management",
-      "title": "Management",
-      "lists": [
-        {
-          "id": "social",
-          "caption": "Social Media Management"
-        },
-        {
-          "id": "community",
-          "caption": "Community Management 24/7"
-        },
-        {
-          "id": "content",
-          "caption": "Content Marketing"
-        }
-      ],
-      "logo": "/images/ux_design.png"
-    },
-    {
-      "id": "exchange",
-      "title": "Exchange & Investor Relations",
-      "lists": [
-        {
-          "id": "creative",
-          "caption": "Creative NFT, GameFi, and Metaverse connect B2C, C2C, B2B models."
-        },
-        {
-          "id": "launchpad",
-          "caption": "Launchpad platform deploy INO, IDO, IGO"
-        },
-        {
-          "id": "exchange",
-          "caption": "Exchange Listings DEX/CEX"
-        },
-        {
-          "id": "market_making",
-          "caption": "Market Making"
-        },
-        {
-          "id": "investor",
-          "caption": "Investor Relations"
-        }
-      ],
-      "logo": "/images/ux_design.png"
-    }
-  ]
+    ]
 }

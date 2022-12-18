@@ -1,10 +1,12 @@
 import {
     ArrowBackIcon,
-    Box, Divider, Drawer,
+    Box,
+    Divider,
+    Drawer,
     DrawerBox,
     Hidden,
     IconButton,
-    List
+    List,
 } from '@mui/material';
 export const RightDrawer = ({ isTablet, showSidebar, handleClose }) => {
     return (

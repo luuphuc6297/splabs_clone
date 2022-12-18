@@ -7,10 +7,9 @@ export const StartGrowing = () => {
         <SectionWrapper sx={{ paddingBottom: 20 }}>
             <Box
                 sx={{
-                    border: '2px solid #19c0ff',
+                    border: '1px solid #19c0ff',
                     borderRadius: 8,
-                    boxShadow: '0px 0px 18px 0px rgba(0,0,0,0.75)',
-                    padding: '60px 100px',
+                    padding: '56px 108px',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',

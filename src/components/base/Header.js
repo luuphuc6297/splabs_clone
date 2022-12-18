@@ -42,6 +42,7 @@ export const Header = () => {
     const theme = useTheme();
     const matchesMD = useMediaQuery(theme.breakpoints.up('md'));
     const matchesXS = useMediaQuery(theme.breakpoints.up('xs'));
+
     const { t } = useTranslation('translation');
 
     const [scrollPositionToggle, setScrollPositionToggle] = useState(false);
