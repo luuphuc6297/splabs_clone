@@ -4,7 +4,7 @@ import { IconChevronRightSvg } from 'components/Svgs/IconChevronRightSvg';
 import { useMobile } from 'hooks/useMobile';
 
 export const CustomNavigationSwiper = ({ swiperRef }) => {
-    const isMobile = useMobile();
+    const isMobile = true;
     return (
         <Box>
             {!isMobile && (
