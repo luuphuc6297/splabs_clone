@@ -13,14 +13,19 @@ export const PartnerCard = React.memo(({ partnerLogo, hrefPartner }) => {
         <a href={hrefPartner} target="_blank" rel="noreferrer">
             <Box
                 sx={{
+                    border: '1px solid',
+                    borderWidth: '1px',
+                    borderImageSlice: 1,
+                    borderImageSource:
+                        'linear-gradient(to left, #743ad5, #d53a9d)',
                     boxShadow: '0px 0px 13px 0px rgba(25,192,255,1)',
                     borderRadius: 4,
-                    height: 100,
+                    height: 108,
                     padding: 1,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    border: '1px solid #19c0ff',
+                    // border: '1px solid #19c0ff',
                     cursor: 'pointer',
                     transition: 'transform 300ms ease-in-out 0s',
                     '&:hover': {
