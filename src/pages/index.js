@@ -1,3 +1,4 @@
+import { homeBackground, secondBackground } from 'assets';
 import { Footer, Header, SectionWrapperFullWidth, TopHeader } from 'components';
 import AboutUs from './AboutUs';
 import { EnforceProject } from './Enforce';
@@ -14,7 +15,7 @@ const LandingPage = () => {
         <>
             <SectionWrapperFullWidth
                 sx={{
-                    backgroundImage: `url('/images/background/landing_background.png')`,
+                    backgroundImage: `url(${homeBackground})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
@@ -28,7 +29,7 @@ const LandingPage = () => {
             </SectionWrapperFullWidth>
             <SectionWrapperFullWidth
                 sx={{
-                    backgroundImage: `url('/images/background/second_background-min.png')`,
+                    backgroundImage: `url(${secondBackground})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
@@ -41,7 +42,7 @@ const LandingPage = () => {
             </SectionWrapperFullWidth>
             <SectionWrapperFullWidth
                 sx={{
-                    backgroundImage: `url('/images/background/second_background-min.png')`,
+                    backgroundImage: `url(${secondBackground})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
