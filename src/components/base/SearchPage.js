@@ -16,7 +16,7 @@ const style = {
 
 export const SearchPage = () => {
     const [open, setOpen] = React.useState(true);
-    const handleOpen = () => setOpen(true);
+    const handleOpen = () => setOpen(false);
     const handleClose = () => setOpen(false);
 
     return (
