@@ -10,6 +10,14 @@ const CLASS_CONTAINER = 'containerSwiper';
 const CLASS_WRAPPER_PASS_PROJECT = 'wrapperPastProject';
 const SPACING = 48;
 
+const calSlidesPerView = (width) => {
+    if (width > 1200) {
+        const spaceBetweenSectionAndSlides = width - 1152;
+        return (width = width / (width - spaceBetweenSectionAndSlides));
+    }
+    return (width = width / (width - SPACING));
+};
+
 export const NewProject = () => {
     const swiperRef = useRef(null);
 
@@ -26,22 +34,20 @@ export const NewProject = () => {
                 swiperRef.current = swiper;
             }}
             onAfterInit={(swiper) => {
-                const slidesPerView = swiper.width / (swiper.width - SPACING);
-
+                const slidesPerView = calSlidesPerView(swiper.width);
                 swiper.params.breakpoints = {
                     600: {
-                        slidesPerView,
+                        slidesPerView: slidesPerView,
                         spaceBetween: 30,
                     },
                 };
                 swiper.update();
             }}
             onResize={(swiper) => {
-                const slidesPerView = swiper.width / (swiper.width - SPACING);
-
+                const slidesPerView = calSlidesPerView(swiper.width);
                 swiper.params.breakpoints = {
                     600: {
-                        slidesPerView,
+                        slidesPerView: slidesPerView,
                         spaceBetween: 30,
                     },
                 };
