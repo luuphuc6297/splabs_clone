@@ -1,13 +1,14 @@
 import { Box } from '@mui/system';
 import { IconChevronLeftSvg } from 'components/Svgs/IconChevronLeftSvg';
 import { IconChevronRightSvg } from 'components/Svgs/IconChevronRightSvg';
-import { useMobile } from 'hooks/useMobile';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export const CustomNavigationSwiper = ({ swiperRef }) => {
-    const isMobile = true;
+    const matches = useMediaQuery('(min-width:1300px)');
+
     return (
         <Box>
-            {!isMobile && (
+            {matches && (
                 <>
                     <Box
                         sx={{
