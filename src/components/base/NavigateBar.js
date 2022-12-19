@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { scrollSection } from 'utils';
 import { Link as LinkReactScroll } from 'react-scroll';
+import { SearchPage } from './SearchPage';
 
 const Navbar = styled(Box)(() => ({
     width: '100%',
@@ -64,7 +65,9 @@ export const NavigateBar = ({ navigateItems }) => {
                     )}
                 </NavItem>
             ))}
+
             <TransparentButton>Apply</TransparentButton>
+            <SearchPage />
         </Navbar>
     );
 };
