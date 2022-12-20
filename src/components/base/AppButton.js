@@ -10,7 +10,7 @@ const StyledAppButton = styled(Button)(({ theme }) => ({
     color: grey[50],
     padding: 8,
     marginRight: 8,
-    transition: 'transform 300ms ease-in-out 0s',
+    transition: 'all 0.5s ease 0s',
     background:
         'linear-gradient(336.08deg, rgb(220, 102, 255) 20.7%, rgb(3, 170, 249) 97.43%)',
     '&:hover': {

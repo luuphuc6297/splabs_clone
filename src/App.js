@@ -1,12 +1,12 @@
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { theme } from 'configs';
 import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import Router from './routes';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const queryClient = new QueryClient({
     defaultOptions: {

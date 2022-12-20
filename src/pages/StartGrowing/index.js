@@ -1,14 +1,22 @@
 import { Box } from '@mui/material';
 import { SectionCaption, SectionTitle, SectionWrapper } from 'components';
 import { StartGrowingForm } from './Form';
-
+import { GradientBox } from 'components';
 export const StartGrowing = () => {
     return (
-        <SectionWrapper sx={{ paddingBottom: 20 }}>
-            <Box
+        <SectionWrapper sx={{ paddingBottom: 24 }}>
+            {/* <Box
                 sx={{
                     border: '1px solid #19c0ff',
                     borderRadius: 8,
+                    padding: '56px 108px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                }}
+            > */}
+            <GradientBox
+                sx={{
                     padding: '56px 108px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -33,7 +41,9 @@ export const StartGrowing = () => {
                     business days.
                 </SectionCaption>
                 <StartGrowingForm />
-            </Box>
+            </GradientBox>
+
+            {/* </Box> */}
         </SectionWrapper>
     );
 };

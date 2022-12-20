@@ -53,17 +53,17 @@ const theme = createTheme({
             'sans-serif',
         ].join(','),
         h1: {
-            fontSize: '2.75rem',
+            fontSize: '3rem',
             fontWeight: 'bold',
             fontFamily: 'PoppinsBold',
         },
         h2: {
-            fontSize: '2rem',
+            fontSize: '2.5rem',
             fontWeight: 'bold',
             fontFamily: 'PoppinsBold',
         },
         h3: {
-            fontSize: '1.25rem',
+            fontSize: '1.5rem',
             fontWeight: 'bold',
             fontFamily: 'PoppinsMedium',
         },

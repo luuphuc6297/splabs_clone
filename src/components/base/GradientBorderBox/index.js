@@ -1,37 +1,27 @@
-import { Box } from '@mui/material';
-import { styled } from '@mui/material';
-// import './style.scss';
+import { Card, styled } from '@mui/material';
 
-const options = {
-    shouldForwardProp: (prop) => prop !== 'gradientColors',
-};
-
-const RoundGradientButton = styled(
-    Box,
-    options
-)(({ theme, gradientColors }) => ({
+export const StyledGradientBox = styled(Card)(({ theme }) => ({
+    background: 'transparent',
+    color: 'white',
+    transition: 'all 0.1s ease-in-out',
+    boxShadow: 'unset',
+    borderRadius: '16px',
     position: 'relative',
-    border: '1px solid transparent',
-    backgroundClip: 'padding-box',
-    borderRadius: 16,
-
-    '&:after': {
+    minHeight: '100%',
+    '&::before': {
+        content: "''",
         position: 'absolute',
-        top: -5,
-        left: -5,
-        right: -5,
-        bottom: -5,
-        background: `linear-gradient(to left, ${gradientColors.join(',')})`,
-        content: '""',
-        zIndex: -1,
-        borderRadius: 16,
+        inset: '0px',
+        borderRadius: '16px',
+        padding: ' 1px',
+        background:
+            'linear-gradient(90.22deg, rgb(220, 102, 255),rgb(3, 170, 249))',
+        WebkitMask:
+            'linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px) content-box content-box, linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px)',
+        WebkitMaskComposite: 'xor',
     },
 }));
 
-export const GradientBorderBox = ({ children, ...props }) => {
-    return (
-        <RoundGradientButton gradientColors={['blue', 'purple']} {...props}>
-            {children}
-        </RoundGradientButton>
-    );
+export const GradientBox = ({ children, ...props }) => {
+    return <StyledGradientBox {...props}>{children}</StyledGradientBox>;
 };
