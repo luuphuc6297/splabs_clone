@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
 import { CustomSwiper, PastProject } from 'components';
-import React, { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Autoplay } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
-import pastProjects from './pastProjects.json';
+import pastProjects from './topPastProjects.json';
 import './styleSwiper.css';
 
 const CLASS_CONTAINER = 'containerSwiper';
@@ -18,7 +18,7 @@ const calSlidesPerView = (width) => {
     return (width = width / (width - SPACING));
 };
 
-export const NewProject = () => {
+export const TopPastProject = () => {
     const swiperRef = useRef(null);
 
     return (

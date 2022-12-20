@@ -1,5 +1,4 @@
-import { Box, Typography } from '@mui/material';
-import { styled } from '@mui/material';
+import { Box, styled, Typography } from '@mui/material';
 import React from 'react';
 
 const Title = styled(Typography)(({ theme }) => ({

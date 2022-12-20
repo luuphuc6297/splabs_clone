@@ -1,7 +1,6 @@
-import { Box, Drawer } from '@mui/material';
+import { Box, Drawer, styled } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { styled } from '@mui/material';
 import { SectionWrapper, SPLabsLogo } from 'components';
 import { IconArrowLeftSvg } from 'components/Svgs/IconArrowLeftSvg';
 import { IconGridSvg } from 'components/Svgs/IconGridSvg';
@@ -59,6 +58,7 @@ export const Header = () => {
 
     const [scrollPositionToggle, setScrollPositionToggle] =
         React.useState(false);
+
     const [openDrawerMenu, setOpenDrawerMenu] = React.useState(false);
 
     const handleScroll = () => {

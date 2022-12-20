@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { IconChevronLeftSvg } from 'components/Svgs/IconChevronLeftSvg';
 import { IconChevronRightSvg } from 'components/Svgs/IconChevronRightSvg';
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 export const CustomNavigationSwiper = ({ swiperRef }) => {
     const matches = useMediaQuery('(min-width:1300px)');

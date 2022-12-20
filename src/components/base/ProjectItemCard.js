@@ -1,6 +1,5 @@
-import { Box, Typography } from '@mui/material';
+import { Box, styled, Typography } from '@mui/material';
 import { grey } from '@mui/material/colors';
-import { styled } from '@mui/material';
 import React from 'react';
 
 const ImageWrapper = styled(Box)(({ theme }) => ({

@@ -1,11 +1,11 @@
 import { CustomSwiper, SectionWrapper } from 'components';
+import { CustomNavigationSwiper } from 'components/base/CustomNavigationSwiper';
 import { ProjectItemCard } from 'components/base/ProjectItemCard';
 import { useRef } from 'react';
 import { SwiperSlide } from 'swiper/react';
-import projects from './ListProject.json';
-import { CustomNavigationSwiper } from 'components/base/CustomNavigationSwiper';
+import botPastProjects from './botPastProjects';
 
-export const ListProject = () => {
+export const BotPastProjects = () => {
     const swiperRef = useRef(null);
 
     return (
@@ -25,7 +25,7 @@ export const ListProject = () => {
                     },
                 }}
             >
-                {projects.payload.map(
+                {botPastProjects.payload.map(
                     ({ id, logo, title, description, link }) => (
                         <SwiperSlide key={id}>
                             <ProjectItemCard

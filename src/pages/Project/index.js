@@ -1,6 +1,6 @@
 import { SectionTitle, SectionWrapperFullWidth } from 'components';
-import { ListProject } from './ListProject';
-import { NewProject } from './NewProject';
+import { BotPastProjects } from './BotPastProjects';
+import { TopPastProjects } from './TopPastProjects';
 
 export const Project = () => {
     return (
@@ -8,8 +8,8 @@ export const Project = () => {
             <SectionTitle sx={{ textAlign: 'center', marginBottom: 5 }}>
                 PROJECTS
             </SectionTitle>
-            <NewProject />
-            <ListProject />
+            <TopPastProjects />
+            <BotPastProjects />
         </SectionWrapperFullWidth>
     );
 };

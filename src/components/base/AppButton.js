@@ -1,6 +1,5 @@
-import { Button } from '@mui/material';
+import { Button, styled } from '@mui/material';
 import { grey } from '@mui/material/colors';
-import { styled } from '@mui/material';
 
 const StyledAppButton = styled(Button)(({ theme }) => ({
     width: 128,

@@ -1,5 +1,4 @@
-import { Typography } from '@mui/material';
-import { styled } from '@mui/material';
+import { styled, Typography } from '@mui/material';
 
 const StyledSectionTile = styled(Typography)(({ theme }) => ({
     fontFamily: 'PoppinsBold',

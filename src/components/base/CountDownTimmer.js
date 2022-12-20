@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
 import { styled } from '@mui/material';
+import { useEffect, useState } from 'react';
 const StyledTimerDiv = styled('div')(({ theme }) => ({
     color: 'red',
 }));
+
 export default function Timer(props) {
     const [time, setTime] = useState();
     useEffect(() => {
