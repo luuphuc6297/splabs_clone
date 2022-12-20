@@ -2,17 +2,29 @@ import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
-import Stack from '@mui/material/Stack';
-import { TextField } from '@mui/material';
+import { Stack, styled, TextField } from '@mui/material';
 
 const style = {
     position: 'absolute',
-    top: '20%',
+    top: '30%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    boxShadow: 24,
-    padding: 2,
 };
+
+const CustomModal = styled(Modal)(({ theme }) => ({
+    '.MuiBackdrop-root': {
+        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    },
+}));
+
+const StyleTextField = styled(TextField)(({ theme }) => ({
+    '.MuiOutlinedInput-notchedOutline': {
+        borderColor: '#ffffff',
+    },
+    '.Mui-focused .MuiOutlinedInput-notchedOutline': {
+        borderColor: '#ffffff !important',
+    },
+}));
 
 export const SearchPage = () => {
     const [open, setOpen] = React.useState(false);
@@ -22,10 +34,10 @@ export const SearchPage = () => {
     return (
         <>
             <SearchIcon onClick={handleOpen} />
-            <Modal open={open} onClose={handleClose}>
+            <CustomModal disableAutoFocus open={open} onClose={handleClose}>
                 <Box sx={style}>
-                    <Stack spacing={2} sx={{ width: 300 }}>
-                        <TextField
+                    <Stack spacing={2} sx={{ width: 400 }}>
+                        <StyleTextField
                             id="outlined-basic"
                             variant="outlined"
                             placeholder="Search here"
@@ -37,7 +49,7 @@ export const SearchPage = () => {
                         />
                     </Stack>
                 </Box>
-            </Modal>
+            </CustomModal>
         </>
     );
 };
