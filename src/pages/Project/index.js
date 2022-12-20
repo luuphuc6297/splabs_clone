@@ -4,7 +4,7 @@ import { TopPastProjects } from './TopPastProjects';
 
 export const Project = () => {
     return (
-        <SectionWrapperFullWidth sx={{ paddingBottom: 20 }}>
+        <SectionWrapperFullWidth sx={{ paddingBottom: 15 }}>
             <SectionTitle sx={{ textAlign: 'center', marginBottom: 5 }}>
                 PROJECTS
             </SectionTitle>

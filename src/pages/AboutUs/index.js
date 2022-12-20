@@ -9,8 +9,7 @@ const AboutUs = () => {
         <SectionWrapper
             id="about_us"
             sx={{
-                marginBottom: 24,
-                paddingTop: 24,
+                marginBottom: 21,
             }}
         >
             <Grid container columnSpacing={3} rowSpacing={3}>

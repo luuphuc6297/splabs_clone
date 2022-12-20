@@ -1,10 +1,21 @@
 import { Box } from '@mui/material';
+import { useTheme } from '@mui/material';
 import { SectionTitle, SectionCaption } from 'components';
 
 export const Description = () => {
+    const theme = useTheme();
     return (
         <Box sx={{ width: '100%' }}>
-            <SectionTitle sx={{ marginBottom: 2 }}>ABOUT US</SectionTitle>
+            <SectionTitle
+                sx={{
+                    marginBottom: 2,
+                    [theme.breakpoints.down('md')]: {
+                        textAlign: 'center',
+                    },
+                }}
+            >
+                ABOUT US
+            </SectionTitle>
             <SectionCaption sx={{ textAlign: 'left', marginBottom: 3 }}>
                 SPLabs is a blockchain hub operating in countries across the
                 globe Vietnam, Korea, and Japan, and has created various GameFi

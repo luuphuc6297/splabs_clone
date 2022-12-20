@@ -1,13 +1,12 @@
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
-import { Box, Typography } from '@mui/material';
-import { styled } from '@mui/material';
+import { Box, styled, Typography } from '@mui/material';
 import { SectionWrapper } from 'components';
+import { HiOutlinePhone } from 'react-icons/hi';
 
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram,
+    AiOutlineInstagram
 } from 'react-icons/ai';
 import ButtonChangeLanguage from './ButtonChangeLanguage';
 
@@ -40,7 +39,7 @@ const SocialNetworksArea = styled(Box)(({ theme }) => ({
 const EmailInfo = styled('a')(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
-    margin: '8px 0',
+    margin: '8px 24px 8px 0',
     textDecoration: 'none',
     color: theme.palette.text.primary,
 }));
@@ -83,9 +82,9 @@ const Phone = styled(Typography)(({ theme }) => ({
     },
 }));
 
-const PhoneIcon = styled(PhoneOutlinedIcon)(({ theme }) => ({
-    width: 24,
-    height: 24,
+const PhoneIcon = styled(HiOutlinePhone)(({ theme }) => ({
+    width: 22,
+    height: 22,
     marginRight: 4,
 }));
 

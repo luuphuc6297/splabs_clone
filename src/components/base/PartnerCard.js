@@ -6,9 +6,14 @@ const Logo = styled('img')(({ theme }) => ({
     width: 168,
     height: 72,
     objectFit: 'contain',
+    [theme.breakpoints.down('480')]: {
+        width: 80,
+        height: 64,
+    },
 }));
 
 export const PartnerCard = React.memo(({ partnerLogo, hrefPartner }) => {
+    
     return (
         <a href={hrefPartner} target="_blank" rel="noreferrer">
             <GradientBox

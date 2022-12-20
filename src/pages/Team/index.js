@@ -14,7 +14,7 @@ export const TheTeam = () => {
     const swiperRef = useRef(null);
 
     return (
-        <SectionWrapper sx={{ marginBottom: 20, position: 'relative' }}>
+        <SectionWrapper sx={{ paddingTop: 7.5, marginBottom: 15, position: 'relative' }}>
             <Box>
                 <SectionTitle sx={{ textAlign: 'center', marginBottom: 5 }}>
                     THE TEAM

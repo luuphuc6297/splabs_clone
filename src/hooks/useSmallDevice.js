@@ -1,6 +1,6 @@
 import { useMediaQuery, useTheme } from '@mui/material';
 
-export const useMobile = () => {
+export const useSmallDevice = () => {
     const theme = useTheme();
     return useMediaQuery(theme.breakpoints.down('480'));
 };

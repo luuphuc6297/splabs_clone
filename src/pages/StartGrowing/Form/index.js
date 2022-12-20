@@ -28,34 +28,29 @@ export const StartGrowingForm = () => {
 
     return (
         <form onSubmit={handleSubmit(handleFormSubmit)}>
-            <Grid
-                sx={{ margin: '0 auto' }}
-                container
-                columnSpacing={6}
-                rowSpacing={4}
-            >
-                <Grid item xs={12} sm={5}>
+            <Grid container columnSpacing={6} rowSpacing={4}>
+                <Grid item xs={12} sm={6}>
                     <InputFieldV2
                         error={errors.email}
                         placeholder="Email Address"
                         {...register('email')}
                     />
                 </Grid>
-                <Grid item xs={12} sm={5}>
+                <Grid item xs={12} sm={6}>
                     <InputFieldV2
                         error={errors.description_project}
                         placeholder="Description Project"
                         {...register('description_project')}
                     />
                 </Grid>
-                <Grid item xs={12} sm={5}>
+                <Grid item xs={12} sm={6}>
                     <InputFieldV2
                         error={errors.company_name}
                         placeholder="Company Name"
                         {...register('company_name')}
                     />
                 </Grid>
-                <Grid item xs={12} sm={5}>
+                <Grid item xs={12} sm={6}>
                     <SubmitButton
                         loading={isSubmitting}
                         disabled={!isValid || isSubmitting}
