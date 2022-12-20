@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 import React from 'react';
 
 const Step = styled(Typography)(({ theme }) => ({

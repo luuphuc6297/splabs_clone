@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 import React from 'react';
 
 const Title = styled(Typography)(({ theme }) => ({
@@ -37,7 +37,7 @@ export const CategoryCard = React.memo(({ title, lists, logo }) => {
                 boxShadow: 'rgb(0 0 0 / 34%) 0px 1px 9px',
                 '&:hover': {
                     background:
-                        'linear-gradient(336.08deg, rgb(159, 140, 204) 10.7%, rgb(45, 145, 200) 97.43%)',
+                        'linear-gradient(336.08deg, rgb(220, 102, 255) 20.7%, rgb(3, 170, 249) 97.43%)',
                     transition: 'all 0.5s ease 0s',
                     transform: 'translateY(-10px) scale(1.05) !important',
                 },

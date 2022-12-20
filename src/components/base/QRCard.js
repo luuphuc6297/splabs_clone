@@ -4,7 +4,7 @@ import {
     CardMedia,
     Typography,
 } from '@mui/material';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 import React from 'react';
 
 const Title = styled(Typography)(({ theme }) => ({

@@ -1,4 +1,4 @@
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 import { IconChevronLeftSvg } from 'components/Svgs/IconChevronLeftSvg';
 import { IconChevronRightSvg } from 'components/Svgs/IconChevronRightSvg';
 import useMediaQuery from '@mui/material/useMediaQuery';

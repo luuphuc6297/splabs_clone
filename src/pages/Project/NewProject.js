@@ -1,4 +1,4 @@
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 import { CustomSwiper, PastProject } from 'components';
 import React, { useRef, useState } from 'react';
 import { Autoplay } from 'swiper';

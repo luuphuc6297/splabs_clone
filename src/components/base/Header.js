@@ -1,7 +1,7 @@
 import { Box, Drawer } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 import { SectionWrapper, SPLabsLogo } from 'components';
 import { IconArrowLeftSvg } from 'components/Svgs/IconArrowLeftSvg';
 import { IconGridSvg } from 'components/Svgs/IconGridSvg';

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 const StyledTimerDiv = styled('div')(({ theme }) => ({
     color: 'red',
 }));

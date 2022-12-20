@@ -25,7 +25,7 @@ const LandingPage = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     objectFit: 'cover',
-                    height: '100vh',
+                    height: '120vh',
                 }}
             >
                 <TopHeader />

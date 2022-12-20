@@ -12,7 +12,7 @@ export const ListProject = () => {
         <SectionWrapper sx={{ marginTop: 5, position: 'relative' }}>
             <CustomSwiper
                 loop={true}
-                spaceBetween={30}
+                spaceBetween={24}
                 slidesPerView={2}
                 slidesPerGroup={4}
                 onSwiper={(swiper) => {
@@ -21,7 +21,7 @@ export const ListProject = () => {
                 breakpoints={{
                     600: {
                         slidesPerView: 4,
-                        spaceBetween: 30,
+                        spaceBetween: 24,
                     },
                 }}
             >

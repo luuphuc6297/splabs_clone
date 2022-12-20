@@ -1,19 +1,18 @@
 import { Box, List, ListItem, Typography } from '@mui/material';
 import { grey } from '@mui/material/colors';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 import {
     SectionTitle,
     SectionWrapper,
     SectionWrapperFullWidth,
-    SPLabsLogo
+    SPLabsLogo,
 } from 'components';
 import { useMobile } from 'hooks/useMobile';
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram
+    AiOutlineInstagram,
 } from 'react-icons/ai';
-
 
 const FaceBookIcon = styled(AiOutlineFacebook)(({ theme }) => ({
     width: 24,

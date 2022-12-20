@@ -1,17 +1,32 @@
 import { Box, Typography } from '@mui/material';
 import { grey } from '@mui/material/colors';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 import React from 'react';
 
-const ImageWrapper = styled(Box)(() => ({
-    // width: 160, // why u fixed width in here? if fixed wide, i think have a lot issue when responsive.
-    height: 160,
+const ImageWrapper = styled(Box)(({ theme }) => ({
+    height: 268,
+    width: 268,
     borderRadius: '16px',
     display: 'flex',
     margin: '0 auto',
     overflow: 'hidden',
     backgroundPosition: 'center',
-    // border: '1px solid #ffffff',
+    [theme.breakpoints.down('lg')]: {
+        height: 248,
+        width: 248,
+    },
+    [theme.breakpoints.down('1080')]: {
+        height: 216,
+        width: 216,
+    },
+    [theme.breakpoints.down('md')]: {
+        height: 184,
+        width: 184,
+    },
+    [theme.breakpoints.down('768')]: {
+        height: 160,
+        width: 160,
+    },
 }));
 
 const Avatar = styled('img')(() => ({

@@ -1,5 +1,5 @@
 import { LoadingButton } from '@mui/lab';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 
 const SubmitBtn = styled(LoadingButton)({
     cursor: 'pointer',

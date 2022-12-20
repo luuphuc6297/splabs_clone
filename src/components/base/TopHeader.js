@@ -1,13 +1,13 @@
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import { Box, Typography } from '@mui/material';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 import { SectionWrapper } from 'components';
 
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram
+    AiOutlineInstagram,
 } from 'react-icons/ai';
 import ButtonChangeLanguage from './ButtonChangeLanguage';
 

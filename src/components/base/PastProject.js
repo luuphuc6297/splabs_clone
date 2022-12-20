@@ -1,5 +1,5 @@
 import { Box, Divider, Grid, Typography } from '@mui/material';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 import { BsTelegram } from 'react-icons/bs';
 import { useMobile } from 'hooks/useMobile';
 
