@@ -15,7 +15,6 @@ const StyledWhiteButton = styled(Button)(({ theme }) => ({
     border: `0.5px solid ${grey[50]}`,
     '&:hover': {
         color: theme.palette.text.primary,
-        // border: `0.5px solid ${grey[50]}`,
     },
 }));
 

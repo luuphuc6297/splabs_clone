@@ -45,7 +45,16 @@ const Caption = styled(Typography)(({ theme }) => ({}));
 
 export const ProjectCard = React.memo(({ step, title, caption }) => {
     return (
-        <Box>
+        <Box
+            data-aos="zoom-in"
+            data-aos-duration="5000"
+            data-aos-easing="linear"
+            sx={{
+                '&:hover': {
+                    transform: 'scale(1.02) !important',
+                }
+            }}
+        >
             <StepBox>
                 <Step>{step}</Step>
             </StepBox>
