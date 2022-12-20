@@ -3,8 +3,8 @@ import { GradientBox } from 'components';
 import React from 'react';
 
 const Logo = styled('img')(({ theme }) => ({
-    width: 108,
-    height: 64,
+    width: 168,
+    height: 72,
     objectFit: 'contain',
 }));
 
@@ -20,6 +20,7 @@ export const PartnerCard = React.memo(({ partnerLogo, hrefPartner }) => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     cursor: 'pointer',
+                    boxShadow: 'rgb(255 255 255 / 60%) 0px 0px 8px 0px',
                     transition: 'transform 300ms ease-in-out 0s',
                     '&:hover': {
                         transform: 'scale(1.05) !important',

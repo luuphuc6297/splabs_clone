@@ -1,9 +1,9 @@
 import { Box, styled, Typography } from '@mui/material';
 import React from 'react';
-import { LeftToRightGradientBox } from 'components';
+
 const StepBox = styled(Box)(({ theme }) => ({
-    width: 32,
-    height: 32,
+    width: 40,
+    height: 40,
     borderRadius: 8,
     marginBottom: 16,
     display: 'flex',
@@ -12,9 +12,9 @@ const StepBox = styled(Box)(({ theme }) => ({
     background: 'transparent',
     color: 'white',
     transition: 'all 0.1s ease-in-out',
-    boxShadow: 'unset',
     position: 'relative',
     minHeight: '100%',
+    boxShadow: 'rgb(255 255 255 / 60%) 0px 0px 15px 0px',
     '&::before': {
         content: "''",
         position: 'absolute',
@@ -30,16 +30,15 @@ const StepBox = styled(Box)(({ theme }) => ({
 }));
 
 const Step = styled(Typography)(({ theme }) => ({
+    fontSize: 18,
     fontFamily: 'PoppinsBold',
-    // fontWeight: 'bold',
+    fontWeight: 'bold',
 }));
 
 const TitleBox = styled(Box)(({ theme }) => ({}));
 
 const Title = styled(Typography)(({ theme }) => ({
     marginBottom: 16,
-    fontWeight: 'bold',
-    
 }));
 
 const Caption = styled(Typography)(({ theme }) => ({}));

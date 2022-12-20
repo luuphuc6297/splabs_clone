@@ -6,7 +6,6 @@ export * from './base/AppButton';
 export * from './base/CategoryCard';
 export * from './base/CustomSwiper';
 export * from './base/Footer';
-// export * from './base/GradientBorderBox';
 export * from './base/Header';
 export * from './base/InputField';
 export * from './base/MemberCard';

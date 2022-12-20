@@ -2,10 +2,12 @@ import { Button, styled } from '@mui/material';
 import { grey } from '@mui/material/colors';
 
 const StyledAppButton = styled(Button)(({ theme }) => ({
-    width: 128,
+    width: 144,
+    height: 48,
     borderRadius: 24,
     textTransform: 'capitalize',
     fontSize: 14,
+    fontFamily: 'PoppinsBold',
     fontWeight: 'bold',
     color: grey[50],
     padding: 8,

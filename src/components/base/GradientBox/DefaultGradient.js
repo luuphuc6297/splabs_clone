@@ -4,7 +4,6 @@ export const StyledGradientBox = styled(Card)(({ theme }) => ({
     background: 'transparent',
     color: 'white',
     transition: 'all 0.1s ease-in-out',
-    boxShadow: 'unset',
     borderRadius: '16px',
     position: 'relative',
     minHeight: '100%',

@@ -1,7 +1,9 @@
 import { Button, styled } from '@mui/material';
 import { grey } from '@mui/material/colors';
 const StyledWhiteButton = styled(Button)(({ theme }) => ({
-    width: 128,
+    width: 144,
+    height: 48,
+    fontFamily: 'PoppinsBold',
     borderRadius: 24,
     textTransform: 'capitalize',
     fontSize: 14,

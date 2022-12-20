@@ -20,6 +20,7 @@ export const AddressCard = React.memo(({ office, address }) => {
     return (
         <GradientBox
             sx={{
+                boxShadow: 'rgb(255 255 255 / 60%) 0px 0px 15px 0px',
                 padding: '32px 24px',
                 height: '100%',
             }}
