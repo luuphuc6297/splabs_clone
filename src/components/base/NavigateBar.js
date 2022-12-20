@@ -37,6 +37,7 @@ export const NavigateBar = ({ navigateItems }) => {
                 <NavItem key={item.id}>
                     {item.internal ? (
                         <LinkReactScroll
+                            style={{ fontSize: '14px' }}
                             to={item.id}
                             smooth
                             delay={0}
@@ -58,6 +59,7 @@ export const NavigateBar = ({ navigateItems }) => {
                                     transform: 'scale(1.05) !important',
                                 },
                                 cursor: 'pointer',
+                                fontSize: '14px',
                             }}
                         >
                             {t(item.label)}
