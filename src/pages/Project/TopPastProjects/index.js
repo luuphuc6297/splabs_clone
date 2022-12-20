@@ -35,12 +35,16 @@ export const TopPastProjects = () => {
             }}
             onAfterInit={(swiper) => {
                 const slidesPerView = calSlidesPerView(swiper.width);
-                swiper.params.breakpoints = {
-                    600: {
-                        slidesPerView: slidesPerView,
-                        spaceBetween: 30,
-                    },
-                };
+              swiper.params.breakpoints = {
+                  600: {
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                  },
+                  900: {
+                      slidesPerView: slidesPerView,
+                      spaceBetween: 30,
+                  },
+              };
                 swiper.update();
             }}
             onResize={(swiper) => {

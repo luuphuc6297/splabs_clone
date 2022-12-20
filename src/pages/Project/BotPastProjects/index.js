@@ -20,6 +20,11 @@ export const BotPastProjects = () => {
                 }}
                 breakpoints={{
                     600: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+
+                    900: {
                         slidesPerView: 4,
                         spaceBetween: 24,
                     },

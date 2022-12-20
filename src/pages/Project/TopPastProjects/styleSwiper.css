@@ -8,3 +8,9 @@
     transform: scale(1);
     filter: blur(0);
 }
+
+@media screen and (max-width: 992px) {
+    .containerSwiperinitialized .swiper-slide-active .wrapperPastProject {
+        padding: 20px;
+    }
+}

@@ -7,9 +7,9 @@ export const CustomNavigationSwiper = ({ swiperRef }) => {
     const matches = useMediaQuery('(min-width:1300px)');
 
     return (
-        <Box>
+        <>
             {matches && (
-                <>
+                <Box>
                     <Box
                         sx={{
                             position: 'absolute',
@@ -38,8 +38,8 @@ export const CustomNavigationSwiper = ({ swiperRef }) => {
                             onClick={() => swiperRef.current.slideNext()}
                         />
                     </Box>
-                </>
+                </Box>
             )}
-        </Box>
+        </>
     );
 };

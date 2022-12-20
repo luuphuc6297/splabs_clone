@@ -3,29 +3,15 @@ import { grey } from '@mui/material/colors';
 import React from 'react';
 
 const ImageWrapper = styled(Box)(({ theme }) => ({
-    height: 268,
-    width: 268,
+    maxHeight: 268,
+    maxWidth: 268,
     borderRadius: '16px',
     display: 'flex',
     margin: '0 auto',
     overflow: 'hidden',
     backgroundPosition: 'center',
-    [theme.breakpoints.down('lg')]: {
-        height: 248,
-        width: 248,
-    },
-    [theme.breakpoints.down('1080')]: {
-        height: 216,
-        width: 216,
-    },
-    [theme.breakpoints.down('md')]: {
-        height: 184,
-        width: 184,
-    },
-    [theme.breakpoints.down('768')]: {
-        height: 160,
-        width: 160,
-    },
+    height: '100%',
+    width: '100%',
 }));
 
 const Avatar = styled('img')(() => ({
