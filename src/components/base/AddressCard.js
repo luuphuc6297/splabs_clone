@@ -1,6 +1,6 @@
-import { Box, styled, Typography } from '@mui/material';
+import { styled, Typography } from '@mui/material';
+import { GradientBox } from 'components';
 import React from 'react';
-
 const Office = styled(Typography)(({ theme }) => ({
     textAlign: 'left',
     fontSize: 18,
@@ -18,16 +18,14 @@ const Address = styled(Typography)(({ theme }) => ({
 
 export const AddressCard = React.memo(({ office, address }) => {
     return (
-        <Box
+        <GradientBox
             sx={{
                 padding: '32px 24px',
-                borderRadius: 4,
-                border: '1px solid white',
                 height: '100%',
             }}
         >
             <Office>{office}</Office>
             <Address>{address}</Address>
-        </Box>
+        </GradientBox>
     );
 });

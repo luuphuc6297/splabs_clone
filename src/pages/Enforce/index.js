@@ -1,9 +1,9 @@
-import { Box, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import {
-    ProjectCard,
+    LeftToRightGradientBox, ProjectCard,
     SectionCaption,
     SectionTitle,
-    SectionWrapper,
+    SectionWrapper
 } from 'components';
 import projects from './projects.json';
 
@@ -25,10 +25,8 @@ export const EnforceProject = () => {
                 through barriers of entry to bring talented individuals into the
                 world
             </SectionCaption>
-            <Box
+            <LeftToRightGradientBox
                 sx={{
-                    border: '1px solid #19c0ff',
-                    borderRadius: 8,
                     padding: '40px 56px',
                 }}
             >
@@ -44,7 +42,7 @@ export const EnforceProject = () => {
                         </Grid>
                     ))}
                 </Grid>
-            </Box>
+            </LeftToRightGradientBox>
         </SectionWrapper>
     );
 };
