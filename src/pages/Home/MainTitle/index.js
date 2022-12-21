@@ -9,15 +9,7 @@ export const MainTitle = () => {
         <>
             <Box>
                 <Box className={isMobile ? null : 'css-typing'}>
-                    <HomeTitle
-                        sx={{
-                            marginBottom: 1,
-                            animation: 'type 4s steps(40)',
-                            animationFillMode: 'forwards',
-                        }}
-                    >
-                        Welcome to SPLabs!
-                    </HomeTitle>
+                    <HomeTitle>Welcome to SPLabs!</HomeTitle>
                 </Box>
             </Box>
             <SectionCaption sx={{ marginBottom: 2 }}>

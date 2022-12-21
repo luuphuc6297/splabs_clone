@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Link as LinkReactScroll } from 'react-scroll';
 import { NavigateBar } from './NavigateBar';
+import SubMenu from './SubMenu';
 
 const navigateItems = [
     { id: 'home', label: 'home', link: '/' },
@@ -17,20 +18,52 @@ const navigateItems = [
         id: 'the_studio',
         label: 'the_studio',
         link: '/#the-studio',
-        internal: true,
+        internal: false,
+        subMenu: [
+            {
+                id: 'the_studio',
+                label: 'Vision',
+                link: '/#the-studio',
+            },
+            {
+                id: 'the_studio',
+                label: 'Advertisement',
+                link: '/#the-studio',
+            },
+            {
+                id: 'the_studio',
+                label: 'Service',
+                link: '/#the-studio',
+            },
+            {
+                id: 'the_studio',
+                label: 'The Team',
+                link: '/#the-studio',
+                internal: true,
+            },
+        ],
     },
     {
-        id: 'influencer',
-        label: 'influencer',
+        id: 'influencer marketing',
+        label: 'Influencer Marketing',
         link: '/#influencer',
-        internal: true,
+        internal: false,
+        subMenu: [
+            {
+                id: 'the_studio',
+                label: 'SPAD Influencer Process',
+                link: '/#the-studio',
+                internal: false,
+            },
+            {
+                id: 'the_studio',
+                label: 'SPAD Business',
+                link: '/#the-studio',
+                internal: false,
+            },
+        ],
     },
-    {
-        id: 'marketing',
-        label: 'marketing',
-        link: '/#marketing',
-        internal: true,
-    },
+
     { id: 'partners', label: 'partners', link: '/#partners', internal: true },
 ];
 
@@ -118,44 +151,59 @@ export const Header = () => {
                             />
                         </Box>
                         <Box>
-                            {navigateItems.map((item) => (
-                                <MenuItem key={item.id}>
-                                    {item.internal ? (
-                                        <LinkReactScroll
-                                            to={item.id}
-                                            smooth
-                                            delay={0}
-                                            duration={500}
-                                            onClick={() =>
+                            {navigateItems.map((item) => {
+                                if (item?.subMenu?.length > 0) {
+                                    return (
+                                        <SubMenu
+                                            subMenu={item.subMenu}
+                                            titleMenu={t(item.label)}
+                                            isMobile
+                                            onCloseMobile={() =>
                                                 setOpenDrawerMenu(false)
                                             }
-                                        >
-                                            {t(item.label)}
-                                        </LinkReactScroll>
-                                    ) : (
-                                        <Link
-                                            id={item.id}
-                                            to={item.link}
-                                            style={{
-                                                color: '#65686f',
-                                                textDecoration: 'none',
-                                                transition: 'all 0.5s',
-                                                '&:hover': {
-                                                    color: 'rgb(159, 140, 204)',
-                                                    transform:
-                                                        'scale(1.05) !important',
-                                                },
-                                                cursor: 'pointer',
-                                            }}
-                                            onClick={() =>
-                                                setOpenDrawerMenu(false)
-                                            }
-                                        >
-                                            {t(item.label)}
-                                        </Link>
-                                    )}
-                                </MenuItem>
-                            ))}
+                                        />
+                                    );
+                                }
+
+                                return (
+                                    <MenuItem key={item.id}>
+                                        {item.internal ? (
+                                            <LinkReactScroll
+                                                to={item.id}
+                                                smooth
+                                                delay={0}
+                                                duration={500}
+                                                onClick={() =>
+                                                    setOpenDrawerMenu(false)
+                                                }
+                                            >
+                                                {t(item.label)}
+                                            </LinkReactScroll>
+                                        ) : (
+                                            <Link
+                                                id={item.id}
+                                                to={item.link}
+                                                style={{
+                                                    color: '#65686f',
+                                                    textDecoration: 'none',
+                                                    transition: 'all 0.5s',
+                                                    '&:hover': {
+                                                        color: 'rgb(159, 140, 204)',
+                                                        transform:
+                                                            'scale(1.05) !important',
+                                                    },
+                                                    cursor: 'pointer',
+                                                }}
+                                                onClick={() =>
+                                                    setOpenDrawerMenu(false)
+                                                }
+                                            >
+                                                {t(item.label)}
+                                            </Link>
+                                        )}
+                                    </MenuItem>
+                                );
+                            })}
                         </Box>
                     </Box>
                 </Drawer>
