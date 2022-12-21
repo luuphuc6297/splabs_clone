@@ -1,12 +1,14 @@
 import { Box } from '@mui/system';
 import { HomeTitle, SectionCaption } from 'components';
 import './cssTyping.css';
+import { useMobile } from 'hooks/useMobile';
 
 export const MainTitle = () => {
+    const isMobile = useMobile();
     return (
         <>
             <Box>
-                <Box className="css-typing">
+                <Box className={isMobile ? null : 'css-typing'}>
                     <HomeTitle
                         sx={{
                             marginBottom: 1,

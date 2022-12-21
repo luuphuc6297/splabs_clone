@@ -5,5 +5,9 @@ import 'swiper/css/navigation';
 import { Swiper } from 'swiper/react';
 
 export const CustomSwiper = ({ children, ...props }) => {
-    return <Swiper {...props}>{children}</Swiper>;
+    return (
+        <Swiper  {...props}>
+            {children}
+        </Swiper>
+    );
 };

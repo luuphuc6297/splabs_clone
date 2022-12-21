@@ -57,7 +57,6 @@ const QrBox = styled('img')(({ theme }) => ({
 
 export const PastProject = ({ logo, name, description, community, qr }) => {
     const isMobile = useMobile();
-
     return (
         <Box
             sx={{
@@ -71,14 +70,11 @@ export const PastProject = ({ logo, name, description, community, qr }) => {
                 gap: 2,
             }}
         >
-            <LogoWrapper
-                sx={{ width: isMobile ? '100%' : 480 }}
-                className="ádasdasdasdasd"
-            >
+            <LogoWrapper sx={{ width: isMobile ? '100%' : 480 }}>
                 <Logo src={logo} loading="lazy" />
             </LogoWrapper>
 
-            <InfoWrapper className="dasdasdasdasd">
+            <InfoWrapper>
                 <Typography
                     sx={{
                         marginBottom: 1,

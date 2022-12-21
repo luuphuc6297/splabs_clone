@@ -26,25 +26,26 @@ export const TopPastProjects = () => {
             containerModifierClass={CLASS_CONTAINER}
             style={{ textAlign: 'center' }}
             loop={true}
-            modules={[Autoplay]}
             spaceBetween={1}
             centeredSlides
             slidesPerView={1}
+            autoPlay
+            modules={[Autoplay]}
             onSwiper={(swiper) => {
                 swiperRef.current = swiper;
             }}
             onAfterInit={(swiper) => {
                 const slidesPerView = calSlidesPerView(swiper.width);
-              swiper.params.breakpoints = {
-                  600: {
-                      slidesPerView: 1,
-                      spaceBetween: 20,
-                  },
-                  900: {
-                      slidesPerView: slidesPerView,
-                      spaceBetween: 30,
-                  },
-              };
+                swiper.params.breakpoints = {
+                    600: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    900: {
+                        slidesPerView: slidesPerView,
+                        spaceBetween: 30,
+                    },
+                };
                 swiper.update();
             }}
             onResize={(swiper) => {
@@ -57,7 +58,6 @@ export const TopPastProjects = () => {
                 };
                 swiper.update();
             }}
-            autoPlay
         >
             {pastProjects.payload.map((pr) => (
                 <SwiperSlide>
