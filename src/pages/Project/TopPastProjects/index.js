@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import { CustomSwiper, PastProject } from 'components';
 import { useRef } from 'react';
-import { Autoplay } from 'swiper';
+
 import { SwiperSlide } from 'swiper/react';
 import pastProjects from './topPastProjects.json';
 import './styleSwiper.css';
@@ -29,8 +29,6 @@ export const TopPastProjects = () => {
             spaceBetween={1}
             centeredSlides
             slidesPerView={1}
-            autoPlay
-            modules={[Autoplay]}
             onSwiper={(swiper) => {
                 swiperRef.current = swiper;
             }}

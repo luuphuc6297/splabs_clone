@@ -1,25 +1,23 @@
 import { Box } from '@mui/material';
-import {
-    CustomSwiper,
-    MemberCard,
-    SectionTitle,
-    SectionWrapper,
-} from 'components';
+import { MemberCard, SectionTitle, SectionWrapper } from 'components';
 import { useRef } from 'react';
 import { SwiperSlide } from 'swiper/react';
 import members from './members.json';
 import { CustomNavigationSwiper } from 'components/base/CustomNavigationSwiper';
+import { Swiper } from 'swiper/react';
 
 export const TheTeam = () => {
     const swiperRef = useRef(null);
 
     return (
-        <SectionWrapper sx={{ paddingTop: 7.5, marginBottom: 15, position: 'relative' }}>
+        <SectionWrapper
+            sx={{ paddingTop: 7.5, marginBottom: 15, position: 'relative' }}
+        >
             <Box>
                 <SectionTitle sx={{ textAlign: 'center', marginBottom: 5 }}>
                     THE TEAM
                 </SectionTitle>
-                <CustomSwiper
+                <Swiper
                     loop={true}
                     spaceBetween={30}
                     slidesPerView={2}
@@ -44,7 +42,7 @@ export const TheTeam = () => {
                             />
                         </SwiperSlide>
                     ))}
-                </CustomSwiper>
+                </Swiper>
             </Box>
 
             <CustomNavigationSwiper swiperRef={swiperRef} />

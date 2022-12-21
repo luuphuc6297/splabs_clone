@@ -1,16 +1,17 @@
-import { CustomSwiper, SectionWrapper } from 'components';
+import { SectionWrapper } from 'components';
 import { CustomNavigationSwiper } from 'components/base/CustomNavigationSwiper';
 import { ProjectItemCard } from 'components/base/ProjectItemCard';
 import { useRef } from 'react';
 import { SwiperSlide } from 'swiper/react';
 import botPastProjects from './botPastProjects';
+import { Swiper } from 'swiper/react';
 
 export const BotPastProjects = () => {
     const swiperRef = useRef(null);
 
     return (
         <SectionWrapper sx={{ marginTop: 5, position: 'relative' }}>
-            <CustomSwiper
+            <Swiper
                 loop={true}
                 spaceBetween={24}
                 slidesPerView={2}
@@ -43,7 +44,7 @@ export const BotPastProjects = () => {
                         </SwiperSlide>
                     )
                 )}
-            </CustomSwiper>
+            </Swiper>
 
             <CustomNavigationSwiper swiperRef={swiperRef} />
         </SectionWrapper>

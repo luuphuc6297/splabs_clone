@@ -1,10 +1,10 @@
 import { Box } from '@mui/material';
-import { CustomSwiper, PastProject } from 'components';
+import { PastProject } from 'components';
 import { useRef } from 'react';
-import { Autoplay } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
 import pastProjects from './topPastProjects.json';
 import './styleSwiper.css';
+import { Swiper } from 'swiper/react';
 
 const CLASS_CONTAINER = 'containerSwiper';
 const CLASS_WRAPPER_PASS_PROJECT = 'wrapperPastProject';
@@ -22,11 +22,10 @@ export const TopPastProject = () => {
     const swiperRef = useRef(null);
 
     return (
-        <CustomSwiper
+        <Swiper
             containerModifierClass={CLASS_CONTAINER}
             style={{ textAlign: 'center' }}
             loop={true}
-            modules={[Autoplay]}
             spaceBetween={1}
             centeredSlides
             slidesPerView={1}
@@ -53,7 +52,6 @@ export const TopPastProject = () => {
                 };
                 swiper.update();
             }}
-            autoPlay
         >
             {pastProjects.payload.map((pr) => (
                 <SwiperSlide>
@@ -62,6 +60,6 @@ export const TopPastProject = () => {
                     </Box>
                 </SwiperSlide>
             ))}
-        </CustomSwiper>
+        </Swiper>
     );
 };
