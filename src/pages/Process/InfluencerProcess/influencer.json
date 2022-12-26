@@ -1,0 +1,34 @@
+{
+    "payload": [
+        {
+            "id": "incubation",
+            "step": "01",
+            "caption": "Grab the opportunity to make your startup dream come true with us!"
+        },
+        {
+            "id": "acceleration",
+            "step": "02",
+            "caption": "We provide development and build-up so that WEB 3.0-based projects can grow into user-friendly projects."
+        },
+        {
+            "id": "community",
+            "step": "03",
+            "caption": "We focus on the community to build innovative Web3 based quality projects!"
+        },
+        {
+            "id": "community",
+            "step": "04",
+            "caption": "We focus on the community to build innovative Web3 based quality projects!"
+        },
+        {
+            "id": "community",
+            "step": "05",
+            "caption": "We focus on the community to build innovative Web3 based quality projects!"
+        },
+        {
+            "id": "community",
+            "step": "06",
+            "caption": "We focus on the community to build innovative Web3 based quality projects!"
+        }
+    ]
+}

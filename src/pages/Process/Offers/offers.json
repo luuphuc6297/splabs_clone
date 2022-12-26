@@ -1,0 +1,28 @@
+{
+    "payload": [
+        {
+            "id": "sourcing",
+            "title": "KOL sourcing",
+            "caption": "We create a long list of KOLs that could fit your business goal",
+            "logo": "/images/offer/research.png"
+        },
+        {
+            "id": "qualifying",
+            "title": "KOL qualifying",
+            "caption": "We research each KOLs and shortlist the best fitting ones",
+            "logo": "/images/offer/verified.png"
+        },
+        {
+            "id": "negotiating",
+            "title": "KOL negotiating",
+            "caption": "We negotiate scope and price negotiation with KOLs",
+            "logo": "/images/offer/handshake.png"
+        },
+        {
+            "id": "campaign",
+            "title": "KOL campaign management & reporting",
+            "caption": "We manage KOL campaigns and provide you with reports",
+            "logo": "/images/offer/bullhorn.png"
+        }
+    ]
+}

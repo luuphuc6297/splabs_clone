@@ -1,0 +1,36 @@
+{
+    "payload": [
+        {
+            "id": "pew_die_pie",
+            "name": "Pew Die Pie",
+            "position": "Game Creator",
+            "avatar": "/images/members/ceo.png",
+            "facebook": "",
+            "youtube": ""
+        },
+        {
+            "id": "pew_pew",
+            "name": "Pew Pew",
+            "position": "Game Creator",
+            "avatar": "/images/members/cso.png",
+            "facebook": "",
+            "youtube": ""
+        },
+        {
+            "id": "andrew_tate",
+            "name": "Andrew Tate",
+            "position": "Lifestyle Creator",
+            "avatar": "/images/members/coo.png",
+            "facebook": "",
+            "youtube": ""
+        },
+        {
+            "id": "tri_minh_le",
+            "name": "Tri Minh Le",
+            "position": "Fashion Creator",
+            "avatar": "/images/members/coo.png",
+            "facebook": "",
+            "youtube": ""
+        }
+    ]
+}

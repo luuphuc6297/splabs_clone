@@ -1,0 +1,119 @@
+{
+    "payload": [
+        {
+            "id": "facebook",
+            "title": "FACEBOOK",
+            "lists": [
+                {
+                    "id": "fb_1",
+                    "caption": "We’re partnered with more than 100 famous influencers who all have more than 100,000 followers/subscribers across all fields such as gaming, music, hobbies, and bitcoin."
+                },
+                {
+                    "id": "fb_2",
+                    "caption": "3 posts a day"
+                },
+                {
+                    "id": "fb_3",
+                    "caption": "Boosting likes on fan pages"
+                },
+                {
+                    "id": "fb_4",
+                    "caption": "Producing 15 to 30-second short videos"
+                }
+            ],
+            "logo": "/images/social/facebook.png"
+        },
+        {
+            "id": "tiktok",
+            "title": "TIKTOK",
+            "lists": [
+                {
+                    "id": "tt_1",
+                    "caption": "We’re partnered with more than 100 famous influencers who all have more than 100,000 followers/subscribers across all fields such as gaming, music, hobbies, and bitcoin."
+                },
+                {
+                    "id": "tt_2",
+                    "caption": "3 posts a day"
+                },
+                {
+                    "id": "tt_3",
+                    "caption": "3 posts a day"
+                },
+                {
+                    "id": "tt_4",
+                    "caption": "3 posts a day"
+                }
+            ],
+            "logo": "/images/social/tiktok.png"
+        },
+        {
+            "id": "youtube",
+            "title": "YOUTUBE",
+            "lists": [
+                {
+                    "id": "yt_1",
+                    "caption": "We’re partnered with more than 100 famous influencers who all have more than 100,000 followers/subscribers across all fields such as gaming, music, hobbies, and bitcoin."
+                },
+                {
+                    "id": "yt_2",
+                    "caption": "3 posts a day"
+                },
+                {
+                    "id": "yt_3",
+                    "caption": "3 posts a day"
+                },
+                {
+                    "id": "yt_4",
+                    "caption": "3 posts a day"
+                }
+            ],
+            "logo": "/images/social/youtube.png"
+        },
+        {
+            "id": "twitter",
+            "title": "TWITTER",
+            "lists": [
+                {
+                    "id": "tw_1",
+                    "caption": "We’re partnered with more than 100 famous influencers who all have more than 100,000 followers/subscribers across all fields such as gaming, music, hobbies, and bitcoin."
+                },
+                {
+                    "id": "tw_2",
+                    "caption": "3 posts a day"
+                },
+                {
+                    "id": "tw_3",
+                    "caption": "3 posts a day"
+                },
+                {
+                    "id": "tw_4",
+                    "caption": "3 posts a day"
+                }
+            ],
+            "logo": "/images/social/twitter.png"
+        },
+        {
+            "id": "livestreaming",
+            "title": "LIVESTREAMING",
+            "lists": [
+                {
+                    "id": "lt_1",
+                    "caption": "We’re partnered with more than 100 famous influencers who all have more than 100,000 followers/subscribers across all fields such as gaming, music, hobbies, and bitcoin."
+                },
+                {
+                    "id": "lt_2",
+                    "caption": "3 posts a day"
+                },
+                {
+                    "id": "lt_3",
+                    "caption": "3 posts a day"
+                },
+                {
+                    "id": "lt_4",
+                    "caption": "3 posts a day"
+                }
+            ],
+            "logo": "/images/social/influencer.png"
+        }
+    ]
+}

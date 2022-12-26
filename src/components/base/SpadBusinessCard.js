@@ -1,12 +1,16 @@
 import { styled, Typography } from '@mui/material';
-import { LeftToRightGradientBox } from 'components';
+import { GradientBox } from 'components';
 import React from 'react';
 
 const Title = styled(Typography)(({ theme }) => ({
     fontWeight: 'bold',
+    fontSize: 18,
+    fontFamily: 'PoppinsBold',
 }));
 
 const Logo = styled('img')(({ theme }) => ({
+    width: 64,
+    height: 64,
     objectFit: 'contain',
 }));
 const Lists = styled('ul')(({ theme }) => ({}));
@@ -15,9 +19,9 @@ const ListItem = styled('li')(({ theme }) => ({
     fontSize: 14,
 }));
 
-export const CategoryCard = React.memo(({ title, lists, logo }) => {
+export const SpadBusinessCard = React.memo(({ title, lists, logo }) => {
     return (
-        <LeftToRightGradientBox
+        <GradientBox
             data-aos="fade-right"
             data-aos-duration="5000"
             data-aos-easing="linear"
@@ -50,6 +54,6 @@ export const CategoryCard = React.memo(({ title, lists, logo }) => {
                     <ListItem key={index}>{list.caption}</ListItem>
                 ))}
             </Lists>
-        </LeftToRightGradientBox>
+        </GradientBox>
     );
 });

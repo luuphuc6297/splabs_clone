@@ -84,9 +84,11 @@ export const Footer = () => {
                                 variant="subtitle2"
                                 gutterBottom
                             >
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's stands.
+                                SPlabs has built up various games and
+                                applications on WEB3 and is a company that
+                                strives to enable various projects around the
+                                world to float with blockchain through the
+                                experience
                             </Typography>
                         </Box>
                         <Box
@@ -140,19 +142,21 @@ export const Footer = () => {
                             >
                                 <ListItem disablePadding>
                                     <Services target="_blank" rel="noreferrer">
-                                        Cyber Security
+                                        Apply for Incubation
                                     </Services>
                                 </ListItem>
                                 <ListItem disablePadding>
-                                    <Services>IT Consultant</Services>
+                                    <Services>Global Marketing</Services>
                                 </ListItem>
                                 <ListItem disablePadding>
-                                    <Services>Strategy & Research</Services>
+                                    <Services>Development</Services>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <Services>IDO/INO/Listing</Services>
                                 </ListItem>
                             </List>
                         </Box>
                     </Box>
-
                     <Box sx={{ flexBasis: isMobile ? '1' : '0', flexGrow: 1 }}>
                         <Box>
                             <SectionTitle
@@ -163,7 +167,65 @@ export const Footer = () => {
                                 variant="subtitle1"
                                 gutterBottom
                             >
-                                Contact
+                                Info
+                            </SectionTitle>
+                            <List
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    gap: 1,
+                                }}
+                            >
+                                <ListItem disablePadding>
+                                    <Email
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="mailto:info@splabs.info"
+                                    >
+                                        About Splabs
+                                    </Email>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <Email
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="mailto:contact@splabs.info276"
+                                    >
+                                        Media Kit
+                                    </Email>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <Email
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="mailto:koreacontact@splabs.info"
+                                    >
+                                        News
+                                    </Email>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <Email
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="mailto:koreacontact@splabs.info"
+                                    >
+                                        FAQ
+                                    </Email>
+                                </ListItem>
+                            </List>
+                        </Box>
+                    </Box>
+                    <Box sx={{ flexBasis: isMobile ? '1' : '0', flexGrow: 1 }}>
+                        <Box>
+                            <SectionTitle
+                                sx={{
+                                    fontWeight: 600,
+                                }}
+                                color="white"
+                                variant="subtitle1"
+                                gutterBottom
+                            >
+                                Contact Us
                             </SectionTitle>
                             <List
                                 sx={{

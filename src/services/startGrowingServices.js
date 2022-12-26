@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { StartGrowingApi } from 'pages/StartGrowing';
+import { StartGrowingApi } from 'pages/LandingPage/StartGrowing';
 import { toast } from 'react-toastify';
 
 const startGrowingKeys = {

@@ -1,0 +1,28 @@
+{
+    "payload": [
+        {
+            "id": "blockchain_pr",
+            "title": "Blockchain PR",
+            "description": "Discover why Web3 PR is at the heart of what we do with the blockchain PR communications method.",
+            "logo": ""
+        },
+        {
+            "id": "technology_pr",
+            "title": "Technology PR",
+            "description": "Increase exposure and improve project quality through building a solid structure and matching project characteristics.",
+            "logo": ""
+        },
+        {
+            "id": "branding_design",
+            "title": "Branding & Design",
+            "description": "We offer a full-scale branding and design service to suit whatever project you are launching.",
+            "logo": ""
+        },
+        {
+            "id": "kol_engagement",
+            "title": "Influencer/KOL Engagement",
+            "description": "Network and build relationships with the biggest KOL’s in blockchain space. Position project front of mind of the top tier influencers and blockchain personalities.",
+            "logo": ""
+        }
+    ]
+}
