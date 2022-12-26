@@ -4,7 +4,7 @@ import {
     Header,
     SectionWithBackground,
     SectionWrapperFullWidth,
-    TopHeader
+    TopHeader,
 } from 'components';
 import AboutUs from './AboutUs';
 import { EnforceProject } from './Enforce';

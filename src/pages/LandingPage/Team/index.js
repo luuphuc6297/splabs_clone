@@ -1,40 +1,49 @@
 import { Box } from '@mui/material';
-import { MemberCard, SectionTitle, SectionWrapper } from 'components';
-import { useRef } from 'react';
+import {
+    MemberCardV2,
+    SectionTitle,
+    SectionWrapperFullWidth,
+} from 'components';
 import { SwiperSlide } from 'swiper/react';
 import members from './members.json';
-import { CustomNavigationSwiper } from 'components/base/CustomNavigationSwiper';
 import { Swiper } from 'swiper/react';
+import './index.css';
 
 export const TheTeam = () => {
-    const swiperRef = useRef(null);
-
     return (
-        <SectionWrapper
-            sx={{ paddingTop: 7.5, marginBottom: 15, position: 'relative' }}
-        >
+        <SectionWrapperFullWidth sx={{ paddingBottom: 15 }}>
             <Box>
                 <SectionTitle sx={{ textAlign: 'center', marginBottom: 5 }}>
                     THE TEAM
                 </SectionTitle>
                 <Swiper
                     loop={true}
-                    spaceBetween={30}
-                    slidesPerView={2}
-                    slidesPerGroup={3}
-                    onSwiper={(swiper) => {
-                        swiperRef.current = swiper;
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    centeredSlides
+                    initialSlide={1}
+                    slideActiveClass="the-team_slideActiveClass"
+                    onActiveIndexChange={(swiper) => {
+                        console.log(swiper);
                     }}
                     breakpoints={{
                         600: {
-                            slidesPerView: 3,
-                            spaceBetween: 60,
+                            slidesPerView: 1.1,
+                            spaceBetween: 15,
+                        },
+                        900: {
+                            slidesPerView: 1.3,
+                            spaceBetween: 20,
+                        },
+                        1000: {
+                            slidesPerView: 1.8,
+                            spaceBetween: 40,
                         },
                     }}
                 >
                     {members.payload.map(({ id, name, position, avatar }) => (
                         <SwiperSlide key={id}>
-                            <MemberCard
+                            <MemberCardV2
                                 id={id}
                                 name={name}
                                 position={position}
@@ -44,8 +53,6 @@ export const TheTeam = () => {
                     ))}
                 </Swiper>
             </Box>
-
-            <CustomNavigationSwiper swiperRef={swiperRef} />
-        </SectionWrapper>
+        </SectionWrapperFullWidth>
     );
 };

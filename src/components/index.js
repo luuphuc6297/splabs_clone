@@ -12,6 +12,7 @@ export * from './base/Header';
 export * from './base/InfluencerProcessCard';
 export * from './base/InputField';
 export * from './base/MemberCard';
+export * from './base/MemberCardV2';
 export * from './base/OfferCard';
 export * from './base/PartnerCard';
 export * from './base/PastProject';
