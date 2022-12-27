@@ -4,12 +4,13 @@ import {
     SectionTitle,
     SectionWrapperFullWidth,
 } from 'components';
-import { SwiperSlide } from 'swiper/react';
+import { SwiperSlide, useSwiperSlide } from 'swiper/react';
 import members from './members.json';
 import { Swiper } from 'swiper/react';
 import './index.css';
 
 export const TheTeam = () => {
+    const swiperSlide = useSwiperSlide();
     return (
         <SectionWrapperFullWidth sx={{ paddingBottom: 15 }}>
             <Box>
@@ -22,7 +23,6 @@ export const TheTeam = () => {
                     slidesPerView={1}
                     centeredSlides
                     initialSlide={1}
-                    slideActiveClass="the-team_slideActiveClass"
                     onActiveIndexChange={(swiper) => {
                         console.log(swiper);
                     }}
@@ -41,16 +41,33 @@ export const TheTeam = () => {
                         },
                     }}
                 >
-                    {members.payload.map(({ id, name, position, avatar }) => (
-                        <SwiperSlide key={id}>
-                            <MemberCardV2
-                                id={id}
-                                name={name}
-                                position={position}
-                                avatar={avatar}
-                            />
-                        </SwiperSlide>
-                    ))}
+                    <>
+                        {members.payload.map(
+                            ({ id, name, position, avatar }) => (
+                                <SwiperSlide key={id}>
+                                    {({ isActive }) => {
+                                        return (
+                                            <Box
+                                                className={
+                                                    isActive
+                                                        ? 'the-team_slideActiveClass'
+                                                        : null
+                                                }
+                                            >
+                                                <MemberCardV2
+                                                    id={id}
+                                                    name={name}
+                                                    position={position}
+                                                    avatar={avatar}
+                                                />
+                                            </Box>
+                                        );
+                                    }}
+                                </SwiperSlide>
+                            )
+                        )}
+                        {console.log(swiperSlide, 'swiperSlide')}
+                    </>
                 </Swiper>
             </Box>
         </SectionWrapperFullWidth>
