@@ -16,7 +16,12 @@ export const Business = () => {
                 }}
             />
             <Box>
-                <Grid container columnSpacing={6} rowSpacing={4}>
+                <Grid
+                    sx={{ justifyContent: 'center' }}
+                    container
+                    columnSpacing={6}
+                    rowSpacing={4}
+                >
                     {business.payload.map((item) => (
                         <Grid item xs={12} sm={6} md={4} key={item.id}>
                             <SpadBusinessCard

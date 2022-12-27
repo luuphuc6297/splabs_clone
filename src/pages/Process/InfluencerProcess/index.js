@@ -21,7 +21,7 @@ export const InfluencerProcess = () => {
             <Box>
                 <Grid container columnSpacing={2} rowSpacing={2}>
                     {influencer.payload.map((item) => (
-                        <Grid item xs={12} sm={4} md={4} key={item.id}>
+                        <Grid item xs={12} sm={6} md={6} key={item.id}>
                             <InfluencerProcessCard
                                 id={item.id}
                                 step={item.step}

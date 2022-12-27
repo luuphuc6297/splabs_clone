@@ -28,7 +28,6 @@ export const OfferCard = React.memo(({ logo, title, caption }) => {
                 display: 'flex',
                 alignItems: 'center',
                 padding: 2,
-                width: 378,
                 height: 128,
                 '&:hover': {
                     transform: 'scale(1.02) !important',

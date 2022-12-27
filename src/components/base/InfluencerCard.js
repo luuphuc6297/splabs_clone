@@ -13,28 +13,26 @@ const Avatar = styled('img')(({ theme }) => ({
     borderRadius: 16,
     objectFit: 'cover',
     width: '100%',
-    height: '100%',
+    boxSizing: 'border-box',
 }));
 
 const Name = styled(Typography)(({ theme }) => ({
     fontSize: 14,
-    marginTop: '12px',
-    marginBottom: '4px',
+    marginTop: '8px',
 }));
 
 const InfoBox = styled(Box)(({ theme }) => ({
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center',
 }));
 
 const SocialLink = styled('a')(({ theme }) => ({
     color: 'white',
+    lineHeight: 1,
 }));
 
 const Position = styled(Typography)(({ theme }) => ({
     fontFamily: 'PoppinsBold',
-    textAlign: 'center',
     fontWeight: 'bold',
 }));
 
@@ -48,7 +46,7 @@ export const InfluencerCard = React.memo(
                     },
                 }}
             >
-                <AvatarWrapper>
+                <AvatarWrapper sx={{ height: 320 }}>
                     <Avatar src={avatar} loading="lazy" />
                 </AvatarWrapper>
                 <InfoBox>
@@ -56,7 +54,7 @@ export const InfluencerCard = React.memo(
                         <Name>{name}</Name>
                         <Position>{position}</Position>
                     </Box>
-                    <Box sx={{ display: 'flex', alignContent: 'center' }}>
+                    <Box sx={{ display: 'flex', alignItems: 'end' }}>
                         <SocialLink
                             href={facebook}
                             target="_blank"

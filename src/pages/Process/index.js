@@ -1,7 +1,10 @@
 import { processBackground } from 'assets';
 import {
-    Footer, Header, SectionWithBackground,
-    SectionWrapperFullWidth, TopHeader
+    Footer,
+    Header,
+    SectionWithBackground,
+    SectionWrapperFullWidth,
+    TopHeader,
 } from 'components';
 import { Explore } from '../LandingPage/Explore';
 import { Business } from './Business';

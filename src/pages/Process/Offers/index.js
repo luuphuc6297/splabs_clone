@@ -24,10 +24,10 @@ export const Offers = () => {
                 through barriers of entry to bring talented individuals into the
                 world
             </SectionCaption>
-            <Box>
+            <Box sx={{ paddingBottom: 18.3 }}>
                 <Grid container columnSpacing={2} rowSpacing={2}>
                     {offers.payload.map((item) => (
-                        <Grid item xs={12} sm={4} md={4} key={item.id}>
+                        <Grid item xs={12} sm={6} md={6} key={item.id}>
                             <OfferCard
                                 id={item.id}
                                 title={item.title}

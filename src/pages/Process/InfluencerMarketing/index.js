@@ -24,47 +24,55 @@ export const InfluencerMarketing = () => {
                     margin: '8px auto 56px auto',
                 }}
             />
-            <Swiper
-                loop={true}
-                spaceBetween={4}
-                slidesPerView={4}
-                centeredSlides
-                onSwiper={(swiper) => {
-                    swiperRef.current = swiper;
-                }}
-                breakpoints={{
-                    600: {
-                        slidesPerView: 1.1,
-                        spaceBetween: 15,
-                    },
-                    900: {
-                        slidesPerView: 1.3,
-                        spaceBetween: 20,
-                    },
-                    1000: {
-                        slidesPerView: 1.8,
-                        spaceBetween: 40,
-                    },
-                }}
-            >
-                <>
-                    {marketings.payload.map(
-                        ({ id, name, position, avatar, facebook, youtube }) => (
-                            <SwiperSlide key={id}>
-                                <InfluencerCard
-                                    id={id}
-                                    name={name}
-                                    position={position}
-                                    avatar={avatar}
-                                    facebook={facebook}
-                                    youtube={youtube}
-                                />
-                            </SwiperSlide>
-                        )
-                    )}
-                </>
-            </Swiper>
-            <CustomNavigationSwiper swiperRef={swiperRef} />
+            <SectionWrapper sx={{ marginTop: 5, position: 'relative' }}>
+                <Swiper
+                    loop={true}
+                    spaceBetween={4}
+                    slidesPerView={1}
+                    onSwiper={(swiper) => {
+                        swiperRef.current = swiper;
+                    }}
+                    breakpoints={{
+                        600: {
+                            slidesPerView: 3,
+                            spaceBetween: 15,
+                        },
+                        900: {
+                            slidesPerView: 4,
+                            spaceBetween: 20,
+                        },
+                        1000: {
+                            slidesPerView: 4,
+                            spaceBetween: 20,
+                        },
+                    }}
+                >
+                    <>
+                        {marketings.payload.map(
+                            ({
+                                id,
+                                name,
+                                position,
+                                avatar,
+                                facebook,
+                                youtube,
+                            }) => (
+                                <SwiperSlide key={id}>
+                                    <InfluencerCard
+                                        id={id}
+                                        name={name}
+                                        position={position}
+                                        avatar={avatar}
+                                        facebook={facebook}
+                                        youtube={youtube}
+                                    />
+                                </SwiperSlide>
+                            )
+                        )}
+                    </>
+                </Swiper>
+                <CustomNavigationSwiper swiperRef={swiperRef} />
+            </SectionWrapper>
         </SectionWrapper>
     );
 };
