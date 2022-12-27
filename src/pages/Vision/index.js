@@ -4,7 +4,7 @@ import {
     Header,
     SectionWithBackground,
     SectionWrapperFullWidth,
-    TopHeader
+    TopHeader,
 } from 'components';
 import { Explore } from '../LandingPage/Explore';
 import { Advertisement } from './Advertisement';
@@ -17,6 +17,7 @@ const VisionPage = () => {
         <>
             <SectionWrapperFullWidth
                 sx={{
+                    width: '101%',
                     backgroundImage: `url(${visionBackground})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
