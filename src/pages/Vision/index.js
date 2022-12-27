@@ -7,6 +7,7 @@ import {
     TopHeader
 } from 'components';
 import { Explore } from '../LandingPage/Explore';
+import { ServicesAndProcess } from './ServicesAndProcess';
 import { TheOurTeam } from './TheFullyTeam/TheOurTeam';
 import { Vision } from './Visions';
 
@@ -28,6 +29,7 @@ const VisionPage = () => {
             </SectionWrapperFullWidth>
             <SectionWithBackground>
                 <Vision />
+                <ServicesAndProcess />
                 <TheOurTeam />
             </SectionWithBackground>
             <Explore />

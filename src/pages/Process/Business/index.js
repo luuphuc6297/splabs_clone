@@ -8,7 +8,13 @@ export const Business = () => {
             <SectionTitle sx={{ textAlign: 'center' }}>
                 SPAD BUSINESS
             </SectionTitle>
-            <Divider />
+            <Divider
+                sx={{
+                    width: '5%',
+                    backgroundColor: 'white',
+                    margin: '0 auto 56px auto',
+                }}
+            />
             <Box>
                 <Grid container columnSpacing={6} rowSpacing={4}>
                     {business.payload.map((item) => (

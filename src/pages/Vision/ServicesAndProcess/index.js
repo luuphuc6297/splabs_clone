@@ -1,22 +1,24 @@
 import { Box, Divider, Grid } from '@mui/material';
 import { SectionTitle, SectionWrapper, VisionCard } from 'components';
 
-import visions from './visions.json';
-
-export const Vision = () => {
+export const ServicesAndProcess = () => {
     return (
         <SectionWrapper id="vision" sx={{ marginBottom: 21 }}>
-            <SectionTitle sx={{ textAlign: 'center' }}>VISIONS</SectionTitle>
+            <SectionTitle sx={{ textAlign: 'center', marginBottom: 2 }}>
+                SERVICES & PROCESS
+            </SectionTitle>
             <Divider
                 sx={{
                     width: '5%',
                     backgroundColor: 'white',
-                    margin: '24px auto 56px auto',
+                    marginBottom: 6,
+                    margin: '0 auto',
+                    textAlign: 'center',
                 }}
             />
             <Box>
                 <Grid container columnSpacing={6} rowSpacing={4}>
-                    {visions.payload.map((item) => (
+                    {/* {visions.payload.map((item) => (
                         <Grid item xs={12} sm={6} md={4} key={item.id}>
                             <VisionCard
                                 id={item.id}
@@ -25,7 +27,7 @@ export const Vision = () => {
                                 caption={item.caption}
                             />
                         </Grid>
-                    ))}
+                    ))} */}
                 </Grid>
             </Box>
         </SectionWrapper>

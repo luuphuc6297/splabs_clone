@@ -11,7 +11,13 @@ export const InfluencerProcess = () => {
             <SectionTitle sx={{ textAlign: 'center' }}>
                 INFLUENCER PROCESS
             </SectionTitle>
-            <Divider />
+            <Divider
+                sx={{
+                    width: '5%',
+                    backgroundColor: 'white',
+                    margin: '0 auto 56px auto',
+                }}
+            />
             <Box>
                 <Grid container columnSpacing={2} rowSpacing={2}>
                     {influencer.payload.map((item) => (

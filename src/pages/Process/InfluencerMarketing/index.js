@@ -17,8 +17,13 @@ export const InfluencerMarketing = () => {
             <SectionTitle sx={{ textAlign: 'center' }}>
                 INFLUENCER MARKETING
             </SectionTitle>
-            <Divider />
-
+            <Divider
+                sx={{
+                    width: '5%',
+                    backgroundColor: 'white',
+                    margin: '0 auto 56px auto',
+                }}
+            />
             <Swiper
                 loop={true}
                 spaceBetween={4}
