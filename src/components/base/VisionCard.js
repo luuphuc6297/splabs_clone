@@ -18,6 +18,7 @@ const Caption = styled(Typography)(({ theme }) => ({
 }));
 
 export const VisionCard = React.memo(({ id, title, caption, logo }) => {
+    console.log('id', id === 'business-statement');
     return (
         <LeftToRightGradientBox
             data-aos="fade-right"
@@ -25,8 +26,8 @@ export const VisionCard = React.memo(({ id, title, caption, logo }) => {
             data-aos-easing="linear"
             id={id}
             sx={{
-                width: 280,
-                height: 360,
+                width: 240,
+                height: 400,
                 borderRadius: 4,
                 display: 'flex',
                 flexDirection: 'column',
@@ -39,13 +40,20 @@ export const VisionCard = React.memo(({ id, title, caption, logo }) => {
                 padding: 2,
                 background: 'rgba(46, 48, 83, 0.4)',
                 boxShadow: 'rgb(255 255 255 / 60%) 0px 0px 8px 0px',
-                transform: ({ id }) =>
-                    id === 'business-statement' ? 'translateY(24px)' : 'none',
+                transform: `${
+                    id === 'business-statement'
+                        ? 'translateY(48px) !important'
+                        : 'translateZ(0)'
+                }`,
                 '&:hover': {
                     background:
                         'linear-gradient(336.08deg, rgb(220, 102, 255) 20.7%, rgb(3, 170, 249) 97.43%)',
                     transition: 'all 0.5s ease 0s',
-                    transform: 'translateY(-10px) scale(1.05) !important',
+                    transform: `${
+                        id === 'business-statement'
+                            ? 'translateY(38px) scale(1.05) !important'
+                            : 'translateY(-10px) scale(1.05) !important'
+                    }`,
                 },
             }}
         >

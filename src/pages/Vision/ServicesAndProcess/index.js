@@ -25,8 +25,8 @@ export const ServicesAndProcess = () => {
                 sx={{
                     display: 'flex',
                     flexWrap: 'wrap',
-                    gap: 5,
-                    justifyContent: 'space-between',
+                    gap: 8,
+                    justifyContent: 'center',
                 }}
             >
                 {services.payload.map((item) => (

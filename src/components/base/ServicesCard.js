@@ -1,8 +1,6 @@
-import { styled, Typography } from '@mui/material';
-import { LeftToRightGradientBox } from 'components';
+import { Divider, styled, Typography, useTheme } from '@mui/material';
+import { GradientBox } from 'components';
 import React from 'react';
-import { Divider } from '@mui/material';
-import { useTheme } from '@mui/material';
 const Title = styled(Typography)(({ theme }) => ({
     fontSize: 18,
     marginBottom: 16,
@@ -13,6 +11,8 @@ const Title = styled(Typography)(({ theme }) => ({
 }));
 
 const Logo = styled('img')(({ theme }) => ({
+    width: 64,
+    height: 64,
     objectFit: 'contain',
 }));
 
@@ -27,7 +27,7 @@ const Caption = styled(Typography)(({ theme }) => ({
 export const ServicesCard = React.memo(({ id, title, description, logo }) => {
     const theme = useTheme();
     return (
-        <LeftToRightGradientBox
+        <GradientBox
             data-aos="fade-right"
             data-aos-duration="5000"
             data-aos-easing="linear"
@@ -74,6 +74,6 @@ export const ServicesCard = React.memo(({ id, title, description, logo }) => {
                 }}
             />
             <Caption>{description}</Caption>
-        </LeftToRightGradientBox>
+        </GradientBox>
     );
 });

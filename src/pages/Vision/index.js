@@ -17,7 +17,7 @@ const VisionPage = () => {
         <>
             <SectionWrapperFullWidth
                 sx={{
-                    width: '101%',
+                    width: '100%',
                     backgroundImage: `url(${visionBackground})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
