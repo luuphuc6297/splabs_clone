@@ -11,8 +11,10 @@ import { Business } from './Business';
 import { InfluencerMarketing } from './InfluencerMarketing';
 import { InfluencerProcess } from './InfluencerProcess';
 import { Offers } from './Offers';
+import useScrollToTarget from 'hooks/useScrollToView';
 
 const ProcessPage = () => {
+    useScrollToTarget();
     return (
         <>
             <SectionWrapperFullWidth

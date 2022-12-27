@@ -4,12 +4,11 @@ import {
     SectionTitle,
     SectionWrapperFullWidth,
 } from 'components';
-import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import members from './members.json';
 import './teamStyles.css';
 
 export const TheTeam = () => {
-    const swiperSlide = useSwiperSlide();
     return (
         <SectionWrapperFullWidth sx={{ paddingBottom: 15 }}>
             <Box>
@@ -22,9 +21,7 @@ export const TheTeam = () => {
                     slidesPerView={1}
                     centeredSlides
                     initialSlide={1}
-                    onActiveIndexChange={(swiper) => {
-                        console.log(swiper);
-                    }}
+                    onActiveIndexChange={(swiper) => {}}
                     breakpoints={{
                         600: {
                             slidesPerView: 1.1,
