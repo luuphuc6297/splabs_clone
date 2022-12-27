@@ -21,7 +21,7 @@ export const InfluencerMarketing = () => {
                 sx={{
                     width: '5%',
                     backgroundColor: 'white',
-                    margin: '0 auto 56px auto',
+                    margin: '8px auto 56px auto',
                 }}
             />
             <Swiper
@@ -29,8 +29,6 @@ export const InfluencerMarketing = () => {
                 spaceBetween={4}
                 slidesPerView={4}
                 centeredSlides
-                // initialSlide={4}
-                // slidesPerGroup={4}
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
                 }}

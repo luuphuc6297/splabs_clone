@@ -11,7 +11,7 @@ export const Vision = () => {
                 sx={{
                     width: '5%',
                     backgroundColor: 'white',
-                    margin: '24px auto 56px auto',
+                    margin: '8px auto 56px auto',
                 }}
             />
             <Box>

@@ -2,6 +2,7 @@
  * Base
  **/
 export * from './base/AddressCard';
+export * from './base/AdvertisementCard';
 export * from './base/AppButton';
 export * from './base/CategoryCard';
 export * from './base/CustomNavigationSwiper';
@@ -21,6 +22,7 @@ export * from './base/PastProject';
 export * from './base/PresentationCard';
 export * from './base/ProjectCard';
 export * from './base/QRCard';
+export * from './base/ServicesCard';
 export * from './base/SpadBusinessCard';
 export * from './base/SPLabsLogo';
 export * from './base/SubmitButton';
@@ -37,8 +39,8 @@ export * from './sections/SectionTitle';
 export * from './sections/SectionWithBackground';
 export * from './sections/SectionWrapper';
 export * from './sections/SectionWrapperFullWidth';
+export * from './sections/AdvertisementSection';
 /**
  * Typography
  **/
 export * from './typography/Error';
-

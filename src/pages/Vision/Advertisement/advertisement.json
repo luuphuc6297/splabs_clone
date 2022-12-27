@@ -2,11 +2,13 @@
     "payload": [
         {
             "id": "the_first_advertisement",
-            "caption": ""
+            "caption": "SPLabs Advertisement, a subsidiary of Splabs, provides community support and marketing services based on Japanese, Korean, and Vietnamese KOL cartels.",
+            "adLogo": "/images/ad/ad_1.png"
         },
         {
             "id": "the_second_advertisement",
-            "caption": ""
+            "caption": "It can also be promoted within the community of projects launched by SPlabs. The communities we have are related to WEB 3.0 and NFT-based projects, and can provide various investment opportunities to community members.",
+            "adLogo": "/images/ad/ad_2.png"
         }
     ]
 }

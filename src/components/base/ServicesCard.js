@@ -4,8 +4,12 @@ import React from 'react';
 import { Divider } from '@mui/material';
 
 const Title = styled(Typography)(({ theme }) => ({
+    fontSize: 18,
     marginBottom: 16,
     fontWeight: 'bold',
+    [theme.breakpoints.down('lg')]: {
+        fontSize: 16,
+    },
 }));
 
 const Logo = styled('img')(({ theme }) => ({
@@ -13,11 +17,14 @@ const Logo = styled('img')(({ theme }) => ({
 }));
 
 const Caption = styled(Typography)(({ theme }) => ({
-    fontSize: 12,
+    fontSize: 16,
     textAlign: 'center',
+    [theme.breakpoints.down('lg')]: {
+        fontSize: 14,
+    },
 }));
 
-export const VisionCard = React.memo(({ id, title, caption, logo }) => {
+export const ServicesCard = React.memo(({ id, title, description, logo }) => {
     return (
         <LeftToRightGradientBox
             data-aos="fade-right"
@@ -25,8 +32,8 @@ export const VisionCard = React.memo(({ id, title, caption, logo }) => {
             data-aos-easing="linear"
             id={id}
             sx={{
-                width: 280,
-                height: 360,
+                width: 520,
+                height: 320,
                 borderRadius: 4,
                 display: 'flex',
                 flexDirection: 'column',
@@ -39,8 +46,6 @@ export const VisionCard = React.memo(({ id, title, caption, logo }) => {
                 padding: 2,
                 background: 'rgba(46, 48, 83, 0.4)',
                 boxShadow: 'rgb(255 255 255 / 60%) 0px 0px 8px 0px',
-                transform: ({ id }) =>
-                    id === 'business-statement' ? 'translateY(24px)' : 'none',
                 '&:hover': {
                     background:
                         'linear-gradient(336.08deg, rgb(220, 102, 255) 20.7%, rgb(3, 170, 249) 97.43%)',
@@ -59,7 +64,7 @@ export const VisionCard = React.memo(({ id, title, caption, logo }) => {
                     marginBottom: 2,
                 }}
             />
-            <Caption>{caption}</Caption>
+            <Caption>{description}</Caption>
         </LeftToRightGradientBox>
     );
 });

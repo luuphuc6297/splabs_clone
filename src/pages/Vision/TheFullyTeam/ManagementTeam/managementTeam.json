@@ -1,0 +1,114 @@
+{
+    "payload": [
+        {
+            "id": "ceo",
+            "name": "Kyle Kim",
+            "position": "CEO",
+            "avatar": "/images/members/ceo.png",
+            "experiences": [
+                {
+                    "id": "ceo_1",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "ceo_2",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "ceo_3",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "ceo_4",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "ceo_5",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "ceo_6",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "ceo_7",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "ceo_8",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "ceo_9",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "ceo_10",
+                    "description": "CEO SPLabs"
+                }
+            ]
+        },
+        {
+            "id": "cso",
+            "name": "David Lee",
+            "position": "CSO",
+            "avatar": "/images/members/cso.png",
+            "experiences": [
+                {
+                    "id": "cso_1",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "cso_2",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "cso_3",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "cso_4",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "cso_5",
+                    "description": "CEO SPLabs"
+                }
+            ]
+        },
+        {
+            "id": "coo",
+            "name": "Tracy Nguyen",
+            "position": "COO",
+            "avatar": "/images/members/coo.png",
+            "experiences": [
+                {
+                    "id": "coo_1",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "coo_2",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "coo_3",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "coo_4",
+                    "description": "CEO SPLabs"
+                },
+                {
+                    "id": "coo_5",
+                    "description": "CEO SPLabs"
+                }
+            ]
+        },
+        {
+            "id": "coo1",
+            "name": "Tracy Nguyen",
+            "position": "COO",
+            "avatar": "/images/members/coo.png"
+        }
+    ]
+}
