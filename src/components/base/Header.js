@@ -38,7 +38,7 @@ const navigateItems = [
             {
                 id: 'the_studio',
                 label: 'The Team',
-                link: '/#the-studio',
+                link: '/process',
                 internal: true,
             },
         ],
@@ -46,20 +46,20 @@ const navigateItems = [
     {
         id: 'influencer marketing',
         label: 'Influencer Marketing',
-        link: '/#influencer',
+        link: '/process',
         internal: false,
         subMenu: [
             {
                 id: 'the_studio',
                 label: 'SPAD Influencer Process',
-                link: '/#the-studio',
-                internal: false,
+                link: '/process',
+                internal: true,
             },
             {
                 id: 'the_studio',
                 label: 'SPAD Business',
-                link: '/#the-studio',
-                internal: false,
+                link: '/process',
+                internal: true,
             },
         ],
     },

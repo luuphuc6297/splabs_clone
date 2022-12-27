@@ -12,9 +12,7 @@ export const ManagementTeam = () => {
             slidesPerView={1}
             centeredSlides
             initialSlide={1}
-            onActiveIndexChange={(swiper) => {
-                console.log(swiper);
-            }}
+            onActiveIndexChange={(swiper) => {}}
             breakpoints={{
                 600: {
                     slidesPerView: 1.1,
