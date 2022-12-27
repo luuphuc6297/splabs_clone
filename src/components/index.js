@@ -40,6 +40,7 @@ export * from './sections/SectionWithBackground';
 export * from './sections/SectionWrapper';
 export * from './sections/SectionWrapperFullWidth';
 export * from './sections/AdvertisementSection';
+export * from './sections/ServicesBanner';
 /**
  * Typography
  **/

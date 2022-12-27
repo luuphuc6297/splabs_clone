@@ -1,5 +1,10 @@
 import { Box, Divider, Grid } from '@mui/material';
-import { SectionTitle, SectionWrapper, ServicesCard } from 'components';
+import {
+    SectionTitle,
+    SectionWrapper,
+    ServicesCard,
+    ServicesBanner,
+} from 'components';
 import services from './services.json';
 export const ServicesAndProcess = () => {
     return (
@@ -15,6 +20,7 @@ export const ServicesAndProcess = () => {
                     textAlign: 'center',
                 }}
             />
+            <ServicesBanner />
             <Box
                 sx={{
                     display: 'flex',
