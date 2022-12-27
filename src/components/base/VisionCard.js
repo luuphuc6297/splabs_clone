@@ -2,6 +2,7 @@ import { styled, Typography } from '@mui/material';
 import { LeftToRightGradientBox } from 'components';
 import React from 'react';
 import { Divider } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 const Title = styled(Typography)(({ theme }) => ({
     marginBottom: 16,
@@ -18,7 +19,7 @@ const Caption = styled(Typography)(({ theme }) => ({
 }));
 
 export const VisionCard = React.memo(({ id, title, caption, logo }) => {
-    console.log('id', id === 'business-statement');
+    const theme = useTheme();
     return (
         <LeftToRightGradientBox
             data-aos="fade-right"
@@ -26,7 +27,7 @@ export const VisionCard = React.memo(({ id, title, caption, logo }) => {
             data-aos-easing="linear"
             id={id}
             sx={{
-                width: 240,
+                width: 260,
                 height: 400,
                 borderRadius: 4,
                 display: 'flex',
@@ -54,6 +55,9 @@ export const VisionCard = React.memo(({ id, title, caption, logo }) => {
                             ? 'translateY(38px) scale(1.05) !important'
                             : 'translateY(-10px) scale(1.05) !important'
                     }`,
+                },
+                [theme.breakpoints.down('md')]: {
+                    transform: 'translateZ(0) !important',
                 },
             }}
         >

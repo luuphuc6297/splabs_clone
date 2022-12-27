@@ -7,111 +7,115 @@
             "descriptions": [
                 {
                     "id": "ca_1",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": "Technical Leader/ Senior Developer at DSI and IPS"
                 },
                 {
                     "id": "ca_2",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": "Team leader at 13 SOLUTION AUSTRALIA"
                 },
                 {
                     "id": "ca_3",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": "Senior Developer at DEVINITION LTD"
                 },
                 {
                     "id": "ca_4",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": "Founder, Team leader at ANH MINH LTD"
                 }
             ]
         },
         {
             "id": "bill_nguyen",
             "name": "Bill Nguyen",
-            "position": "CTO",
+            "position": "Back end developer",
             "descriptions": [
                 {
                     "id": "ca_1",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": "CTO at BTVLab (Laboritoy and blockchain project development)"
                 },
                 {
                     "id": "ca_2",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": "Server lead at Where.Place (Indoor digital maps service)"
                 },
                 {
                     "id": "ca_3",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": "Server lead at Cinamon (Online social media service)"
                 },
                 {
                     "id": "ca_4",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": "Viettel Group, research and development team leader"
                 }
             ]
         },
         {
-            "id": "bill_nguyen",
-            "name": "Bill Nguyen",
-            "position": "CTO",
+            "id": "hoang_hai",
+            "name": "Hoang Hai",
+            "position": "Blockchain Engineer",
             "descriptions": [
                 {
-                    "id": "ca_1",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "hh_1",
+                    "description": "Experience working with blockchain since 2018"
                 },
                 {
-                    "id": "ca_2",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "hh_2",
+                    "description": "Over 3 years experience in developing and releasing secure and production smart contracts in Solidity."
                 },
                 {
-                    "id": "ca_3",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "hh_3",
+                    "description": "Senior Blockchain Developer at SPLabs."
                 },
                 {
-                    "id": "ca_4",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "hh_4",
+                    "description": "Strong knowledge of the EVM networks, DeFis and other Web3 ecosystems."
                 }
             ]
         },
         {
-            "id": "bill_nguyen",
-            "name": "Bill Nguyen",
-            "position": "CTO",
+            "id": "tam_tran",
+            "name": "Tam Tran",
+            "position": "Front End Developer",
             "descriptions": [
                 {
-                    "id": "ca_1",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "tt_1",
+                    "description": "4 years experience Web Developer"
                 },
                 {
-                    "id": "ca_2",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "tt_2",
+                    "description": "2 years experience Mobile Developer"
                 },
                 {
-                    "id": "ca_3",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "tt_3",
+                    "description": "Team Leader Frontend, web, mobile developer at StiB Labs"
                 },
                 {
-                    "id": "ca_4",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "tt_4",
+                    "description": "Web developer at Smartdatics"
+                },
+                {
+                    "id": "tt_5",
+                    "description": "Freelancer developer"
                 }
             ]
         },
         {
-            "id": "bill_nguyen",
-            "name": "Bill Nguyen",
-            "position": "CTO",
+            "id": "danny_truong",
+            "name": "Danny Truong",
+            "position": "Project Planner & Coordinator",
             "descriptions": [
                 {
-                    "id": "ca_1",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "dn_1",
+                    "description": "Project Communications Coordinator at SPLabs Co., Ltd"
                 },
                 {
-                    "id": "ca_2",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "dn_2",
+                    "description": "Project Planner / UI UX Planner at BTV Lab Co., Ltd"
                 },
                 {
-                    "id": "ca_3",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "dn_3",
+                    "description": "Project Assistant / Korean Communicator at FPT Software"
                 },
                 {
-                    "id": "ca_4",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "dn_4",
+                    "description": "Developer at Shinhan DS Vietnam System Developer at Youngwoo DSP Co., Ltd - Samsung Display's Project"
                 }
             ]
         },
