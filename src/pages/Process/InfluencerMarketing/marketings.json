@@ -4,31 +4,31 @@
             "id": "pew_die_pie",
             "name": "Pew Die Pie",
             "position": "Game Creator",
-            "avatar": "/images/members/ceo.png",
+            "avatar": "/images/influencer/pew-die-pie.jpg",
             "facebook": "",
-            "youtube": ""
+            "youtube": "https://www.youtube.com/@PewDiePie"
         },
         {
             "id": "pew_pew",
             "name": "Pew Pew",
             "position": "Game Creator",
-            "avatar": "/images/members/cso.png",
-            "facebook": "",
+            "avatar": "/images/influencer/andrew-tate.jpg",
+            "facebook": "https://www.youtube.com/@PewPew",
             "youtube": ""
         },
         {
             "id": "andrew_tate",
             "name": "Andrew Tate",
             "position": "Lifestyle Creator",
-            "avatar": "/images/members/coo.png",
+            "avatar": "/images/influencer/andrew-tate.jpg",
             "facebook": "",
-            "youtube": ""
+            "youtube": "https://www.youtube.com/@andrewtate---"
         },
         {
             "id": "tri_minh_le",
             "name": "Tri Minh Le",
             "position": "Fashion Creator",
-            "avatar": "/images/members/coo.png",
+            "avatar": "/images/influencer/pew-die-pie.jpg",
             "facebook": "",
             "youtube": ""
         }

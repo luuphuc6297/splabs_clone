@@ -52,19 +52,19 @@
             "lists": [
                 {
                     "id": "yt_1",
-                    "caption": "We’re partnered with more than 100 famous influencers who all have more than 100,000 followers/subscribers across all fields such as gaming, music, hobbies, and bitcoin."
+                    "caption": "Creating a YouTube channel for each project"
                 },
                 {
                     "id": "yt_2",
-                    "caption": "3 posts a day"
+                    "caption": "Introducing promotional videos on famous influencers’ channels"
                 },
                 {
                     "id": "yt_3",
-                    "caption": "3 posts a day"
+                    "caption": "Live streaming of famous influencers"
                 },
                 {
                     "id": "yt_4",
-                    "caption": "3 posts a day"
+                    "caption": "Boosting subscribers and views for each projects’ YouTube channel"
                 }
             ],
             "logo": "/images/social/youtube.png"
@@ -75,19 +75,19 @@
             "lists": [
                 {
                     "id": "tw_1",
-                    "caption": "We’re partnered with more than 100 famous influencers who all have more than 100,000 followers/subscribers across all fields such as gaming, music, hobbies, and bitcoin."
+                    "caption": "Creating a Twitter channel for each project"
                 },
                 {
                     "id": "tw_2",
-                    "caption": "3 posts a day"
+                    "caption": "Boosting likes on fan pages"
                 },
                 {
                     "id": "tw_3",
-                    "caption": "3 posts a day"
+                    "caption": "Sharing various news and events"
                 },
                 {
                     "id": "tw_4",
-                    "caption": "3 posts a day"
+                    "caption": "1 post a day"
                 }
             ],
             "logo": "/images/social/twitter.png"
@@ -98,19 +98,15 @@
             "lists": [
                 {
                     "id": "lt_1",
-                    "caption": "We’re partnered with more than 100 famous influencers who all have more than 100,000 followers/subscribers across all fields such as gaming, music, hobbies, and bitcoin."
+                    "caption": "Live streaming on a wide range of platforms"
                 },
                 {
                     "id": "lt_2",
-                    "caption": "3 posts a day"
+                    "caption": "Attracting users through live streaming"
                 },
                 {
                     "id": "lt_3",
-                    "caption": "3 posts a day"
-                },
-                {
-                    "id": "lt_4",
-                    "caption": "3 posts a day"
+                    "caption": "Carrying out a variety of events"
                 }
             ],
             "logo": "/images/social/influencer.png"

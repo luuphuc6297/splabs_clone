@@ -4,10 +4,9 @@ import {
     SectionTitle,
     SectionWrapperFullWidth,
 } from 'components';
-import { SwiperSlide, useSwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';
 import members from './members.json';
-import { Swiper } from 'swiper/react';
-import './index.css';
+import './teamStyles.css';
 
 export const TheTeam = () => {
     const swiperSlide = useSwiperSlide();
@@ -66,7 +65,6 @@ export const TheTeam = () => {
                                 </SwiperSlide>
                             )
                         )}
-                        {console.log(swiperSlide, 'swiperSlide')}
                     </>
                 </Swiper>
             </Box>

@@ -1,0 +1,22 @@
+{
+    "payload": [
+        {
+            "id": "Business Purpose",
+            "title": "Business Purpose",
+            "caption": "Making full use of our company’s infrastructure, we introduce your company’s project to Vietnam, Southeast Asia, and all around the world through various social media platforms and attract real users of your service according to your company’s project.",
+            "logo": "/images/roadmap.png"
+        },
+        {
+            "id": "Business Statement",
+            "title": "Business Statement",
+            "caption": "Making full use of our company’s infrastructure, we introduce your company’s project to Vietnam, Southeast Asia, and all around the world through various social media platforms and attract real users of your service according to your company’s project.",
+            "logo": "/images/roadmap.png"
+        },
+        {
+            "id": "Business Goals",
+            "title": "Business Goals",
+            "caption": "We introduce and deliver information with the cryptocurrency market’s “P2E” blockchain games as the main content, and through a whole range of marketing strategies, we attract actual users so that all those who use your service can open the “box that earns money.",
+            "logo": "/images/roadmap.png"
+        }
+    ]
+}

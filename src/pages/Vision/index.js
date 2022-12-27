@@ -1,20 +1,21 @@
-import { homeBackground } from 'assets';
+import { visionBackground } from 'assets';
 import {
-    Footer, Header, SectionWithBackground,
-    SectionWrapperFullWidth, TopHeader
+    Footer,
+    Header,
+    SectionWithBackground,
+    SectionWrapperFullWidth,
+    TopHeader
 } from 'components';
 import { Explore } from '../LandingPage/Explore';
-import { Business } from './Business';
-import { InfluencerMarketing } from './InfluencerMarketing';
-import { InfluencerProcess } from './InfluencerProcess';
-import { Offers } from './Offers';
+import { TheOurTeam } from './TheFullyTeam/TheOurTeam';
+import { Vision } from './Visions';
 
-const ProcessPage = () => {
+const VisionPage = () => {
     return (
         <>
             <SectionWrapperFullWidth
                 sx={{
-                    backgroundImage: `url(${homeBackground})`,
+                    backgroundImage: `url(${visionBackground})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
@@ -26,14 +27,12 @@ const ProcessPage = () => {
                 <Header />
             </SectionWrapperFullWidth>
             <SectionWithBackground>
-                <InfluencerProcess />
-                <Business />
-                <InfluencerMarketing />
-                <Offers />
+                <Vision />
+                <TheOurTeam />
             </SectionWithBackground>
             <Explore />
             <Footer />
         </>
     );
 };
-export default ProcessPage;
+export default VisionPage;

@@ -1,9 +1,8 @@
-import { Box, Divider, Typography } from '@mui/material';
-import { styled } from '@mui/material';
-import React from 'react';
-import TelegramIcon from '@mui/icons-material/Telegram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import { Box, Divider, styled, Typography } from '@mui/material';
 import { useTheme } from '@mui/system';
+import React from 'react';
 
 const Name = styled(Typography)(({ theme }) => ({
     marginTop: '10px',
