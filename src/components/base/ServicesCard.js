@@ -2,7 +2,7 @@ import { styled, Typography } from '@mui/material';
 import { LeftToRightGradientBox } from 'components';
 import React from 'react';
 import { Divider } from '@mui/material';
-
+import { useTheme } from '@mui/material';
 const Title = styled(Typography)(({ theme }) => ({
     fontSize: 18,
     marginBottom: 16,
@@ -25,6 +25,7 @@ const Caption = styled(Typography)(({ theme }) => ({
 }));
 
 export const ServicesCard = React.memo(({ id, title, description, logo }) => {
+    const theme = useTheme();
     return (
         <LeftToRightGradientBox
             data-aos="fade-right"
@@ -51,6 +52,14 @@ export const ServicesCard = React.memo(({ id, title, description, logo }) => {
                         'linear-gradient(336.08deg, rgb(220, 102, 255) 20.7%, rgb(3, 170, 249) 97.43%)',
                     transition: 'all 0.5s ease 0s',
                     transform: 'translateY(-10px) scale(1.05) !important',
+                },
+                [theme.breakpoints.down('lg')]: {
+                    width: 480,
+                    height: 280,
+                },
+                [theme.breakpoints.down('md')]: {
+                    width: 420,
+                    height: 240,
                 },
             }}
         >

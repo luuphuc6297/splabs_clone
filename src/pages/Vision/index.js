@@ -4,13 +4,14 @@ import {
     Header,
     SectionWithBackground,
     SectionWrapperFullWidth,
-    TopHeader,
+    TopHeader
 } from 'components';
 import { Explore } from '../LandingPage/Explore';
-import { ServicesAndProcess } from './ServicesAndProcess';
-import { TheOurTeam } from './TheFullyTeam/TheOurTeam';
-import { Vision } from './Visions';
 import { Advertisement } from './Advertisement';
+import { ServicesAndProcess } from './ServicesAndProcess';
+import { TheFullyTeam } from './TheFullyTeam';
+import { Vision } from './Visions';
+
 const VisionPage = () => {
     return (
         <>
@@ -30,7 +31,7 @@ const VisionPage = () => {
             <SectionWithBackground>
                 <Vision />
                 <ServicesAndProcess />
-                <TheOurTeam />
+                <TheFullyTeam />
                 <Advertisement />
             </SectionWithBackground>
             <Explore />

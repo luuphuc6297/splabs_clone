@@ -3,7 +3,7 @@ import { SectionTitle, SectionWrapper, ServicesCard } from 'components';
 import services from './services.json';
 export const ServicesAndProcess = () => {
     return (
-        <SectionWrapper id="vision" sx={{ marginBottom: 21 }}>
+        <SectionWrapper id="services_process" sx={{ marginBottom: 21 }}>
             <SectionTitle sx={{ textAlign: 'center', marginBottom: 2 }}>
                 SERVICES & PROCESS
             </SectionTitle>

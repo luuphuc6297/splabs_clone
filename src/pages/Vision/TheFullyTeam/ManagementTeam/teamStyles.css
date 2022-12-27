@@ -1,0 +1,8 @@
+.the-team_slideActiveClass .member-card_item {
+    background: linear-gradient(90.22deg, rgb(220, 102, 255), rgb(3, 170, 249));
+    color: #f0f5f9;
+}
+
+.the-team_slideActiveClass .member-card_item > div {
+    color: #f0f5f9;
+}

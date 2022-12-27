@@ -9,7 +9,7 @@ import offers from './offers.json';
 
 export const Offers = () => {
     return (
-        <SectionWrapper id="spad_business" sx={{ marginBottom: 21 }}>
+        <SectionWrapper id="spad_business">
             <SectionTitle sx={{ textAlign: 'center' }}>
                 WHAT DO WE OFFERS
             </SectionTitle>

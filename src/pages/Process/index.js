@@ -1,4 +1,4 @@
-import { homeBackground } from 'assets';
+import { processBackground } from 'assets';
 import {
     Footer, Header, SectionWithBackground,
     SectionWrapperFullWidth, TopHeader
@@ -14,7 +14,7 @@ const ProcessPage = () => {
         <>
             <SectionWrapperFullWidth
                 sx={{
-                    backgroundImage: `url(${homeBackground})`,
+                    backgroundImage: `url(${processBackground})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',

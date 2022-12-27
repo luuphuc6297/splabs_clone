@@ -4,7 +4,7 @@ import advertise from './advertisement.json';
 
 export const Advertisement = () => {
     return (
-        <SectionWrapper id="vision" sx={{ marginBottom: 21 }}>
+        <SectionWrapper id="advertisement">
             <SectionTitle sx={{ textAlign: 'center', marginBottom: 2 }}>
                 SPLABS ADVERTISEMENT
             </SectionTitle>
