@@ -4,9 +4,9 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { SectionWrapper, SPLabsLogo } from 'components';
 import { IconArrowLeftSvg } from 'components/Svgs/IconArrowLeftSvg';
 import { IconGridSvg } from 'components/Svgs/IconGridSvg';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Link as LinkReactScroll } from 'react-scroll';
 import { NavigateBar } from './NavigateBar';
 import SubMenu from './SubMenu';
@@ -38,8 +38,7 @@ const navigateItems = [
             {
                 id: 'the_studio',
                 label: 'The Team',
-                link: '/process',
-                internal: true,
+                link: '/process#',
             },
         ],
     },
@@ -52,14 +51,12 @@ const navigateItems = [
             {
                 id: 'the_studio',
                 label: 'SPAD Influencer Process',
-                link: '/process',
-                internal: true,
+                link: '/process#spad_business', // after # is id element
             },
             {
                 id: 'the_studio',
                 label: 'SPAD Business',
-                link: '/process',
-                internal: true,
+                link: '/process#spad_business', // after # is id element
             },
         ],
     },
@@ -86,6 +83,17 @@ export const Header = () => {
     const theme = useTheme();
     const matchesMD = useMediaQuery(theme.breakpoints.up('md'));
     const matchesXS = useMediaQuery(theme.breakpoints.up('xs'));
+    const { pathname } = useLocation();
+
+    const dataNavigateItems = useMemo(() => {
+        return navigateItems.map((item) => {
+            if (item.subMenu?.length > 0 && item.link === pathname) {
+                item.internal = true;
+            }
+            item.internal = false;
+            return item;
+        });
+    }, [pathname]);
 
     const { t } = useTranslation('translation');
 
@@ -125,7 +133,7 @@ export const Header = () => {
             >
                 <SPLabsLogo />
                 {matchesMD ? (
-                    <NavigateBar navigateItems={navigateItems} />
+                    <NavigateBar navigateItems={dataNavigateItems} />
                 ) : (
                     <IconGridSvg onClick={() => setOpenDrawerMenu(true)} />
                 )}
@@ -151,13 +159,14 @@ export const Header = () => {
                             />
                         </Box>
                         <Box>
-                            {navigateItems.map((item) => {
+                            {dataNavigateItems.map((item) => {
                                 if (item?.subMenu?.length > 0) {
                                     return (
                                         <SubMenu
                                             subMenu={item.subMenu}
                                             titleMenu={t(item.label)}
                                             isMobile
+                                            internal={item.internal}
                                             onCloseMobile={() =>
                                                 setOpenDrawerMenu(false)
                                             }

@@ -15,6 +15,7 @@ import {
     ListItemText,
 } from '@mui/material';
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
 const styleTextMenuMobile = {
     color: '#65686f',
@@ -66,10 +67,13 @@ export default function SubMenu({
     subMenu,
     isMobile,
     onCloseMobile,
+    internal,
 }) {
     const [anchorEl, setAnchorEl] = React.useState(null);
+
     const [openMenuMobile, setOpenMenuMobile] = React.useState(false);
     const { t } = useTranslation('translation');
+    const navigate = useNavigate();
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
         if (isMobile) {
@@ -102,7 +106,7 @@ export default function SubMenu({
                         <List component="div" disablePadding>
                             {subMenu.map((subItem) => (
                                 <StyledListItemText sx={{ pl: 4 }}>
-                                    {subItem?.internal ? (
+                                    {internal ? (
                                         <LinkReactScroll
                                             onClick={
                                                 onCloseMobile && onCloseMobile
@@ -168,7 +172,7 @@ export default function SubMenu({
                                     sx={{ cursor: 'pointer' }}
                                     onClick={handleClose}
                                 >
-                                    {subItem?.internal ? (
+                                    {internal ? (
                                         <LinkReactScroll
                                             onClick={handleClose}
                                             to={subItem.id}
@@ -179,7 +183,13 @@ export default function SubMenu({
                                             {t(subItem.label)}
                                         </LinkReactScroll>
                                     ) : (
-                                        <MenuItem>{t(subItem.label)}</MenuItem>
+                                        <MenuItem
+                                            onClick={() =>
+                                                navigate(subItem.link)
+                                            }
+                                        >
+                                            {t(subItem.label)}
+                                        </MenuItem>
                                     )}
 
                                     {hasDivider && (

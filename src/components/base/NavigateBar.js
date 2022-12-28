@@ -39,6 +39,7 @@ export const NavigateBar = ({ navigateItems }) => {
                         <SubMenu
                             subMenu={item.subMenu}
                             titleMenu={t(item.label)}
+                            internal={item.internal}
                         />
                     );
                 }
@@ -58,7 +59,6 @@ export const NavigateBar = ({ navigateItems }) => {
                             <Link
                                 id={item.id}
                                 to={item.link}
-                                onClick={() => scrollSection(item.id)}
                                 style={{
                                     color: '#ffffff',
                                     textDecoration: 'none',
