@@ -6,6 +6,7 @@ import {
     SectionWrapperFullWidth,
     TopHeader,
 } from 'components';
+import useScrollToTarget from 'hooks/useScrollToView';
 import AboutUs from './AboutUs';
 import { EnforceProject } from './Enforce';
 import { Explore } from './Explore';
@@ -17,6 +18,7 @@ import { StartGrowing } from './StartGrowing';
 import { TheTeam } from './Team';
 
 const LandingPage = () => {
+    useScrollToTarget();
     return (
         <>
             <SectionWrapperFullWidth

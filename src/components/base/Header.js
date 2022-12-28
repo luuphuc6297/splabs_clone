@@ -23,22 +23,22 @@ const navigateItems = [
             {
                 id: 'the_studio',
                 label: 'Vision',
-                link: '/#the-studio',
+                link: '/vision',
             },
             {
-                id: 'the_studio',
+                id: 'advertisement',
                 label: 'Advertisement',
-                link: '/#the-studio',
+                link: '/advertisement',
             },
             {
-                id: 'the_studio',
+                id: 'service',
                 label: 'Service',
-                link: '/#the-studio',
+                link: '/service',
             },
             {
                 id: 'the_studio',
                 label: 'The Team',
-                link: '/process#',
+                link: '/#the-team',
             },
         ],
     },
@@ -49,14 +49,14 @@ const navigateItems = [
         internal: false,
         subMenu: [
             {
-                id: 'the_studio',
+                id: 'influencer_process',
                 label: 'SPAD Influencer Process',
-                link: '/process#spad_business', // after # is id element
+                link: '/process#influencer_process', // after # is id element
             },
             {
-                id: 'the_studio',
+                id: 'spad_usiness',
                 label: 'SPAD Business',
-                link: '/process#spad_business', // after # is id element
+                link: '/process#influencer_marketing', // after # is id element
             },
         ],
     },

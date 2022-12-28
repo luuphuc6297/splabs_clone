@@ -10,7 +10,7 @@ import './teamStyles.css';
 
 export const TheTeam = () => {
     return (
-        <SectionWrapperFullWidth sx={{ paddingBottom: 15 }}>
+        <SectionWrapperFullWidth id="the-team" sx={{ paddingBottom: 15 }}>
             <Box>
                 <SectionTitle sx={{ textAlign: 'center', marginBottom: 5 }}>
                     THE TEAM

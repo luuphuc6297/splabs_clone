@@ -184,9 +184,9 @@ export default function SubMenu({
                                         </LinkReactScroll>
                                     ) : (
                                         <MenuItem
-                                            onClick={() =>
-                                                navigate(subItem.link)
-                                            }
+                                            onClick={() => {
+                                                navigate(subItem.link);
+                                            }}
                                         >
                                             {t(subItem.label)}
                                         </MenuItem>
