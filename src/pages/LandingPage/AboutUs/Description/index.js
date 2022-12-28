@@ -5,7 +5,7 @@ import { SectionTitle, SectionCaption } from 'components';
 export const Description = () => {
     const theme = useTheme();
     return (
-        <Box sx={{ width: '100%' }}>
+        <Box id="about-us" sx={{ width: '100%' }}>
             <SectionTitle
                 sx={{
                     marginBottom: 2,

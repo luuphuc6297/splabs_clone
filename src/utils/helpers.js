@@ -3,8 +3,8 @@ export const scrollSection = (id) => {
     if (section) {
         section.scrollIntoView({
             behavior: 'smooth',
-            block: 'center',
-            inline: 'center',
+            block: 'start',
+            inline: 'start',
         });
     }
 };

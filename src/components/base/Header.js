@@ -33,7 +33,7 @@ const navigateItems = [
             {
                 id: 'service',
                 label: 'Service',
-                link: '/service',
+                link: '/vision#services_process',
             },
             {
                 id: 'the_studio',
@@ -60,8 +60,12 @@ const navigateItems = [
             },
         ],
     },
-
-    { id: 'partners', label: 'partners', link: '/#partners', internal: true },
+    {
+        id: 'partners',
+        label: 'partners',
+        link: '/#sp-partners',
+        internal: true,
+    },
 ];
 
 const MenuItem = styled(Box)(() => ({

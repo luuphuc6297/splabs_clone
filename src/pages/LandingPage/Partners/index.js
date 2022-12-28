@@ -4,7 +4,7 @@ import partners from './partners.json';
 
 export const Partners = () => {
     return (
-        <SectionWrapper id="partners" sx={{ paddingBottom: 20 }}>
+        <SectionWrapper id="sp-partners" sx={{ paddingBottom: 20 }}>
             <SectionTitle sx={{ textAlign: 'center', marginBottom: 8 }}>
                 PARTNERS
             </SectionTitle>
