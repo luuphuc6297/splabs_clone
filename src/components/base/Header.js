@@ -17,29 +17,29 @@ const navigateItems = [
     {
         id: 'the_studio',
         label: 'the_studio',
-        link: '/#the-studio',
+        link: '/vision',
         internal: false,
         subMenu: [
-            {
-                id: 'the_studio',
-                label: 'Vision',
-                link: '/vision',
-            },
-            {
-                id: 'advertisement',
-                label: 'Advertisement',
-                link: '/vision#advertisement',
-            },
-            {
-                id: 'service',
-                label: 'Service',
-                link: '/vision#services_process',
-            },
-            {
-                id: 'the_studio',
-                label: 'The Team',
-                link: '/#the-team',
-            },
+            // {
+            //     id: 'the_studio',
+            //     label: 'Vision',
+            //     link: '/vision',
+            // },
+            // {
+            //     id: 'advertisement',
+            //     label: 'Advertisement',
+            //     link: '/vision#advertisement',
+            // },
+            // {
+            //     id: 'service',
+            //     label: 'Service',
+            //     link: '/vision#services_process',
+            // },
+            // {
+            //     id: 'the_studio',
+            //     label: 'The Team',
+            //     link: '/#the-team',
+            // },
         ],
     },
     {
@@ -48,16 +48,16 @@ const navigateItems = [
         link: '/process',
         internal: false,
         subMenu: [
-            {
-                id: 'influencer_process',
-                label: 'SPAD Influencer Process',
-                link: '/process#influencer_process', // after # is id element
-            },
-            {
-                id: 'spad_usiness',
-                label: 'SPAD Business',
-                link: '/process#influencer_marketing', // after # is id element
-            },
+            // {
+            //     id: 'influencer_process',
+            //     label: 'SPAD Influencer Process',
+            //     link: '/process#influencer_process', // after # is id element
+            // },
+            // {
+            //     id: 'spad_usiness',
+            //     label: 'SPAD Business',
+            //     link: '/process#influencer_marketing', // after # is id element
+            // },
         ],
     },
     {
