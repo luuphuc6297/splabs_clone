@@ -14,7 +14,7 @@ export const Explore = () => {
     return (
         <SectionWrapperFullWidth
             sx={{
-                backgroundImage: `url('/images/background/info_section.png')`,
+                backgroundImage: `url('/images/background/info-section.png')`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
             }}

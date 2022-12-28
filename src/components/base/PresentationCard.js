@@ -25,7 +25,7 @@ export const PresentationCard = React.memo(
                     height: '100%',
                     padding: '40px',
                     borderRadius: 4,
-                    backgroundImage: `url('/images/background/presentation_background.png')`,
+                    backgroundImage: `url('/images/background/presentation-background.png')`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     objectFit: 'contain',
