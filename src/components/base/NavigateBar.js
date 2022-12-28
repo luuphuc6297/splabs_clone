@@ -77,7 +77,9 @@ export const NavigateBar = ({ navigateItems }) => {
                 );
             })}
 
-            <TransparentButton>Apply</TransparentButton>
+            <TransparentButton onClick={() => scrollSection('#start-growing')}>
+                Apply
+            </TransparentButton>
             <SearchPage />
         </Navbar>
     );
