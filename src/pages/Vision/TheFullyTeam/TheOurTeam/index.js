@@ -42,22 +42,24 @@ export const TheOurTeam = () => {
             </Box>
 
             <Box sx={{ display: 'flex', justifyContent: 'center', mt: 6 }}>
-                <Button
-                    onClick={() => setIsShowMore((preState) => !preState)}
-                    sx={{
-                        color: '#333333',
-                        background: '#ffffff',
-                        height: 48,
-                        width: 130,
-                        padding: '15px',
-                        borderRadius: 30,
-                        '&:hover': {
-                            backgroundColor: '#ffffff',
-                        },
-                    }}
-                >
-                    Load more
-                </Button>
+                {isShowMore && (
+                    <Button
+                        onClick={() => setIsShowMore((preState) => !preState)}
+                        sx={{
+                            color: '#333333',
+                            background: '#ffffff',
+                            height: 48,
+                            width: 130,
+                            padding: '15px',
+                            borderRadius: 30,
+                            '&:hover': {
+                                backgroundColor: '#ffffff',
+                            },
+                        }}
+                    >
+                        Load more
+                    </Button>
+                )}
             </Box>
         </Container>
     );

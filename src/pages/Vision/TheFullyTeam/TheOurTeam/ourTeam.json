@@ -120,71 +120,142 @@
             ]
         },
         {
-            "id": "bill_nguyen",
-            "name": "Bill Nguyen",
-            "position": "CTO",
+            "id": "thai_nguyen",
+            "name": "Thai Nguyen",
+            "position": "Mobile Developer",
             "descriptions": [
                 {
-                    "id": "ca_1",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "tn_1",
+                    "description": " Proficient knowledge of relevant computer languages for Android, iOS"
                 },
                 {
-                    "id": "ca_2",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "tn_2",
+                    "description": " Senior Mobile Developer at SPLabs."
                 },
                 {
-                    "id": "ca_3",
-                    "description": "Live streaming on a wide range of platforms"
-                },
-                {
-                    "id": "ca_4",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "tn_3",
+                    "description": "Senior Front End / Mobile Developer at SaiGon Technology Solution."
                 }
             ]
         },
         {
-            "id": "bill_nguyen",
-            "name": "Bill Nguyen",
-            "position": "CTO",
+            "id": "thai_vu",
+            "name": "Thai Vu",
+            "position": "BackEnd Developer",
             "descriptions": [
                 {
                     "id": "ca_1",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": "Senior Developer Full-stack at FPT SOFTWARE. Web FrontEnd Developer at MWG."
                 },
                 {
                     "id": "ca_2",
-                    "description": "Live streaming on a wide range of platforms"
-                },
-                {
-                    "id": "ca_3",
-                    "description": "Live streaming on a wide range of platforms"
-                },
-                {
-                    "id": "ca_4",
-                    "description": "Live streaming on a wide range of platforms"
+                    "description": " PHP developer at EFE Technology."
                 }
             ]
         },
         {
-            "id": "bill_nguyen",
-            "name": "Bill Nguyen",
-            "position": "CTO",
+            "id": "luu_phuc",
+            "name": "Luu Phuc",
+            "position": "Full-stack Engineer",
             "descriptions": [
                 {
-                    "id": "ca_1",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "lp_1",
+                    "description": "Full-stack Javascript Engineer at MobyteLab Solution"
                 },
                 {
-                    "id": "ca_2",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "lp_2",
+                    "description": "Full-stack Javascript Engineer at Template.net"
                 },
                 {
-                    "id": "ca_3",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "lp_3",
+                    "description": "Front-end team leader at CoachingCloud"
+                }
+            ]
+        },
+        {
+            "id": "Dicky Tran",
+            "name": "Dicky Tran",
+            "position": "Business Analyst",
+            "descriptions": [
+                {
+                    "id": "dt_1",
+                    "description": "Responsible for communicating with the technical team to implement logic for Blockchain projects."
                 },
                 {
-                    "id": "ca_4",
-                    "description": "Live streaming on a wide range of platforms"
+                    "id": "dt_2",
+                    "description": "Conducting system tests & user acceptance tests."
+                }
+            ]
+        },
+        {
+            "id": "petrus_si_qui",
+            "name": "Petrus Si Qui",
+            "position": "Front End Developer",
+            "descriptions": [
+                {
+                    "id": "sq_1",
+                    "description": "Front End Developer."
+                },
+                {
+                    "id": "sq_2",
+                    "description": "Manage company hosting, website domains."
+                }
+            ]
+        },
+        {
+            "id": "Winny Vu",
+            "name": "Winny Vu",
+            "position": "Designer",
+            "descriptions": [
+                {
+                    "id": "wn_1",
+                    "description": "Over 3 years of experience in Graphic Design, creation & production of design products in various formats online platform."
+                },
+                {
+                    "id": "wn_2",
+                    "description": "Understanding of technology capabilities such as HTML, CSS, and user interface technologies."
+                }
+            ]
+        },
+        {
+            "id": "Lam Nguyen",
+            "name": "Lam Nguyen",
+            "position": "QA Engineer",
+            "descriptions": [
+                {
+                    "id": "ln_1",
+                    "description": "Junior QA at IMBA."
+                },
+                {
+                    "id": "ln_2",
+                    "description": "QAwith GameFi"
+                }
+            ]
+        },
+        {
+            "id": "Bee",
+            "name": "Bee",
+            "position": "CS & Content Marketing",
+            "descriptions": [
+                {
+                    "id": "wn_1",
+                    "description": "4 years of blockchain & cryptocurrency experience"
+                },
+                {
+                    "id": "wn_2",
+                    "description": "Planning and implementing Ul/UX web crypto projects."
+                },
+                {
+                    "id": "wn_2",
+                    "description": "Plan and implement on online platforms: Telegram, Discord, Facebook, Twitter..."
+                },
+                {
+                    "id": "wn_2",
+                    "description": "Customer support for crypto exchange, GameFi, Play-to-Earn, Move-to-Eam, Travel-to-Earn, Launchpad..."
+                },
+                {
+                    "id": "wn_2",
+                    "description": "Plan events, videos, social media channels."
                 }
             ]
         }

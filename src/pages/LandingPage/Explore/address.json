@@ -8,12 +8,12 @@
         {
             "id": "head",
             "office": "Headquaters Address",
-            "address": "109 Nguyen Co Thach, An Loi Dong Ward, District 2, HCMC, Viet Nam"
+            "address": "1 Raffles Place, #40-02, One Raffles Place, Office Tower 1, Singapore 048616"
         },
         {
             "id": "korea",
             "office": "Korea Office",
-            "address": "109 Nguyen Co Thach, An Loi Dong Ward, District 2, HCMC, Viet Nam"
+            "address": "5, Eonju-ro 99-gil, Gangnam-gu, Seoul, Republic of Korea trustBD 5F~6F"
         }
     ]
 }
