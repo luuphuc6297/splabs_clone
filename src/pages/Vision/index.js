@@ -6,6 +6,7 @@ import {
     SectionWrapperFullWidth,
     TopHeader,
 } from 'components';
+import useScrollToTarget from 'hooks/useScrollToView';
 import { Explore } from '../LandingPage/Explore';
 import { Advertisement } from './Advertisement';
 import { ServicesAndProcess } from './ServicesAndProcess';
@@ -13,6 +14,7 @@ import { TheFullyTeam } from './TheFullyTeam';
 import { Vision } from './Visions';
 
 const VisionPage = () => {
+    useScrollToTarget();
     return (
         <>
             <SectionWrapperFullWidth

@@ -28,7 +28,7 @@ const navigateItems = [
             {
                 id: 'advertisement',
                 label: 'Advertisement',
-                link: '/advertisement',
+                link: '/vision#advertisement',
             },
             {
                 id: 'service',
