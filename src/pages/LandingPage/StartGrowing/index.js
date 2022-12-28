@@ -3,14 +3,14 @@ import {
     LeftToRightGradientBox,
     SectionCaption,
     SectionTitle,
-    SectionWrapper
+    SectionWrapper,
 } from 'components';
 import { StartGrowingForm } from './Form';
 export const StartGrowing = () => {
     const theme = useTheme();
 
     return (
-        <SectionWrapper sx={{ paddingBottom: 15 }}>
+        <SectionWrapper id="start-growing" sx={{ paddingBottom: 15 }}>
             <LeftToRightGradientBox
                 sx={{
                     padding: '56px 108px',
