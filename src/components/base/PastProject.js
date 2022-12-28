@@ -4,7 +4,7 @@ import { BsTelegram } from 'react-icons/bs';
 import { useMobile } from 'hooks/useMobile';
 
 const LogoWrapper = styled(Box)(({ theme }) => ({
-    width: 480,
+    minWidth: 312,
     height: 344,
     borderRadius: 8,
     border: '1px solid #f5f5f5',
@@ -55,7 +55,7 @@ const QrBox = styled('img')(({ theme }) => ({
     height: 80,
 }));
 
-export const PastProject = ({ logo, name, description, community, qr }) => {
+export const PastProject = ({ logo, name, description, community, qr, status }) => {
     const isMobile = useMobile();
     return (
         <Box
@@ -82,7 +82,8 @@ export const PastProject = ({ logo, name, description, community, qr }) => {
                         fontSize: 18,
                     }}
                 >
-                    Past Project
+                    
+                    {status}
                 </Typography>
                 <Divider
                     sx={{

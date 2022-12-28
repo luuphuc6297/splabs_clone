@@ -131,7 +131,9 @@ export const Header = () => {
                     alignItems: 'center',
                 }}
             >
-                <SPLabsLogo />
+                <Link to="/">
+                    <SPLabsLogo />
+                </Link>
                 {matchesMD ? (
                     <NavigateBar navigateItems={dataNavigateItems} />
                 ) : (

@@ -6,6 +6,7 @@
             "name": "Step Watch",
             "description": "Step watch is a Web3 walking fitness reward application that allows user to exercise with their NFT and earn money",
             "community": "",
+            "status": "Past Project",
             "qr": "/images/email_qr.png",
             "link": "https://stepwatch.feliciastation.com/"
         },
@@ -13,17 +14,28 @@
             "id": "infinity_angel",
             "logo": "/images/past_projects/infinity.png",
             "name": "Infinity Angel",
-            "description": "Step watch is a Web3 walking fitness reward application that allows user to exercise with their NFT and earn money",
+            "description": "Infinity Angel is an '‘AOS-style real-time online battle arena’ High quality. free-to-play games with the added advantage of creating earning opportunities and blockchain technology. The project will be officially released in the third quarter of 2022",
             "community": "",
+            "status": "Past Project",
             "qr": "/images/email_qr.png",
             "link": "https://infinityangel.io/"
         },
         {
-            "id": "infinity_angel_1",
-            "logo": "",
-            "name": "Infinity Angel",
-            "description": "Step watch is a Web3 walking fitness reward application that allows user to exercise with their NFT and earn money",
+            "id": "airtnt",
+            "logo": "/images/past_projects/airtnt.png",
+            "name": "AirTNT",
+            "description": "AirTnT changes the future of travel by creating a new revolution in travel data sharing and connecting individual providers as well as service organizations providing travel products to the community. G C",
             "community": "",
+            "status": "Ongoing Project",
+            "qr": "/images/email_qr.png"
+        },
+        {
+            "id": "gatekeeper",
+            "logo": "/images/past_projects/airtnt.png",
+            "name": "GateKeeper",
+            "description": "GateKeeper is a decentralized DEX exchange with the aim of connecting token auction groups, fundraising projects in a safe and transparent environment based on Ethereum, Binance SmartChain, Polygon, Avalanche, Matic and more blockchain.",
+            "community": "",
+            "status": "Past Project",
             "qr": "/images/email_qr.png"
         }
     ]
