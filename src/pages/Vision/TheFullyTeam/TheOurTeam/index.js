@@ -1,5 +1,5 @@
-import { Box, Button, Grid } from '@mui/material';
-import { SectionTitle, SectionWrapper, TheOurTeamCard } from 'components';
+import { Box, Container, Button } from '@mui/material';
+import { SectionTitle, TheOurTeamCard } from 'components';
 import { useState } from 'react';
 import ourTeam from './ourTeam.json';
 
@@ -7,7 +7,7 @@ export const TheOurTeam = () => {
     const [isShowMore, setIsShowMore] = useState(true);
 
     return (
-        <SectionWrapper id="the_our_team" sx={{ marginBottom: 21 }}>
+        <Container id="the_our_team" sx={{ marginBottom: 21 }} maxWidth="lg">
             <SectionTitle
                 sx={{
                     fontSize: 32,
@@ -19,20 +19,28 @@ export const TheOurTeam = () => {
                 OUR TEAM
             </SectionTitle>
 
-            <Grid container columnSpacing={6} rowSpacing={4}>
+            <Box
+                sx={{
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    flexWrap: 'wrap',
+                    gap: 7,
+                    justifyContent: 'center',
+                }}
+            >
                 {ourTeam.payload
                     .slice(0, isShowMore ? 6 : undefined)
                     .map((item) => (
-                        <Grid item xs={12} sm={6} md={4} key={item.id}>
-                            <TheOurTeamCard
-                                id={item.id}
-                                name={item.name}
-                                position={item.position}
-                                descriptions={item.descriptions}
-                            />
-                        </Grid>
+                        <TheOurTeamCard
+                            id={item.id}
+                            name={item.name}
+                            position={item.position}
+                            descriptions={item.descriptions}
+                        />
                     ))}
-            </Grid>
+            </Box>
+
             <Box sx={{ display: 'flex', justifyContent: 'center', mt: 6 }}>
                 <Button
                     onClick={() => setIsShowMore((preState) => !preState)}
@@ -51,6 +59,6 @@ export const TheOurTeam = () => {
                     Load more
                 </Button>
             </Box>
-        </SectionWrapper>
+        </Container>
     );
 };

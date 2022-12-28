@@ -21,6 +21,7 @@ const Lists = styled('ul')(({ theme }) => ({
 }));
 
 const ListItem = styled('li')(({ theme }) => ({
+    lineHeight: 1.5,
     fontSize: 14,
 }));
 
@@ -42,17 +43,16 @@ export const MemberCardV2 = React.memo(
                         display: 'flex',
                         color: '#10131a',
                         justifyContent: 'space-between',
+                        padding: '56px 40px',
                         backgroundImage: `url('${avatar}')`,
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'right',
-                        padding: '56px 40px',
                         boxSizing: 'border-box',
-                        backgroundSize: '70%',
+                        backgroundSize: 'contain',
                         backgroundPositionY: 'bottom',
-                        position: 'relative',
                         objectFit: 'contain',
                         [theme.breakpoints.up('sm')]: {
-                            padding: '80px 60px',
+                            padding: '60px',
                             backgroundSize: 'contain',
                         },
                     }}
@@ -62,7 +62,7 @@ export const MemberCardV2 = React.memo(
                             flexBasis: '50%',
                             flexShrink: 0,
                             [theme.breakpoints.up('sm')]: {
-                                flexBasis: '40%',
+                                flexBasis: '80%',
                             },
                         }}
                     >

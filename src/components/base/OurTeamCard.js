@@ -18,6 +18,7 @@ const Lists = styled('ul')(({ theme }) => ({}));
 
 const ListItem = styled('li')(({ theme }) => ({
     marginBottom: 4,
+    lineHeight: 1.5,
     fontSize: 14,
 }));
 
@@ -28,7 +29,8 @@ export const TheOurTeamCard = React.memo(({ name, position, descriptions }) => {
             data-aos-duration="5000"
             data-aos-easing="linear"
             sx={{
-                height: 360,
+                width: 340,
+                height: 380,
                 borderRadius: 4,
                 display: 'flex',
                 flexDirection: 'column',
@@ -38,7 +40,7 @@ export const TheOurTeamCard = React.memo(({ name, position, descriptions }) => {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 cursor: 'pointer',
-                padding: '16px 8px',
+                padding: '16px 16px',
                 background: 'rgba(46, 48, 83, 0.4)',
                 boxShadow: 'rgb(255 255 255 / 60%) 0px 0px 8px 0px',
                 '&:hover': {
