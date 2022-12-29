@@ -9,6 +9,7 @@ const AboutUs = () => {
         <SectionWrapper
             id="about_us"
             sx={{
+                paddingTop: 12,
                 marginBottom: 21,
             }}
         >

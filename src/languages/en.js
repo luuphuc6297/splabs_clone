@@ -3,7 +3,7 @@ export const en = {
     home: 'Home',
     about_us: 'About us',
     services: 'Services',
-    influencer: 'Influencer',
+    spad_marketing: 'Spad Marketing',
     marketing: 'Marketing',
     partners: 'Partners',
     /** About us */

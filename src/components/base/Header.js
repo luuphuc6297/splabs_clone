@@ -43,8 +43,8 @@ const navigateItems = [
         ],
     },
     {
-        id: 'influencer marketing',
-        label: 'Influencer Marketing',
+        id: 'spad_marketing',
+        label: 'Spad Marketing',
         link: '/process',
         internal: false,
         subMenu: [

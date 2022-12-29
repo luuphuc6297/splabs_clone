@@ -8,7 +8,7 @@ import { scrollSection } from 'utils';
 import { Link as LinkReactScroll } from 'react-scroll';
 import { SearchPage } from './SearchPage';
 import SubMenu from './SubMenu';
-
+import { grey } from '@mui/material/colors';
 const Navbar = styled(Box)(() => ({
     width: '100%',
     display: 'flex',
@@ -78,7 +78,20 @@ export const NavigateBar = ({ navigateItems }) => {
             })}
 
             <TransparentButton onClick={() => scrollSection('#start-growing')}>
-                Apply
+                <a
+                    href="https://forms.gle/W2nuZixZv8a7uoD27"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                        fontSize: 14,
+                        fontFamily: 'PoppinsBold',
+                        fontWeight: 'bold',
+                        color: grey[50],
+                        textDecoration: 'none',
+                    }}
+                >
+                    Apply
+                </a>
             </TransparentButton>
             <SearchPage />
         </Navbar>

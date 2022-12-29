@@ -8,6 +8,7 @@ export const Description = () => {
         <Box id="about-us" sx={{ width: '100%' }}>
             <SectionTitle
                 sx={{
+                    
                     marginBottom: 2,
                     [theme.breakpoints.down('md')]: {
                         textAlign: 'center',
