@@ -233,7 +233,7 @@ export const Footer = () => {
                                             gap: 1,
                                         }}
                                     >
-                                        <ListItem disablePadding>
+                                        {/* <ListItem disablePadding>
                                             <Email
                                                 target="_blank"
                                                 rel="noreferrer"
@@ -241,17 +241,17 @@ export const Footer = () => {
                                             >
                                                 info@splabs.info
                                             </Email>
-                                        </ListItem>
+                                        </ListItem> */}
                                         <ListItem disablePadding>
                                             <Email
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                href="mailto:contact@splabs.info276"
+                                                href="mailto:contact@splabs.info"
                                             >
-                                                contact@splabs.info276
+                                                contact@splabs.info
                                             </Email>
                                         </ListItem>
-                                        <ListItem disablePadding>
+                                        {/* <ListItem disablePadding>
                                             <Email
                                                 target="_blank"
                                                 rel="noreferrer"
@@ -259,7 +259,7 @@ export const Footer = () => {
                                             >
                                                 koreacontact@splabs.info
                                             </Email>
-                                        </ListItem>
+                                        </ListItem> */}
                                     </List>
                                     <Box
                                         sx={{

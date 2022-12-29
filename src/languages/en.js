@@ -2,7 +2,7 @@ export const en = {
     /** Home section */
     home: 'Home',
     about_us: 'About us',
-    the_studio: 'Vision',
+    services: 'Services',
     influencer: 'Influencer',
     marketing: 'Marketing',
     partners: 'Partners',

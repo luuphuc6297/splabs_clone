@@ -16,7 +16,7 @@ const navigateItems = [
     { id: 'about_us', label: 'about_us', link: '/#about-us', internal: true },
     {
         id: 'the_studio',
-        label: 'the_studio',
+        label: 'services',
         link: '/vision',
         internal: false,
         subMenu: [
