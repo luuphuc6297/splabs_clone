@@ -4,32 +4,37 @@
             "id": "ceo",
             "name": "Kyle Kim",
             "position": "CEO",
-            "avatar": "/images/members/ceo.png"
+            "avatar": "/images/members/ceo.png",
+            "linkedin": "https://www.linkedin.com/in/hyunjong-kim-02b20b16b/"
         },
         {
             "id": "cso",
             "name": "David Lee",
             "position": "CSO",
-            "avatar": "/images/members/cso.png"
+            "avatar": "/images/members/cso.png",
+            "linkedin": "https://www.linkedin.com/in/%EC%83%81%EC%A7%84-%EC%8B%AC-347137228/"
         },
         {
             "id": "coo",
             "name": "Tracy Nguyen",
             "position": "COO",
-            "avatar": "/images/members/coo.png"
+            "avatar": "/images/members/coo.png",
+            "linkedin": "https://www.linkedin.com/in/tracy-nguyen-81b306109/"
         },
 
         {
             "id": "cmo",
             "name": "Sim Sang Jin",
             "position": "CMO",
-            "avatar": "/images/members/cmo.png"
+            "avatar": "/images/members/cmo.png",
+            "linkedin": "https://www.linkedin.com/in/kwanyeong-lee-753958219/"
         },
         {
             "id": "SPLabsBoardofDirectors",
             "name": "Patrick Kim",
             "position": "SP Labs Board of Directors",
-            "avatar": "/images/members/PatrickKim.png"
+            "avatar": "/images/members/PatrickKim.png",
+            "linkedin": "https://www.linkedin.com/in/patrick-kim"
         }
     ]
 }

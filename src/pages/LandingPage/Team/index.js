@@ -39,7 +39,7 @@ export const TheTeam = () => {
                 >
                     <>
                         {members.payload.map(
-                            ({ id, name, position, avatar }) => (
+                            ({ id, name, position, avatar, linkedin}) => (
                                 <SwiperSlide key={id}>
                                     {({ isActive }) => {
                                         return (
@@ -56,6 +56,7 @@ export const TheTeam = () => {
                                                     name={name}
                                                     position={position}
                                                     avatar={avatar}
+                                                    linkedin={linkedin}
                                                 />
                                             </Box>
                                         );
