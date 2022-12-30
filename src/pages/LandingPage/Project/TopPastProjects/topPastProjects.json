@@ -5,7 +5,28 @@
             "logo": "/images/past_projects/step_watch.png",
             "name": "Step Watch",
             "description": "Step watch is a Web3 walking fitness reward application that allows user to exercise with their NFT and earn money",
-            "community": "",
+            "community": [
+                {
+                    "id": "sw_1",
+                    "icon": "telegram",
+                    "content": "Group/ 12.5K members"
+                },
+                {
+                    "id": "sw_2",
+                    "icon": "twitter",
+                    "content": "/24.8K followers"
+                },
+                {
+                    "id": "sw_4",
+                    "icon": "discord",
+                    "content": "/51.3K members"
+                },
+                {
+                    "id": "sw_3",
+                    "icon": "telegram",
+                    "content": "Channel/ 3.2K subscribers"
+                }
+            ],
             "status": "Past Project",
             "qr": "/images/email_qr.png",
             "link": "https://stepwatch.feliciastation.com/"
@@ -15,7 +36,34 @@
             "logo": "/images/past_projects/infinity.png",
             "name": "Infinity Angel",
             "description": "Infinity Angel is an '‘AOS-style real-time online battle arena’ High quality. free-to-play games with the added advantage of creating earning opportunities and blockchain technology. The project will be officially released in the third quarter of 2022",
-            "community": "",
+            "community": [
+                {
+                    "id": "sw_1",
+                    "icon": "telegram",
+                    "content": "Group/ 23.9K members"
+                },
+                {
+                    "id": "sw_1",
+                    "icon": "telegram",
+                    "content": "Group/ 19.7K members"
+                },
+                {
+                    "id": "sw_2",
+                    "icon": "twitter",
+                    "content": "/23.9K followers"
+                },
+                {
+                    "id": "sw_4",
+                    "icon": "discord",
+                    "content": "/ 40.7K members"
+                },
+                {
+                    "id": "sw_4",
+                    "icon": "facebook",
+                    "content": "Fanpage/ 259K members"
+                }
+                
+            ],
             "status": "Past Project",
             "qr": "/images/email_qr.png",
             "link": "https://infinityangel.io/"
@@ -25,7 +73,33 @@
             "logo": "/images/past_projects/airtnt.jpg",
             "name": "AirTNT",
             "description": "AirTnT changes the future of travel by creating a new revolution in travel data sharing and connecting individual providers as well as service organizations providing travel products to the community. G C",
-            "community": "",
+            "community": [
+                {
+                    "id": "sw_1",
+                    "icon": "telegram",
+                    "content": "Group / 145.1K members"
+                },
+                {
+                    "id": "sw_2",
+                    "icon": "twitter",
+                    "content": "/ 50.5K followers"
+                },
+                {
+                    "id": "sw_3",
+                    "icon": "telegram",
+                    "content": "Channel / 14.7K subscribers"
+                },
+                {
+                    "id": "sw_3",
+                    "icon": "discord",
+                    "content": "Channel / 15.5K subscribers"
+                },
+                {
+                    "id": "sw_3",
+                    "icon": "face",
+                    "content": "/ airtnt.t2e"
+                }
+            ],
             "status": "Ongoing Project",
             "qr": "/images/email_qr.png"
         },
@@ -34,7 +108,23 @@
             "logo": "/images/past_projects/gateKeeper.png",
             "name": "GateKeeper",
             "description": "GateKeeper is a decentralized DEX exchange with the aim of connecting token auction groups, fundraising projects in a safe and transparent environment based on Ethereum, Binance SmartChain, Polygon, Avalanche, Matic and more blockchain.",
-            "community": "",
+            "community": [
+                {
+                    "id": "sw_1",
+                    "icon": "telegram",
+                    "content": "Group/ 12.5 members"
+                },
+                {
+                    "id": "sw_2",
+                    "icon": "twitter",
+                    "content": "/24.8k followers"
+                },
+                {
+                    "id": "sw_3",
+                    "icon": "telegram",
+                    "content": "Channel/ 3.2k subscribers"
+                }
+            ],
             "status": "Past Project",
             "qr": "/images/email_qr.png"
         }

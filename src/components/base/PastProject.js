@@ -2,7 +2,9 @@ import { Box, Divider, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/material';
 import { BsTelegram } from 'react-icons/bs';
 import { useMobile } from 'hooks/useMobile';
-
+import { AiFillTwitterCircle } from 'react-icons/ai';
+import { FaDiscord } from 'react-icons/fa';
+import { BsFacebook } from 'react-icons/bs';
 const LogoWrapper = styled(Box)(({ theme }) => ({
     minWidth: 312,
     height: 344,
@@ -44,6 +46,24 @@ const TelegramIcon = styled(BsTelegram)(({ theme }) => ({
     marginRight: 8,
 }));
 
+const TwitterIcon = styled(AiFillTwitterCircle)(({ theme }) => ({
+    width: 26,
+    height: 26,
+    marginRight: 8,
+}));
+
+const DiscordIcon = styled(FaDiscord)(({ theme }) => ({
+    width: 24,
+    height: 24,
+    marginRight: 8,
+}));
+
+const FacebookIcon = styled(BsFacebook)(({ theme }) => ({
+    width: 24,
+    height: 24,
+    marginRight: 8,
+}));
+
 const CommunityInfo = styled(Typography)(({ theme }) => ({
     fontSize: 14,
     textAlign: 'left',
@@ -55,8 +75,79 @@ const QrBox = styled('img')(({ theme }) => ({
     height: 80,
 }));
 
-export const PastProject = ({ logo, name, description, community, qr, status }) => {
+export const PastProject = ({
+    logo,
+    name,
+    description,
+    community,
+    qr,
+    status,
+}) => {
     const isMobile = useMobile();
+
+    const renderCommunityItem = (item) => {
+        switch (item.icon) {
+            case 'telegram':
+                return (
+                    <Grid
+                        item
+                        xs={6}
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <TelegramIcon />
+                        <CommunityInfo>{item.content}</CommunityInfo>
+                    </Grid>
+                );
+            case 'twitter':
+                return (
+                    <Grid
+                        item
+                        xs={6}
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <TwitterIcon />
+                        <CommunityInfo>{item.content}</CommunityInfo>
+                    </Grid>
+                );
+            case 'discord':
+                return (
+                    <Grid
+                        item
+                        xs={6}
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <DiscordIcon />
+                        <CommunityInfo>{item.content}</CommunityInfo>
+                    </Grid>
+                );
+            case 'facebook':
+                return (
+                    <Grid
+                        item
+                        xs={6}
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <FacebookIcon />
+                        <CommunityInfo>{item.content}</CommunityInfo>
+                    </Grid>
+                );
+            default:
+                break;
+        }
+    };
+
     return (
         <Box
             sx={{
@@ -82,7 +173,6 @@ export const PastProject = ({ logo, name, description, community, qr, status }) 
                         fontSize: 18,
                     }}
                 >
-                    
                     {status}
                 </Typography>
                 <Divider
@@ -102,7 +192,33 @@ export const PastProject = ({ logo, name, description, community, qr, status }) 
                         rowSpacing={{ xs: 2 }}
                         columnSpacing={{ xs: 2 }}
                     >
-                        <Grid
+                        {community.map((item) => (
+                            <>{renderCommunityItem(item)}</>
+                        ))}
+                        {/* <Grid
+                            item
+                            xs={6}
+                            sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                            }}
+                        >
+                           */}
+                        {/* <TelegramIcon />
+                            <CommunityInfo>Group/ 12.5 members</CommunityInfo> */}
+                        {/* </Grid>
+                        <Grid */}
+                        {/* item
+                            xs={6}
+                            sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <TelegramIcon />
+                            <CommunityInfo>Group/ 12.5 members</CommunityInfo>
+                        </Grid> */}
+                        {/* <Grid
                             item
                             xs={6}
                             sx={{
@@ -112,8 +228,8 @@ export const PastProject = ({ logo, name, description, community, qr, status }) 
                         >
                             <TelegramIcon />
                             <CommunityInfo>Group/ 12.5 members</CommunityInfo>
-                        </Grid>
-                        <Grid
+                        </Grid> */}
+                        {/* <Grid
                             item
                             xs={6}
                             sx={{
@@ -123,29 +239,7 @@ export const PastProject = ({ logo, name, description, community, qr, status }) 
                         >
                             <TelegramIcon />
                             <CommunityInfo>Group/ 12.5 members</CommunityInfo>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={6}
-                            sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                            }}
-                        >
-                            <TelegramIcon />
-                            <CommunityInfo>Group/ 12.5 members</CommunityInfo>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={6}
-                            sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                            }}
-                        >
-                            <TelegramIcon />
-                            <CommunityInfo>Group/ 12.5 members</CommunityInfo>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Box>
                 <Box
