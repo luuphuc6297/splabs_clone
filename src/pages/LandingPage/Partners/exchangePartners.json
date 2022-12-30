@@ -12,11 +12,6 @@
         },
         {
             "id": "houbi",
-            "partnerLogo": "/images/partners/houbi.png",
-            "hrefPartner": "https://www.kucoin.com/"
-        },
-        {
-            "id": "houbi",
             "partnerLogo": "/images/partners/kucoin.png",
             "hrefPartner": "https://www.huobi.com/"
         },
