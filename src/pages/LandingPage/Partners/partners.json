@@ -28,131 +28,164 @@
         {
             "id": "nftb",
             "partnerLogo": "/images/partners/nftb.png",
-            "hrefPartner": ""
+            "hrefPartner": "https://nftb.io/"
         },
         {
             "id": "chainlink",
-            "partnerLogo": "/images/partners/chainlink.png"
+            "partnerLogo": "/images/partners/chainlink.png",
+            "hrefPartner": "https://chain.link/"
+            
         },
         {
             "id": "chain_dustry",
-            "partnerLogo": "/images/partners/chain_dustry.png"
+            "partnerLogo": "/images/partners/chain_dustry.png",
+            "hrefPartner": "https://www.chaindustry.io/"
         },
         {
             "id": "cls",
-            "partnerLogo": "/images/partners/cls.png"
+            "partnerLogo": "/images/partners/cls.png",
+            "hrefPartner": "https://www.cls.global/"
         },
         {
             "id": "nsststudio",
-            "partnerLogo": "/images/partners/nsstudio.png"
+            "partnerLogo": "/images/partners/nsstudio.png",
+            "hrefPartner": "http://www.nsstudio.co.kr/"
+            
         },
         {
             "id": "klaytn",
-            "partnerLogo": "/images/partners/klaytn.png"
+            "partnerLogo": "/images/partners/klaytn.png",
+            "hrefPartner": "http://www.nsstudio.co.kr/"
         },
         {
             "id": "kaikas",
-            "partnerLogo": "/images/partners/kaikas.png"
+            "partnerLogo": "/images/partners/kaikas.png",
+            "hrefPartner": "https://klaydice.io/"
         },
         {
             "id": "soken",
-            "partnerLogo": "/images/partners/soken.png"
+            "partnerLogo": "/images/partners/soken.png",
+            "hrefPartner": "https://soken.io/"
         },
         {
             "id": "houbi_nft",
-            "partnerLogo": "/images/partners/houbi_nft.png"
+            "partnerLogo": "/images/partners/houbi_nft.png",
+            "hrefPartner": "https://tmg35s.d1verse.io/#/home"
         },
         {
             "id": "toz",
-            "partnerLogo": "/images/partners/toz.png"
+            "partnerLogo": "/images/partners/toz.png",
+            "hrefPartner": ""
         },
         {
             "id": "signvm",
-            "partnerLogo": "/images/partners/signvm.png"
+            "partnerLogo": "/images/partners/signvm.png",
+            "hrefPartner": "https://www.signvm.io/"
         },
         {
             "id": "mk",
-            "partnerLogo": "/images/partners/mk.png"
+            "partnerLogo": "/images/partners/mk.png",
+            "hrefPartner": "http://www.nsstudio.co.kr/"
         },
         {
             "id": "moon_knight",
-            "partnerLogo": "/images/partners/moon_knight.png"
+            "partnerLogo": "/images/partners/moon_knight.png",
+            "hrefPartner": "https://moonknightlabs.com/"
         },
         {
             "id": "game_tree",
-            "partnerLogo": "/images/partners/game_tree.png"
+            "partnerLogo": "/images/partners/game_tree.png",
+            "hrefPartner": "https://gametree.me/"
         },
         {
             "id": "gateio",
-            "partnerLogo": "/images/partners/gateio.png"
+            "partnerLogo": "/images/partners/gateio.png",
+            "hrefPartner": "https://www.gate.io/"
         },
         {
             "id": "gateio_lab",
-            "partnerLogo": "/images/partners/gateio_lab.png"
+            "partnerLogo": "/images/partners/gateio_lab.png",
+            "hrefPartner": "https://www.gate.io/"
         },
         {
             "id": "kucoin",
-            "partnerLogo": "/images/partners/kucoin.png"
+            "partnerLogo": "/images/partners/kucoin.png",
+            "hrefPartner": "https://www.kucoin.com/"
         },
         {
             "id": "mexc",
-            "partnerLogo": "/images/partners/mexc.png"
+            "partnerLogo": "/images/partners/mexc.png",
+            "hrefPartner": "https://www.mexc.com/"
         },
         {
             "id": "phemex",
-            "partnerLogo": "/images/partners/phemex.png"
+            "partnerLogo": "/images/partners/phemex.png",
+            "hrefPartner": "https://phemex.com/"
         },
         {
             "id": "linx",
-            "partnerLogo": "/images/partners/linx.png"
+            "partnerLogo": "/images/partners/linx.png",
+            "hrefPartner": ""
         },
         {
             "id": "game_con",
-            "partnerLogo": "/images/partners/game_con.png"
+            "partnerLogo": "/images/partners/game_con.png",
+            "hrefPartner": "https://gameon.vc/"
         },
         {
             "id": "teddy_bear",
-            "partnerLogo": "/images/partners/teddy_bear.png"
+            "partnerLogo": "/images/partners/teddy_bear.png",
+            "hrefPartner": "https://teddybearlabs.io/"
         },
         {
             "id": "gramming",
-            "partnerLogo": "/images/partners/gramming.png"
+            "partnerLogo": "/images/partners/gramming.png",
+            "hrefPartner": "https://www.p-gramming.com/main/main.php"
         },
         {
             "id": "pixel_play",
-            "partnerLogo": "/images/partners/pixel_play.png"
+            "partnerLogo": "/images/partners/pixel_play.png",
+            "hrefPartner": "https://www.pixelplay.com/"
         },
         {
             "id": "sotatek",
-            "partnerLogo": "/images/partners/sotatek.png"
+            "partnerLogo": "/images/partners/sotatek.png",
+            "hrefPartner": "https://www.sotatek.com/"
         },
         {
             "id": "parable",
-            "partnerLogo": "/images/partners/parable.png"
+            "partnerLogo": "/images/partners/parable.png",
+            "hrefPartner": "https://parable-asia.com/"
         },
         {
             "id": "sun_miya",
-            "partnerLogo": "/images/partners/sun_miya.png"
+            "partnerLogo": "/images/partners/sun_miya.png",
+            "hrefPartner": "http://www.nsstudio.co.kr/"
         },
         {
             "id": "guy",
-            "partnerLogo": "/images/partners/guy.png"
+            "partnerLogo": "/images/partners/guy.png",
+            "hrefPartner": "http://www.nsstudio.co.kr/"
         },
         {
             "id": "aqua_pnix",
-            "partnerLogo": "/images/partners/aqua_pnix.png"
+            "partnerLogo": "/images/partners/aqua_pnix.png",
+            "hrefPartner": "http://www.nsstudio.co.kr/"
         },
         {
             "id": "earn_box",
-            "partnerLogo": "/images/partners/earn_box.png"
+            "partnerLogo": "/images/partners/earn_box.png",
+            "hrefPartner": "http://www.nsstudio.co.kr/"
         },
         {
             "id": "travel_track",
-            "partnerLogo": "/images/partners/travel_track.png"
+            "partnerLogo": "/images/partners/travel_track.png",
+            "hrefPartner": "http://www.nsstudio.co.kr/"
         },
         {
             "id": "finace",
-            "partnerLogo": "/images/partners/finace.png"
+            "partnerLogo": "/images/partners/finace.png",
+            "hrefPartner": "http://www.nsstudio.co.kr/"
         }
     ]
 }
