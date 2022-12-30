@@ -160,32 +160,32 @@
         {
             "id": "sun_miya",
             "partnerLogo": "/images/partners/sun_miya.png",
-            "hrefPartner": "http://www.nsstudio.co.kr/"
+            "hrefPartner": "https://sunmiya.club/"
         },
         {
             "id": "guy",
             "partnerLogo": "/images/partners/guy.png",
-            "hrefPartner": "http://www.nsstudio.co.kr/"
+            "hrefPartner": "/"
         },
         {
             "id": "aqua_pnix",
             "partnerLogo": "/images/partners/aqua_pnix.png",
-            "hrefPartner": "http://www.nsstudio.co.kr/"
+            "hrefPartner": "https://aquapnix.com/"
         },
         {
             "id": "earn_box",
             "partnerLogo": "/images/partners/earn_box.png",
-            "hrefPartner": "http://www.nsstudio.co.kr/"
+            "hrefPartner": "/"
         },
         {
             "id": "travel_track",
             "partnerLogo": "/images/partners/travel_track.png",
-            "hrefPartner": "http://www.nsstudio.co.kr/"
+            "hrefPartner": "https://traveltracks.com.vn/"
         },
         {
             "id": "finace",
             "partnerLogo": "/images/partners/finace.png",
-            "hrefPartner": "http://www.nsstudio.co.kr/"
+            "hrefPartner": "https://8.finance/"
         }
     ]
 }

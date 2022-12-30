@@ -24,12 +24,15 @@ export const StartGrowing = () => {
                 }}
             >
                 <SectionTitle sx={{ textAlign: 'center', marginBottom: 2 }}>
-                    Start Growing
+                    Contact Us
                 </SectionTitle>
-                <SectionCaption sx={{ textAlign: 'center' }}>
-                    Turn your efforts and our power into your money machine!
-                </SectionCaption>
                 <SectionCaption
+                    sx={{ textAlign: 'center', margin: '0 auto 24px auto' }}
+                >
+                    From Layer 1 development to project development and
+                    business, we solve everything together.
+                </SectionCaption>
+                {/* <SectionCaption
                     sx={{
                         textAlign: 'center',
                         maxWidth: '520px',
@@ -39,7 +42,7 @@ export const StartGrowing = () => {
                     Tell us your story: Your ideas, progress, team and vision;
                     After receiving your story, we will contact you within 3
                     business days.
-                </SectionCaption>
+                </SectionCaption> */}
                 <StartGrowingForm />
             </LeftToRightGradientBox>
 
