@@ -65,6 +65,12 @@ export const MemberCardV2 = React.memo(
                             backgroundPositionY: 'bottom',
                             display: 'flex',
                         },
+                        [theme.breakpoints.down('1080')]: {
+                            backgroundSize: '280px !important',
+                        },
+                        [theme.breakpoints.down('sm')]: {
+                            height: 560,
+                        },
                     }}
                 >
                     <Box
@@ -107,15 +113,17 @@ export const MemberCardV2 = React.memo(
                                             </ListItem>
                                         ))}
                                 </Lists>
-                                <ListsSecond>
-                                    {experiences
-                                        .slice(8)
-                                        .map((experience, index) => (
-                                            <ListItem key={index}>
-                                                {experience.description}
-                                            </ListItem>
-                                        ))}
-                                </ListsSecond>
+                                {experiences.length > 7 && (
+                                    <ListsSecond>
+                                        {experiences
+                                            .slice(8)
+                                            .map((experience, index) => (
+                                                <ListItem key={index}>
+                                                    {experience.description}
+                                                </ListItem>
+                                            ))}
+                                    </ListsSecond>
+                                )}
                             </Box>
                         )}
                     </Box>
