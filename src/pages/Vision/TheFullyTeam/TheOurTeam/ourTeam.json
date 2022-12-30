@@ -144,11 +144,11 @@
             "position": "BackEnd Developer",
             "descriptions": [
                 {
-                    "id": "ca_1",
+                    "id": "tv_1",
                     "description": "Senior Developer Full-stack at FPT SOFTWARE. Web FrontEnd Developer at MWG."
                 },
                 {
-                    "id": "ca_2",
+                    "id": "tv_2",
                     "description": " PHP developer at EFE Technology."
                 }
             ]
@@ -238,24 +238,123 @@
             "position": "CS & Content Marketing",
             "descriptions": [
                 {
-                    "id": "wn_1",
+                    "id": "b_1",
                     "description": "4 years of blockchain & cryptocurrency experience"
                 },
                 {
-                    "id": "wn_2",
+                    "id": "b_2",
                     "description": "Planning and implementing Ul/UX web crypto projects."
                 },
                 {
-                    "id": "wn_2",
+                    "id": "b_2",
                     "description": "Plan and implement on online platforms: Telegram, Discord, Facebook, Twitter..."
                 },
                 {
-                    "id": "wn_2",
+                    "id": "b_2",
                     "description": "Customer support for crypto exchange, GameFi, Play-to-Earn, Move-to-Eam, Travel-to-Earn, Launchpad..."
                 },
                 {
-                    "id": "wn_2",
+                    "id": "b_2",
                     "description": "Plan events, videos, social media channels."
+                }
+            ]
+        },
+        {
+            "id": "Vivian",
+            "name": "Vivian",
+            "position": "Manager Design",
+            "descriptions": [
+                {
+                    "id": "vv_1",
+                    "description": "Over 3 years of full-time experience as a UI/UX designer."
+                },
+                {
+                    "id": "vv_2",
+                    "description": "Advanced knowledge of the Figma design"
+                },
+                {
+                    "id": "vv_3",
+                    "description": "Design thinking, design workflow and solutions for web and mobile applications."
+                },
+                {
+                    "id": "vv_4",
+                    "description": "Understanding of technology capabilities such as HTML, CSS, and user interface technologies."
+                },
+                {
+                    "id": "vv_5",
+                    "description": " Experience in UX research and testing."
+                }
+            ]
+        },
+        {
+            "id": "lua",
+            "name": "Lua",
+            "position": "Accounting",
+            "descriptions": [
+                {
+                    "id": "l_1",
+                    "description": "Interpreting and internal accounting."
+                },
+                {
+                    "id": "v_2",
+                    "description": "Making reports, compiling contracts, producing reports, synthesizing."
+                },
+                {
+                    "id": "l_3",
+                    "description": "Monitor debts, archive documents"
+                }
+            ]
+        },
+        {
+            "id": "hanna",
+            "name": "Hana",
+            "position": "Kor Viet Interpreter",
+            "descriptions": [
+                {
+                    "id": "hn_1",
+                    "description": "Practice translating Blockchain products, PR press releases, media content into Korean/Vietnamese"
+                },
+                {
+                    "id": "hn_2",
+                    "description": "Work with dev teams to ensure timely and efficient workflow"
+                },
+                {
+                    "id": "hn_3",
+                    "description": " Maintain seamless communication between Korean partners and other teams"
+                }
+            ]
+        },
+        {
+            "id": "Steve Dao",
+            "name": "Steve Dao",
+            "position": "Design",
+            "descriptions": [
+                {
+                    "id": "sd_1",
+                    "description": "2 years of experience in Graphic Design."
+                },
+                {
+                    "id": "sd_2",
+                    "description": "Experience in UX/UI, Digital, Event, ECommerce Design"
+                },
+                {
+                    "id": "sd_3",
+                    "description": "Maintain seamless communication between Korean partners and other teams"
+                }
+            ]
+        },
+        {
+            "id": "Margin",
+            "name": "Margin",
+            "position": "Community Marketing",
+            "descriptions": [
+                {
+                    "id": "mg_1",
+                    "description": "2 years of experience in community development of crypto projects."
+                },
+                {
+                    "id": "mg_2",
+                    "description": "Experience in organizing online events."
                 }
             ]
         }

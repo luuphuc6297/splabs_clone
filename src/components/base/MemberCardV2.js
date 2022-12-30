@@ -8,15 +8,21 @@ const Name = styled(Typography)(({ theme }) => ({
     marginTop: '10px',
     marginBottom: '4px',
     letterSpacing: '1.3',
-    fontSize: 42,
+    fontSize: 36,
     wordBreak: 'break-word',
 }));
 
 const Position = styled(Typography)(({ theme }) => ({}));
 
 const Lists = styled('ul')(({ theme }) => ({
-    width: '100%',
-    marginRight: 56,
+    width: '72%',
+    marginRight: 16,
+    padding: 0,
+}));
+
+const ListsSecond = styled('ul')(({ theme }) => ({
+    width: '80%',
+    marginRight: 80,
     padding: 0,
 }));
 
@@ -39,6 +45,7 @@ export const MemberCardV2 = React.memo(
             >
                 <Box
                     sx={{
+                        maxWidth: 848,
                         height: 420,
                         display: 'flex',
                         color: '#10131a',
@@ -48,18 +55,19 @@ export const MemberCardV2 = React.memo(
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'right',
                         boxSizing: 'border-box',
-                        backgroundSize: 'contain',
-                        backgroundPositionY: '20px',
+                        backgroundPositionY: '88px',
                         objectFit: 'contain',
+                        margin: 'auto',
+                        backgroundSize: '348px !important',
                         [theme.breakpoints.up('sm')]: {
-                            padding: '60px',
+                            padding: '40px',
                             backgroundSize: 'contain',
                         },
                     }}
                 >
                     <Box
                         sx={{
-                            flexBasis: '50%',
+                            flexBasis: '60%',
                             flexShrink: 0,
                             [theme.breakpoints.up('sm')]: {
                                 flexBasis: '80%',
@@ -90,22 +98,22 @@ export const MemberCardV2 = React.memo(
                             <Box sx={{ display: 'flex' }}>
                                 <Lists>
                                     {experiences
-                                        .slice(0, 5)
+                                        .slice(0, 7)
                                         .map((experience, index) => (
                                             <ListItem key={index}>
                                                 {experience.description}
                                             </ListItem>
                                         ))}
                                 </Lists>
-                                <Lists>
+                                <ListsSecond>
                                     {experiences
-                                        .slice(6)
+                                        .slice(8)
                                         .map((experience, index) => (
                                             <ListItem key={index}>
                                                 {experience.description}
                                             </ListItem>
                                         ))}
-                                </Lists>
+                                </ListsSecond>
                             </Box>
                         )}
                     </Box>

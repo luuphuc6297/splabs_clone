@@ -13,7 +13,7 @@
                     "caption": "Marketing Strategy Development"
                 }
             ],
-            "logo": "/images/roadmap.png"
+            "logo": "/images/category/roadmap.png"
         },
         {
             "id": "design",
@@ -40,7 +40,7 @@
                     "caption": "Video Production"
                 }
             ],
-            "logo": "/images/ux_design.png"
+            "logo": "/images/category/ux_design.png"
         },
         {
             "id": "management",
@@ -59,7 +59,7 @@
                     "caption": "Content Marketing"
                 }
             ],
-            "logo": "/images/ux_design.png"
+            "logo": "/images/category/communities.png"
         },
         {
             "id": "exchange",
@@ -86,7 +86,7 @@
                     "caption": "Investor Relations"
                 }
             ],
-            "logo": "/images/ux_design.png"
+            "logo": "/images/category/public-relation.png"
         }
     ]
 }

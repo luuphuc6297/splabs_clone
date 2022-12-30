@@ -32,19 +32,19 @@
                 },
                 {
                     "id": "ceo_7",
-                    "description": "CEO SPLabs"
+                    "description": "Development of P2P exchange platform."
                 },
                 {
                     "id": "ceo_8",
-                    "description": "CEO SPLabs"
+                    "description": "Founder CEO Hcoin P2P exchange."
                 },
                 {
                     "id": "ceo_9",
-                    "description": "CEO SPLabs"
+                    "description": "COO/Co-Founder Blockchain Era."
                 },
                 {
                     "id": "ceo_10",
-                    "description": "CEO SPLabs"
+                    "description": "Infinity Angel, Stepwatch, Immortal wars CMO. Communications."
                 }
             ]
         },
@@ -56,23 +56,19 @@
             "experiences": [
                 {
                     "id": "cso_1",
-                    "description": "CEO SPLabs"
+                    "description": "Listing head Bitget exchange."
                 },
                 {
                     "id": "cso_2",
-                    "description": "CEO SPLabs"
+                    "description": "Ambassador Korea Coinmarketcap."
                 },
                 {
                     "id": "cso_3",
-                    "description": "CEO SPLabs"
+                    "description": "Asset manager Huobi exchange."
                 },
                 {
                     "id": "cso_4",
-                    "description": "CEO SPLabs"
-                },
-                {
-                    "id": "cso_5",
-                    "description": "CEO SPLabs"
+                    "description": "CSO SPLabs."
                 }
             ]
         },
@@ -84,31 +80,21 @@
             "experiences": [
                 {
                     "id": "coo_1",
-                    "description": "CEO SPLabs"
+                    "description": "8 years of experience in strategy, partnerships and innovation in Financial Services."
                 },
                 {
                     "id": "coo_2",
-                    "description": "CEO SPLabs"
+                    "description": "Operation team INNOVATECH."
                 },
                 {
                     "id": "coo_3",
-                    "description": "CEO SPLabs"
+                    "description": "COO Infinity Angel, Stepwatch, Immortal wars."
                 },
                 {
                     "id": "coo_4",
-                    "description": "CEO SPLabs"
-                },
-                {
-                    "id": "coo_5",
-                    "description": "CEO SPLabs"
+                    "description": "Development Manager strategy SPLabs. Leader Marketing Global."
                 }
             ]
-        },
-        {
-            "id": "coo1",
-            "name": "Tracy Nguyen",
-            "position": "COO",
-            "avatar": "/images/members/coo.png"
         }
     ]
 }

@@ -107,15 +107,15 @@ export const TopHeader = () => {
             >
                 <ContactInfoArea>
                     {/* Email */}
-                    <EmailInfo href="mailto:info@splabs.info">
+                    <EmailInfo href="mailto:contact@splabs.info">
                         <EmailIcon />
-                        <Email>info@splabs.info</Email>
+                        <Email>contact@splabs.info</Email>
                     </EmailInfo>
                     {/* Phone */}
-                    <PhoneInfo href="tel:+987 8762 866 82">
+                    {/* <PhoneInfo href="tel:+987 8762 866 82">
                         <PhoneIcon />
                         <Phone>+987 8762 866 82</Phone>
-                    </PhoneInfo>
+                    </PhoneInfo> */}
                 </ContactInfoArea>
                 <SocialNetworksArea>
                     <Box>

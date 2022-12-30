@@ -44,7 +44,7 @@ const navigateItems = [
     },
     {
         id: 'spad_marketing',
-        label: 'Spad Marketing',
+        label: 'SPAD Marketing',
         link: '/process',
         internal: false,
         subMenu: [

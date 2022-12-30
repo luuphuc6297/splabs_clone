@@ -35,6 +35,7 @@ export const ManagementTeam = () => {
                             {({ isActive }) => {
                                 return (
                                     <Box
+                                        sx={{ maxWidth: 878 }}
                                         className={
                                             isActive
                                                 ? 'the-team_slideActiveClass'
