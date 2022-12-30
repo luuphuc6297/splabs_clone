@@ -69,7 +69,8 @@ export const MemberCardV2 = React.memo(
                             backgroundSize: '280px !important',
                         },
                         [theme.breakpoints.down('sm')]: {
-                            height: 560,
+                            height: experiences ? 'auto' : 560,
+                            maxHeight: 800,
                         },
                     }}
                 >
