@@ -130,6 +130,10 @@ export const MemberCardV2 = React.memo(
                     <Box
                         sx={{
                             flex: 1,
+                            '> img': {
+                                width: '100%',
+                                height: '100%',
+                            },
                             [theme.breakpoints.up('sm')]: {
                                 '> img': {
                                     display: 'none',
