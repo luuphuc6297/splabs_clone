@@ -4,6 +4,7 @@ import {
     SectionTitle,
     SectionWrapperFullWidth,
 } from 'components';
+import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import members from './members.json';
 import './teamStyles.css';
@@ -22,6 +23,11 @@ export const TheTeam = () => {
                     centeredSlides
                     initialSlide={1}
                     onActiveIndexChange={(swiper) => {}}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    modules={[Autoplay]}
                     breakpoints={{
                         600: {
                             slidesPerView: 1.1,
@@ -39,7 +45,7 @@ export const TheTeam = () => {
                 >
                     <>
                         {members.payload.map(
-                            ({ id, name, position, avatar, linkedin}) => (
+                            ({ id, name, position, avatar, linkedin }) => (
                                 <SwiperSlide key={id}>
                                     {({ isActive }) => {
                                         return (

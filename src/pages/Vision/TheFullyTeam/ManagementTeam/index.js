@@ -1,5 +1,6 @@
 import { Box } from '@mui/material';
 import { MemberCardV2 } from 'components';
+import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import managementTeam from './managementTeam.json';
 import './teamStyles.css';
@@ -13,6 +14,11 @@ export const ManagementTeam = () => {
             centeredSlides
             initialSlide={1}
             onActiveIndexChange={(swiper) => {}}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
+            modules={[Autoplay]}
             breakpoints={{
                 600: {
                     slidesPerView: 1.1,
@@ -31,7 +37,6 @@ export const ManagementTeam = () => {
             <>
                 {managementTeam.payload.map(
                     ({ id, name, position, avatar, experiences, linkedin }) => (
-                        
                         <SwiperSlide key={id}>
                             {({ isActive }) => {
                                 return (
