@@ -29,6 +29,11 @@
             "id": "phemex",
             "partnerLogo": "/images/partners/phemex.png",
             "hrefPartner": "https://phemex.com/"
+        },
+        {
+            "id": "bingx",
+            "partnerLogo": "/images/partners/bingx.png",
+            "hrefPartner": "https://bingx.com/en-us/"
         }
     ]
 }
