@@ -23,6 +23,18 @@
             "name": "Tracy Nguyen",
             "position": "COO",
             "avatar": "/images/members/coo.png"
+        },
+        {
+            "id": "cmo",
+            "name": "Sim Sang Jin",
+            "position": "CMO",
+            "avatar": "/images/members/cmo.png"
+        },
+        {
+            "id": "SPLabsBoardofDirectors",
+            "name": "Patrick Kim",
+            "position": "SP Labs Board of Directors",
+            "avatar": "/images/members/PatrickKim.png"
         }
     ]
 }

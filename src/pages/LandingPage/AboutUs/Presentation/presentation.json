@@ -1,25 +1,25 @@
 {
-  "payload": [
-    {
-      "id": "incubation",
-      "step": "01",
-      "title": "INCUBATION",
-      "top_caption": "Grab the opportunity to make your startup dream come true with us!",
-      "bot_caption": "We incubate the project with the advantage of Web3, dApp, community, process, funding and support global entrepreneurs who are passionate about creating their own business achievements."
-    },
-    {
-      "id": "acceleration",
-      "step": "02",
-      "title": "ACCELERATION ",
-      "top_caption": "We provide development and build-up so that WEB 3.0-based projects can grow into user-friendly projects.",
-      "bot_caption": "We design, build, and promote great Web3 products. We grow your user base and engage your Web3 global community."
-    },
-    {
-      "id": "community",
-      "step": "03",
-      "title": "COMMUNITY",
-      "top_caption": "We focus on the community to build innovative Web3 based quality projects!",
-      "bot_caption": "Community is key to Web3 projects. Great ideas come from anywhere, anyone, whether you have a great Web3 idea or solid skills, join us to immediately own a quality community in the journey of radiating startups shining."
-    }
-  ]
+    "payload": [
+        {
+            "id": "incubation",
+            "step": "01",
+            "title": "INCUBATION",
+            "top_caption": "Grab the opportunity to make your startup dream come true with us!",
+            "bot_caption": "We incubate the project with the advantage of Web3, dApp, community, process, funding and support global entrepreneurs who are passionate about creating their own business achievements."
+        },
+        {
+            "id": "acceleration",
+            "step": "02",
+            "title": "ACCELERATION ",
+            "top_caption": "We provide development and build-up so that WEB 3.0-based projects can grow into user-friendly projects.",
+            "bot_caption": "We design, build, and promote great Web3 products. We grow your user base and engage your Web3 global community."
+        },
+        {
+            "id": "development",
+            "step": "03",
+            "title": "DEVELOPMENT",
+            "top_caption": "The development team consisting of 10 Koreans and 30 Vietnamese is the most powerful Layer 1 and Layer 2 professional development team in the world.",
+            "bot_caption": "The strongest strength of the development team is the experience accumulated through the development of numerous projects."
+        }
+    ]
 }
