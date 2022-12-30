@@ -103,20 +103,24 @@
             "avatar": "/images/members/cmo.png",
             "experiences": [
                 {
-                    "id": "coo_1",
-                    "description": "8 years of experience in strategy, partnerships and innovation in Financial Services."
+                    "id": "cmo_1",
+                    "description": "Research and development finance."
                 },
                 {
-                    "id": "coo_2",
-                    "description": "Operation team INNOVATECH."
+                    "id": "cmo_2",
+                    "description": "Product recognizer research and development."
                 },
                 {
-                    "id": "coo_3",
-                    "description": "COO Infinity Angel, Stepwatch, Immortal wars."
+                    "id": "cmo_3",
+                    "description": "Update new futures for the product."
                 },
                 {
                     "id": "coo_4",
-                    "description": "Development Manager strategy SPLabs. Leader Marketing Global."
+                    "description": "Look for development partners and strategic partner."
+                },
+                {
+                    "id": "coo_5",
+                    "description": "Develop international markets."
                 }
             ]
         },
@@ -127,20 +131,16 @@
             "avatar": "/images/members/PatrickKim.png",
             "experiences": [
                 {
-                    "id": "coo_1",
-                    "description": "8 years of experience in strategy, partnerships and innovation in Financial Services."
+                    "id": "spl_1",
+                    "description": "Global Operations of 3 NFT Projects "
                 },
                 {
-                    "id": "coo_2",
-                    "description": "Operation team INNOVATECH."
+                    "id": "spl_2",
+                    "description": "Responsible for responding to overseas customers"
                 },
                 {
-                    "id": "coo_3",
-                    "description": "COO Infinity Angel, Stepwatch, Immortal wars."
-                },
-                {
-                    "id": "coo_4",
-                    "description": "Development Manager strategy SPLabs. Leader Marketing Global."
+                    "id": "spl_3",
+                    "description": "Responsible for overseas part CA of the project"
                 }
             ]
         }
