@@ -48,12 +48,13 @@ export const MemberCardV2 = React.memo(
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'right',
                         boxSizing: 'border-box',
-                        backgroundSize: 'contain',
-                        backgroundPositionY: '20px',
+                        backgroundSize: '90%',
+                        backgroundPositionY: 'bottom',
                         objectFit: 'contain',
                         [theme.breakpoints.up('sm')]: {
                             padding: '60px',
                             backgroundSize: 'contain',
+                            backgroundPositionY: '20px',
                         },
                     }}
                 >
