@@ -30,7 +30,8 @@ export const ManagementTeam = () => {
         >
             <>
                 {managementTeam.payload.map(
-                    ({ id, name, position, avatar, experiences }) => (
+                    ({ id, name, position, avatar, experiences, linkedin }) => (
+                        
                         <SwiperSlide key={id}>
                             {({ isActive }) => {
                                 return (
@@ -48,6 +49,7 @@ export const ManagementTeam = () => {
                                             position={position}
                                             avatar={avatar}
                                             experiences={experiences}
+                                            linkedin={linkedin}
                                         />
                                     </Box>
                                 );
