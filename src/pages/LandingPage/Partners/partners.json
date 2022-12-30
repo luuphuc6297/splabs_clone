@@ -34,7 +34,6 @@
             "id": "chainlink",
             "partnerLogo": "/images/partners/chainlink.png",
             "hrefPartner": "https://chain.link/"
-            
         },
         {
             "id": "chain_dustry",
@@ -50,7 +49,6 @@
             "id": "nsststudio",
             "partnerLogo": "/images/partners/nsstudio.png",
             "hrefPartner": "http://www.nsstudio.co.kr/"
-            
         },
         {
             "id": "klaytn",
@@ -98,30 +96,11 @@
             "hrefPartner": "https://gametree.me/"
         },
         {
-            "id": "gateio",
-            "partnerLogo": "/images/partners/gateio.png",
-            "hrefPartner": "https://www.gate.io/"
-        },
-        {
             "id": "gateio_lab",
             "partnerLogo": "/images/partners/gateio_lab.png",
             "hrefPartner": "https://www.gate.io/"
         },
-        {
-            "id": "kucoin",
-            "partnerLogo": "/images/partners/kucoin.png",
-            "hrefPartner": "https://www.kucoin.com/"
-        },
-        {
-            "id": "mexc",
-            "partnerLogo": "/images/partners/mexc.png",
-            "hrefPartner": "https://www.mexc.com/"
-        },
-        {
-            "id": "phemex",
-            "partnerLogo": "/images/partners/phemex.png",
-            "hrefPartner": "https://phemex.com/"
-        },
+
         {
             "id": "linx",
             "partnerLogo": "/images/partners/linx.png",
@@ -171,11 +150,6 @@
             "id": "aqua_pnix",
             "partnerLogo": "/images/partners/aqua_pnix.png",
             "hrefPartner": "https://aquapnix.com/"
-        },
-        {
-            "id": "earn_box",
-            "partnerLogo": "/images/partners/earn_box.png",
-            "hrefPartner": "/"
         },
         {
             "id": "travel_track",
