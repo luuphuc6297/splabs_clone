@@ -18,12 +18,18 @@ const Lists = styled('ul')(({ theme }) => ({
     width: '72%',
     marginRight: 16,
     padding: 0,
+    [theme.breakpoints.down('sm')]: {
+        marginRight: 0,
+    },
 }));
 
 const ListsSecond = styled('ul')(({ theme }) => ({
     width: '80%',
     marginRight: 80,
     padding: 0,
+    [theme.breakpoints.down('sm')]: {
+        marginRight: 0,
+    },
 }));
 
 const ListItem = styled('li')(({ theme }) => ({
@@ -57,6 +63,7 @@ export const MemberCardV2 = React.memo(
                         backgroundPositionY: '88px',
                         objectFit: 'contain',
                         margin: 'auto',
+
                         backgroundSize: '348px !important',
                         [theme.breakpoints.up('sm')]: {
                             backgroundImage: `url('${avatar}')`,
@@ -69,14 +76,15 @@ export const MemberCardV2 = React.memo(
                             backgroundSize: '280px !important',
                         },
                         [theme.breakpoints.down('sm')]: {
-                            height: experiences ? 'auto' : 560,
-                            maxHeight: 800,
+                            height: experiences ? 800 : 560,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            paddingBottom: '0px',
                         },
                     }}
                 >
                     <Box
                         sx={{
-                            flexBasis: '60%',
                             flexShrink: 0,
                             [theme.breakpoints.up('sm')]: {
                                 flexBasis: '80%',
@@ -107,7 +115,7 @@ export const MemberCardV2 = React.memo(
                             <Box sx={{ display: 'flex' }}>
                                 <Lists>
                                     {experiences
-                                        .slice(0, 7)
+                                        .slice(0, 6)
                                         .map((experience, index) => (
                                             <ListItem key={index}>
                                                 {experience.description}
@@ -117,7 +125,7 @@ export const MemberCardV2 = React.memo(
                                 {experiences.length > 7 && (
                                     <ListsSecond>
                                         {experiences
-                                            .slice(8)
+                                            .slice(7)
                                             .map((experience, index) => (
                                                 <ListItem key={index}>
                                                     {experience.description}
