@@ -47,11 +47,10 @@ export const MemberCardV2 = React.memo(
                     sx={{
                         maxWidth: 848,
                         height: 420,
-                        display: 'flex',
                         color: '#10131a',
                         justifyContent: 'space-between',
-                        padding: '56px 40px',
-                        backgroundImage: `url('${avatar}')`,
+                        padding: '25px 30px',
+                        backgroundImage: `none`,
                         backgroundRepeat: 'no-repeat',
                         backgroundPositionX: 'right',
                         boxSizing: 'border-box',
@@ -60,8 +59,11 @@ export const MemberCardV2 = React.memo(
                         margin: 'auto',
                         backgroundSize: '348px !important',
                         [theme.breakpoints.up('sm')]: {
-                            padding: '40px',
+                            backgroundImage: `url('${avatar}')`,
+                            padding: '60px',
                             backgroundSize: 'contain',
+                            backgroundPositionY: 'bottom',
+                            display: 'flex',
                         },
                     }}
                 >
@@ -117,7 +119,18 @@ export const MemberCardV2 = React.memo(
                             </Box>
                         )}
                     </Box>
-                    <Box sx={{ flex: 1 }}></Box>
+                    <Box
+                        sx={{
+                            flex: 1,
+                            [theme.breakpoints.up('sm')]: {
+                                '> img': {
+                                    display: 'none',
+                                },
+                            },
+                        }}
+                    >
+                        <img src={avatar} alt="avatar" />
+                    </Box>
                 </Box>
             </Box>
         );

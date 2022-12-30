@@ -6,7 +6,7 @@ import { HiOutlinePhone } from 'react-icons/hi';
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram
+    AiOutlineInstagram,
 } from 'react-icons/ai';
 import ButtonChangeLanguage from './ButtonChangeLanguage';
 
