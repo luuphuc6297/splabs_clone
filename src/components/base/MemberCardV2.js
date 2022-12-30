@@ -40,8 +40,6 @@ const ListItem = styled('li')(({ theme }) => ({
 export const MemberCardV2 = React.memo(
     ({ avatar, name, position, experiences, linkedin }) => {
         const theme = useTheme();
-
-        console.log('linkedin', linkedin);
         return (
             <Box
                 className="member-card_item"
@@ -110,14 +108,28 @@ export const MemberCardV2 = React.memo(
                                 gap: 3,
                             }}
                         >
-                            <TelegramIcon fontSize="large" />
                             <a
                                 href={linkedin}
                                 target="_blank"
                                 rel="noreferrer"
-                                style={{ cursor: 'pointer' }}
+                                style={{ cursor: 'pointer', color: 'inherit' }}
                             >
-                                <LinkedInIcon fontSize="large" />
+                                <TelegramIcon
+                                    color="inherit"
+                                    fontSize="large"
+                                />
+                            </a>
+
+                            <a
+                                href={linkedin}
+                                target="_blank"
+                                rel="noreferrer"
+                                style={{ cursor: 'pointer', color: 'inherit' }}
+                            >
+                                <LinkedInIcon
+                                    color="inherit"
+                                    fontSize="large"
+                                />
                             </a>
                         </Box>
                         {experiences && (
