@@ -95,6 +95,54 @@
                     "description": "Development Manager strategy SPLabs. Leader Marketing Global."
                 }
             ]
+        },
+        {
+            "id": "cmo",
+            "name": "Sim Sang Jin",
+            "position": "CMO",
+            "avatar": "/images/members/cmo.png",
+            "experiences": [
+                {
+                    "id": "coo_1",
+                    "description": "8 years of experience in strategy, partnerships and innovation in Financial Services."
+                },
+                {
+                    "id": "coo_2",
+                    "description": "Operation team INNOVATECH."
+                },
+                {
+                    "id": "coo_3",
+                    "description": "COO Infinity Angel, Stepwatch, Immortal wars."
+                },
+                {
+                    "id": "coo_4",
+                    "description": "Development Manager strategy SPLabs. Leader Marketing Global."
+                }
+            ]
+        },
+        {
+            "id": "SPLabsBoardofDirectors",
+            "name": "Patrick Kim",
+            "position": "SP Labs Board of Directors",
+            "avatar": "/images/members/PatrickKim.png",
+            "experiences": [
+                {
+                    "id": "coo_1",
+                    "description": "8 years of experience in strategy, partnerships and innovation in Financial Services."
+                },
+                {
+                    "id": "coo_2",
+                    "description": "Operation team INNOVATECH."
+                },
+                {
+                    "id": "coo_3",
+                    "description": "COO Infinity Angel, Stepwatch, Immortal wars."
+                },
+                {
+                    "id": "coo_4",
+                    "description": "Development Manager strategy SPLabs. Leader Marketing Global."
+                }
+            ]
         }
     ]
 }
