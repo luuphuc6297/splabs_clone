@@ -1,0 +1,34 @@
+{
+    "payload": [
+        {
+            "id": "gateio",
+            "partnerLogo": "/images/partners/gateio.png",
+            "hrefPartner": "https://www.gate.io/"
+        },
+        {
+            "id": "kucoin",
+            "partnerLogo": "/images/partners/kucoin.png",
+            "hrefPartner": "https://www.kucoin.com/"
+        },
+        {
+            "id": "houbi",
+            "partnerLogo": "/images/partners/houbi.png",
+            "hrefPartner": "https://www.kucoin.com/"
+        },
+        {
+            "id": "houbi",
+            "partnerLogo": "/images/partners/kucoin.png",
+            "hrefPartner": "https://www.huobi.com/"
+        },
+        {
+            "id": "mexc",
+            "partnerLogo": "/images/partners/mexc.png",
+            "hrefPartner": "https://www.mexc.com/"
+        },
+        {
+            "id": "phemex",
+            "partnerLogo": "/images/partners/phemex.png",
+            "hrefPartner": "https://phemex.com/"
+        }
+    ]
+}
