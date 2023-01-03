@@ -6,7 +6,7 @@ import { HiOutlinePhone } from 'react-icons/hi';
 import {
     AiFillTwitterSquare,
     AiOutlineFacebook,
-    AiOutlineInstagram,
+    AiOutlineLinkedin
 } from 'react-icons/ai';
 import { TbBrandTelegram } from 'react-icons/tb';
 import ButtonChangeLanguage from './ButtonChangeLanguage';
@@ -140,11 +140,21 @@ export const TopHeader = () => {
 
                     <Box>
                         <SocialLink
-                            href="https://twitter.com/SPLabs_info"
+                            href="https://twitter.com/SPLabsInfo"
                             target="_blank"
                             rel="noreferrer"
                         >
                             <AiFillTwitterSquare size={24} />
+                        </SocialLink>
+                    </Box>
+
+                    <Box>
+                        <SocialLink
+                            href="https://www.linkedin.com/company/splabsheadquater/about/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <AiOutlineLinkedin size={24} />
                         </SocialLink>
                     </Box>
 

@@ -6,7 +6,7 @@
             "hrefPartner": "https://www.gate.io/"
         },
         {
-            "id": "houbi",
+            "id": "kucoin",
             "partnerLogo": "/images/partners/houbi.png",
             "hrefPartner": "https://www.kucoin.com/"
         },
@@ -29,6 +29,21 @@
             "id": "bingx",
             "partnerLogo": "/images/partners/bingx.png",
             "hrefPartner": "https://bingx.com/en-us/"
+        },
+        {
+            "id": "bybit",
+            "partnerLogo": "/images/partners/bingx.png",
+            "hrefPartner": "https://www.bybit.com/en-US/"
+        },
+        {
+            "id": "btcex",
+            "partnerLogo": "/images/partners/bingx.png",
+            "hrefPartner": "https://www.btcex.com/"
+        },
+        {
+            "id": "bitget",
+            "partnerLogo": "/images/partners/bingx.png",
+            "hrefPartner": "https://www.bitget.com/"
         }
     ]
 }
