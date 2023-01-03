@@ -3,13 +3,8 @@ import { Box, styled, Typography } from '@mui/material';
 import { SectionWrapper } from 'components';
 import { HiOutlinePhone } from 'react-icons/hi';
 
-import {
-    AiFillTwitterSquare,
-    AiOutlineFacebook,
-    AiOutlineLinkedin
-} from 'react-icons/ai';
-import { TbBrandTelegram } from 'react-icons/tb';
 import ButtonChangeLanguage from './ButtonChangeLanguage';
+import ButtonChangeSocial from './ButtonChangeSocial';
 
 const StyledTopHeader = styled(Box)(({ theme }) => ({
     width: '100vw',
@@ -89,13 +84,6 @@ const PhoneIcon = styled(HiOutlinePhone)(({ theme }) => ({
     marginRight: 4,
 }));
 
-const SocialLink = styled('a')(({ theme }) => ({
-    color: theme.palette.text.primary,
-    textDecoration: 'none',
-    cursor: 'pointer',
-    display: 'flex',
-}));
-
 export const TopHeader = () => {
     return (
         <StyledTopHeader>
@@ -120,42 +108,7 @@ export const TopHeader = () => {
                 </ContactInfoArea>
                 <SocialNetworksArea>
                     <Box>
-                        <SocialLink
-                            href="https://www.facebook.com/SPLabs.info"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <AiOutlineFacebook size={24} />
-                        </SocialLink>
-                    </Box>
-                    <Box>
-                        <SocialLink
-                            href="https://t.me/SPLabs_channel"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <TbBrandTelegram size={24} />
-                        </SocialLink>
-                    </Box>
-
-                    <Box>
-                        <SocialLink
-                            href="https://twitter.com/SPLabsInfo"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <AiFillTwitterSquare size={24} />
-                        </SocialLink>
-                    </Box>
-
-                    <Box>
-                        <SocialLink
-                            href="https://www.linkedin.com/company/splabsheadquater/about/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <AiOutlineLinkedin size={24} />
-                        </SocialLink>
+                        <ButtonChangeSocial />
                     </Box>
 
                     <Box>
