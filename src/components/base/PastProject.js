@@ -6,12 +6,18 @@ import { AiFillTwitterCircle } from 'react-icons/ai';
 import { FaDiscord } from 'react-icons/fa';
 import { BsFacebook } from 'react-icons/bs';
 const LogoWrapper = styled(Box)(({ theme }) => ({
+    minWidth: 312,
     height: 344,
-    borderRadius: 8,
-    border: '1px solid #f5f5f5',
+    borderRadius: 16,
     overflow: 'hidden',
     boxSizing: 'border-box',
     display: 'flex',
+    border: '0.5px solid #f5f5f5',
+    [theme.breakpoints.down('868')]: {
+        height: '100%',
+        width: '60%',
+        alignItems: 'start',
+    },
 }));
 
 const Logo = styled('img')(({ theme }) => ({
@@ -154,22 +160,18 @@ export const PastProject = ({
                 padding: 3,
                 border: '1px solid #f5f5f5',
                 borderRadius: '16px',
-                height: '100%',
+                height: isMobile ? 460 : 344,
                 display: 'flex',
                 alignItems: 'center',
-                flexDirection: 'initial',
+                flexDirection: isMobile ? 'column' : 'initial',
                 gap: 2,
-
-                [theme.breakpoints.down('md')]: {
+                [theme.breakpoints.down('868')]: {
                     flexDirection: 'column',
+                    height: '100%',
                 },
             }}
         >
-            <LogoWrapper
-                sx={{
-                    width: '100%',
-                }}
-            >
+            <LogoWrapper>
                 <Logo src={logo} loading="lazy" />
             </LogoWrapper>
 
@@ -203,51 +205,6 @@ export const PastProject = ({
                         {community.map((item) => (
                             <>{renderCommunityItem(item)}</>
                         ))}
-                        {/* <Grid
-                            item
-                            xs={6}
-                            sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                            }}
-                        >
-                           */}
-                        {/* <TelegramIcon />
-                            <CommunityInfo>Group/ 12.5 members</CommunityInfo> */}
-                        {/* </Grid>
-                        <Grid */}
-                        {/* item
-                            xs={6}
-                            sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                            }}
-                        >
-                            <TelegramIcon />
-                            <CommunityInfo>Group/ 12.5 members</CommunityInfo>
-                        </Grid> */}
-                        {/* <Grid
-                            item
-                            xs={6}
-                            sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                            }}
-                        >
-                            <TelegramIcon />
-                            <CommunityInfo>Group/ 12.5 members</CommunityInfo>
-                        </Grid> */}
-                        {/* <Grid
-                            item
-                            xs={6}
-                            sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                            }}
-                        >
-                            <TelegramIcon />
-                            <CommunityInfo>Group/ 12.5 members</CommunityInfo>
-                        </Grid> */}
                     </Grid>
                 </Box>
                 <Box

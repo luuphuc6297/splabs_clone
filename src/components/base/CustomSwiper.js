@@ -8,11 +8,11 @@ import { Swiper } from 'swiper/react';
 export const CustomSwiper = ({ children, ...props }) => {
     return (
         <Swiper
-            autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-            }}
-            modules={[Autoplay]}
+            // autoplay={{
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // }}
+            // modules={[Autoplay]}
             {...props}
         >
             {children}
