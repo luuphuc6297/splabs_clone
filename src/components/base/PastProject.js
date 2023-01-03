@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, Typography } from '@mui/material';
+import { Box, Divider, Grid, Typography, useTheme } from '@mui/material';
 import { styled } from '@mui/material';
 import { BsTelegram } from 'react-icons/bs';
 import { useMobile } from 'hooks/useMobile';
@@ -6,7 +6,6 @@ import { AiFillTwitterCircle } from 'react-icons/ai';
 import { FaDiscord } from 'react-icons/fa';
 import { BsFacebook } from 'react-icons/bs';
 const LogoWrapper = styled(Box)(({ theme }) => ({
-    minWidth: 312,
     height: 344,
     borderRadius: 8,
     border: '1px solid #f5f5f5',
@@ -84,6 +83,7 @@ export const PastProject = ({
     status,
 }) => {
     const isMobile = useMobile();
+    const theme = useTheme();
 
     const renderCommunityItem = (item) => {
         switch (item.icon) {
@@ -154,14 +154,22 @@ export const PastProject = ({
                 padding: 3,
                 border: '1px solid #f5f5f5',
                 borderRadius: '16px',
-                height: isMobile ? 460 : 360,
+                height: '100%',
                 display: 'flex',
                 alignItems: 'center',
-                flexDirection: isMobile ? 'column' : 'initial',
+                flexDirection: 'initial',
                 gap: 2,
+
+                [theme.breakpoints.down('md')]: {
+                    flexDirection: 'column',
+                },
             }}
         >
-            <LogoWrapper sx={{ width: isMobile ? '100%' : 480 }}>
+            <LogoWrapper
+                sx={{
+                    width: '100%',
+                }}
+            >
                 <Logo src={logo} loading="lazy" />
             </LogoWrapper>
 
