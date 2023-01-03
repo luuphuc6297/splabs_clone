@@ -2,10 +2,13 @@ import { Box } from '@mui/material';
 import { MemberCardV2 } from 'components';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useTheme } from '@mui/material/styles';
 import managementTeam from './managementTeam.json';
 import './teamStyles.css';
 
 export const ManagementTeam = () => {
+    const theme = useTheme();
+
     return (
         <Swiper
             loop={true}
@@ -41,7 +44,12 @@ export const ManagementTeam = () => {
                             {({ isActive }) => {
                                 return (
                                     <Box
-                                        sx={{ maxWidth: 878 }}
+                                        sx={{
+                                            [theme.breakpoints.up('1780')]: {
+                                                maxWidth: 1080,
+                                            },
+                                            maxWidth: 878,
+                                        }}
                                         className={
                                             isActive
                                                 ? 'the-team_slideActiveClass'

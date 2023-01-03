@@ -13,6 +13,7 @@ import {
     AiOutlineFacebook,
     AiOutlineInstagram,
 } from 'react-icons/ai';
+import { TbBrandTelegram } from 'react-icons/tb';
 
 const FaceBookIcon = styled(AiOutlineFacebook)(({ theme }) => ({
     width: 24,
@@ -20,7 +21,7 @@ const FaceBookIcon = styled(AiOutlineFacebook)(({ theme }) => ({
     color: 'white',
 }));
 
-const InstagramIcon = styled(AiOutlineInstagram)(({ theme }) => ({
+const InstagramIcon = styled(TbBrandTelegram)(({ theme }) => ({
     width: 24,
     height: 24,
     color: 'white',
@@ -126,6 +127,7 @@ export const Footer = () => {
                                     >
                                         <ListItem disablePadding>
                                             <Services
+                                                href="https://0ot7e2e0o21.typeform.com/to/LcfFUga7"
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >

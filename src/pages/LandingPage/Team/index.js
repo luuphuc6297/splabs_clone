@@ -8,10 +8,11 @@ import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import members from './members.json';
 import './teamStyles.css';
-
+import { useTheme } from '@mui/material/styles';
 export const TheTeam = () => {
+    const theme = useTheme();
     return (
-        <SectionWrapperFullWidth id="the-team" sx={{ paddingBottom: 15 }}>
+        <SectionWrapperFullWidth id="the-team" sx={{ paddingBottom: 20 }}>
             <Box>
                 <SectionTitle sx={{ textAlign: 'center', marginBottom: 5 }}>
                     THE TEAM
@@ -50,7 +51,14 @@ export const TheTeam = () => {
                                     {({ isActive }) => {
                                         return (
                                             <Box
-                                                sx={{ maxWidth: 878 }}
+                                                sx={{
+                                                    [theme.breakpoints.up(
+                                                        '1780'
+                                                    )]: {
+                                                        maxWidth: 1080,
+                                                    },
+                                                    maxWidth: 878,
+                                                }}
                                                 className={
                                                     isActive
                                                         ? 'the-team_slideActiveClass'

@@ -16,7 +16,7 @@ export const TheOurTeam = () => {
                     marginTop: 21,
                 }}
             >
-                OUR TEAM
+                OUR CORE TEAM
             </SectionTitle>
 
             <Box

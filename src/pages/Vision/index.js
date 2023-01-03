@@ -25,7 +25,7 @@ const VisionPage = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     objectFit: 'cover',
-                    height: '90vh',
+                    height: '72vh',
                 }}
             >
                 <TopHeader />

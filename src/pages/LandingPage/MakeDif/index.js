@@ -18,7 +18,7 @@ export const MakeDifferent = () => {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                paddingBottom: 7.5,
+                paddingBottom: 20,
                 flexDirection: isTablet ? 'column' : 'initial',
                 gap: isTablet ? '32px' : '0',
             }}

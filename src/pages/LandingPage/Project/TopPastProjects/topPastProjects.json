@@ -33,9 +33,9 @@
         },
         {
             "id": "infinity_angel",
-            "logo": "/images/past_projects/infinity.png",
-            "name": "Infinity Angel",
-            "description": "Infinity Angel is an '‘AOS-style real-time online battle arena’ High quality. free-to-play games with the added advantage of creating earning opportunities and blockchain technology. The project will be officially released in the third quarter of 2022",
+            "logo": "/images/past_projects/infititygames.png",
+            "name": "Infinity Games",
+            "description": "Infinity games is an '‘AOS-style real-time online battle arena’ High quality. free-to-play games with the added advantage of creating earning opportunities and blockchain technology. The project will be officially released in the third quarter of 2022",
             "community": [
                 {
                     "id": "sw_1",
@@ -63,7 +63,7 @@
                     "content": "Fanpage 259K members"
                 }
             ],
-            "status": "Past Project",
+            "status": "Ongoing Project",
             "qr": "/images/email_qr.png",
             "link": "https://infinityangel.io/"
         },
@@ -124,7 +124,7 @@
                     "content": "Channel 3.2k subscribers"
                 }
             ],
-            "status": "Past Project",
+            "status": "Ongoing Project",
             "qr": "/images/email_qr.png"
         }
     ]

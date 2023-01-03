@@ -24,7 +24,7 @@ const ProcessPage = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     objectFit: 'cover',
-                    height: '90vh',
+                    height: '82vh',
                 }}
             >
                 <TopHeader />

@@ -8,6 +8,7 @@ import {
     AiOutlineFacebook,
     AiOutlineInstagram,
 } from 'react-icons/ai';
+import { TbBrandTelegram } from 'react-icons/tb';
 import ButtonChangeLanguage from './ButtonChangeLanguage';
 
 const StyledTopHeader = styled(Box)(({ theme }) => ({
@@ -133,7 +134,7 @@ export const TopHeader = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <AiOutlineInstagram size={24} />
+                            <TbBrandTelegram size={24} />
                         </SocialLink>
                     </Box>
 

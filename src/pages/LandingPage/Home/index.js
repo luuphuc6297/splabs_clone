@@ -24,7 +24,7 @@ const HomePage = () => {
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                 <AppButton>
                     <a
-                        href="https://forms.gle/W2nuZixZv8a7uoD27"
+                        href="https://0ot7e2e0o21.typeform.com/to/LcfFUga7"
                         target="_blank"
                         rel="noreferrer"
                         style={{
